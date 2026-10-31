@@ -72,8 +72,8 @@ function ContactModal({ dict, onClose }: { dict: ContactDict; onClose: () => voi
   }
 
   const inputClass =
-    "w-full rounded-lg border border-outline-variant bg-surface-container-lowest px-4 py-3 text-body-md text-on-surface placeholder:text-on-surface-variant/50 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary transition-colors";
-  const labelClass = "font-headline text-label-md text-on-surface";
+    "w-full h-11 rounded-[6px] border border-neutral-300 bg-white px-3.5 text-[14.5px] text-[#1a1a1a] placeholder:text-neutral-400 focus:border-[#0c48d8] focus:outline-none transition-colors";
+  const labelClass = "block text-[13px] font-semibold text-neutral-800 mb-1.5";
 
   return (
     <div
@@ -83,50 +83,51 @@ function ContactModal({ dict, onClose }: { dict: ContactDict; onClose: () => voi
       aria-label={dict.title}
     >
       <div
-        className="absolute inset-0 bg-on-surface/50 backdrop-blur-sm"
+        className="absolute inset-0 bg-neutral-950/60"
         onClick={onClose}
         aria-hidden="true"
       />
 
-      <div className="relative w-full sm:max-w-lg max-h-[92dvh] overflow-y-auto bg-surface-container-lowest rounded-t-2xl sm:rounded-2xl shadow-2xl p-6 sm:p-8">
+      <div className="relative w-full sm:max-w-lg max-h-[92dvh] overflow-y-auto bg-white rounded-t-[12px] sm:rounded-[12px] border border-neutral-200 shadow-2xl p-7 sm:p-10">
         <button
           type="button"
           onClick={onClose}
           aria-label={dict.close}
-          className="absolute top-4 right-4 flex h-9 w-9 items-center justify-center rounded-full text-on-surface-variant hover:bg-on-surface/[0.06] hover:text-on-surface transition-colors"
+          className="absolute top-5 right-5 flex h-9 w-9 items-center justify-center rounded-[6px] text-neutral-400 hover:text-neutral-900 hover:bg-neutral-100 transition-colors cursor-pointer"
         >
-          <span className="material-symbols-outlined text-[22px]">close</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75">
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
         </button>
 
         {status === "success" ? (
           <div className="flex flex-col items-center text-center gap-4 py-10">
-            <span
-              className="material-symbols-outlined text-[56px] text-tertiary"
-              style={{ fontVariationSettings: "'FILL' 1" }}
-            >
-              check_circle
-            </span>
-            <h2 className="font-headline text-headline-md text-on-surface">
+            <div className="inline-flex h-12 w-12 items-center justify-center rounded-[6px] bg-[#0c48d8] text-white">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+            </div>
+            <h2 className="font-headline text-[22px] font-semibold text-[#1a1a1a]">
               {dict.successTitle}
             </h2>
-            <p className="text-body-md text-on-surface-variant max-w-sm">{dict.successDesc}</p>
+            <p className="text-[15px] text-neutral-600 max-w-sm">{dict.successDesc}</p>
             <button
               type="button"
               onClick={onClose}
-              className="mt-2 px-8 py-3 bg-primary text-on-primary rounded-xl font-headline text-label-md hover:bg-primary-container transition-colors"
+              className="mt-2 h-11 px-8 rounded-[6px] bg-[#0b0d14] text-white text-[14px] font-medium hover:bg-[#0c48d8] transition-colors cursor-pointer"
             >
               {dict.close}
             </button>
           </div>
         ) : (
           <>
-            <h2 className="font-headline text-headline-md text-on-surface mb-2 pr-8">
+            <h2 className="font-headline text-[24px] font-semibold text-[#1a1a1a] mb-2 pr-8">
               {dict.title}
             </h2>
-            <p className="text-body-sm text-on-surface-variant mb-6">{dict.subtitle}</p>
+            <p className="text-[14.5px] text-neutral-600 mb-7 leading-relaxed">{dict.subtitle}</p>
 
             <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-              {/* Honeypot: hidden from humans, bots fill it and get silently dropped. */}
               <input
                 type="text"
                 name="website"
@@ -136,9 +137,9 @@ function ContactModal({ dict, onClose }: { dict: ContactDict; onClose: () => voi
                 aria-hidden="true"
               />
 
-              <div className="flex flex-col gap-1.5">
+              <div>
                 <label htmlFor="contact-name" className={labelClass}>
-                  {dict.name} <span className="text-error">*</span>
+                  {dict.name} <span className="text-red-600">*</span>
                 </label>
                 <input
                   id="contact-name"
@@ -152,9 +153,9 @@ function ContactModal({ dict, onClose }: { dict: ContactDict; onClose: () => voi
                 />
               </div>
 
-              <div className="flex flex-col gap-1.5">
+              <div>
                 <label htmlFor="contact-phone" className={labelClass}>
-                  {dict.phone} <span className="text-error">*</span>
+                  {dict.phone} <span className="text-red-600">*</span>
                 </label>
                 <input
                   id="contact-phone"
@@ -167,10 +168,10 @@ function ContactModal({ dict, onClose }: { dict: ContactDict; onClose: () => voi
                 />
               </div>
 
-              <div className="flex flex-col gap-1.5">
+              <div>
                 <label htmlFor="contact-company" className={labelClass}>
                   {dict.company}{" "}
-                  <span className="font-normal text-on-surface-variant">({dict.optional})</span>
+                  <span className="font-normal text-neutral-400">({dict.optional})</span>
                 </label>
                 <input
                   id="contact-company"
@@ -182,22 +183,22 @@ function ContactModal({ dict, onClose }: { dict: ContactDict; onClose: () => voi
                 />
               </div>
 
-              <div className="flex flex-col gap-1.5">
+              <div>
                 <label htmlFor="contact-message" className={labelClass}>
                   {dict.message}{" "}
-                  <span className="font-normal text-on-surface-variant">({dict.optional})</span>
+                  <span className="font-normal text-neutral-400">({dict.optional})</span>
                 </label>
                 <textarea
                   id="contact-message"
                   name="message"
                   rows={3}
                   placeholder={dict.messagePlaceholder}
-                  className={`${inputClass} resize-none`}
+                  className="w-full rounded-[6px] border border-neutral-300 bg-white p-3.5 text-[14.5px] text-[#1a1a1a] placeholder:text-neutral-400 focus:border-[#0c48d8] focus:outline-none transition-colors resize-none"
                 />
               </div>
 
               {status === "error" && (
-                <p role="alert" className="text-body-sm text-error">
+                <p role="alert" className="text-[13.5px] text-red-600">
                   {dict.error}
                 </p>
               )}
@@ -205,7 +206,7 @@ function ContactModal({ dict, onClose }: { dict: ContactDict; onClose: () => voi
               <button
                 type="submit"
                 disabled={status === "sending"}
-                className="mt-2 w-full px-8 py-4 bg-primary text-on-primary rounded-xl font-headline text-label-md hover:bg-primary-container transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+                className="mt-2 w-full h-12 rounded-[6px] bg-[#0c48d8] text-white text-[15px] font-medium hover:bg-[#0835a6] transition-colors disabled:opacity-60 cursor-pointer"
               >
                 {status === "sending" ? dict.submitting : dict.submit}
               </button>

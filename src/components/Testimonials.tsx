@@ -1,93 +1,157 @@
-import type { Dictionary } from "@/i18n/dictionaries";
+import Link from "next/link";
+import type { Dictionary, Locale } from "@/i18n/dictionaries";
 
-const META = [
-  {
-    name: "Nguyễn Thu Hà",
-    company: "Thẩm mỹ viện Hà Anh",
-    initials: "HA",
-    avatarClass: "bg-primary/12 text-primary",
-    metricValue: "+42%",
-  },
-  {
-    name: "Trần Quốc Bảo",
-    company: "Cửa hàng Quốc Bảo",
-    initials: "QB",
-    avatarClass: "bg-tertiary/12 text-tertiary",
-    metricValue: "12h",
-  },
-  {
-    name: "Lê Minh Châu",
-    company: "Công ty Minh Châu Media",
-    initials: "MC",
-    avatarClass: "bg-secondary/12 text-secondary",
-    metricValue: "3×",
-  },
+const CASE_IMAGES = [
+  "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1000&q=80",
+  "https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=1000&q=80",
+  "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1000&q=80",
 ];
 
-export default function Testimonials({ dict }: { dict: Dictionary }) {
+const CASE_METRICS = ["+42%", "99.8%", "+50%"];
+
+export default function Testimonials({ dict, lang = "vi" }: { dict: Dictionary; lang?: Locale }) {
   const t = dict.testimonials;
+  const exploreProjectsLabel =
+    lang === "vi"
+      ? "KHÁM PHÁ CÁC DỰ ÁN"
+      : lang === "ja"
+        ? "導入事例をすべて見る"
+        : "EXPLORE PROJECTS";
 
   return (
-    <section className="scroll-section py-20 lg:py-28 bg-surface-container-low border-y border-outline-variant/30">
-      <div className="max-w-[1440px] mx-auto px-4 md:px-8">
-        <div className="text-center max-w-2xl mx-auto mb-14">
-          <p className="eyebrow mb-3">{t.eyebrow}</p>
-          <h2 className="font-headline text-headline-lg text-on-surface mb-4 text-balance">
-            {t.title}
-          </h2>
-          <p className="text-body-md text-on-surface-variant">{t.subtitle}</p>
-        </div>
+    <section
+      id="cases"
+      className="py-20 lg:py-28 bg-[#0b0d14] text-white overflow-hidden"
+    >
+      <div className="max-w-[1400px] mx-auto px-5 md:px-10">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+          {/* Left Sticky Column — solid white/blue text, no gradient */}
+          <div className="lg:col-span-5 lg:sticky lg:top-28">
+            <h2 className="vnext-h2-dark">
+              {lang === "vi" ? (
+                <>
+                  Năng lực triển khai{" "}
+                  <span className="font-bold text-white">
+                    được khách hàng công nhận
+                  </span>
+                </>
+              ) : lang === "ja" ? (
+                <>
+                  お客様に評価される{" "}
+                  <span className="font-bold text-white">
+                    確かなシステム実装力
+                  </span>
+                </>
+              ) : (
+                <>
+                  Implementation capability{" "}
+                  <span className="font-bold text-white">
+                    recognized by clients
+                  </span>
+                </>
+              )}
+            </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {t.items.map((item, index) => {
-            const person = META[index];
-            return (
-              <figure
-                key={person.name}
-                className="flex flex-col bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/40 hover:border-primary/30 transition-colors"
+            <p className="mt-5 text-[15.5px] text-white/65 font-light leading-relaxed">
+              {t.subtitle}
+            </p>
+
+            <div className="mt-10">
+              <Link
+                href={`/${lang}/cases`}
+                className="group inline-flex items-center gap-3 text-[13.5px] font-semibold uppercase tracking-[0.08em] text-white hover:text-white/80 transition-colors duration-300"
               >
-                <div className="flex gap-0.5 mb-5 text-primary" aria-label={t.ratingLabel}>
-                  {Array.from({ length: 5 }).map((_, i) => (
-                    <span
-                      key={i}
-                      className="material-symbols-outlined text-[20px]"
-                      style={{ fontVariationSettings: "'FILL' 1" }}
-                      aria-hidden="true"
-                    >
-                      star
-                    </span>
-                  ))}
-                </div>
+                <span className="h-[1.5px] w-10 bg-[#0c48d8] transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:w-14" />
+                <span>{exploreProjectsLabel}</span>
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  className="transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M1.5 12.5L12.5 1.5M12.5 1.5H3.5M12.5 1.5V10.5"
+                    stroke="currentColor"
+                    strokeWidth="1.6"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </Link>
+            </div>
+          </div>
 
-                <blockquote className="flex-1 text-body-md text-on-surface mb-6">
-                  “{item.quote}”
-                </blockquote>
+          {/* Right Column: Project Cards */}
+          <div className="lg:col-span-7 flex flex-col gap-10">
+            {t.items.map((item, index) => {
+              const metricValue = CASE_METRICS[index] ?? "+40%";
+              const imgUrl = CASE_IMAGES[index % CASE_IMAGES.length];
 
-                <div className="flex items-center justify-between gap-4 pt-6 border-t border-outline-variant/40">
-                  <figcaption className="flex items-center gap-3">
-                    <span
-                      className={`flex h-11 w-11 items-center justify-center rounded-full font-headline text-label-md font-bold ${person.avatarClass}`}
-                      aria-hidden="true"
-                    >
-                      {person.initials}
-                    </span>
-                    <span className="flex flex-col">
-                      <span className="font-headline text-label-md text-on-surface">{person.name}</span>
-                      <span className="text-body-sm text-on-surface-variant">
-                        {item.role}, {person.company}
+              return (
+                <Link
+                  key={item.projectTitle}
+                  href={`/${lang}/cases`}
+                  className="group block rounded-[12px] overflow-hidden border border-white/12 bg-white/[0.03] hover:border-white/30 hover:bg-white/[0.05] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]"
+                >
+                  <div className="aspect-[16/9] w-full overflow-hidden bg-neutral-900 relative">
+                    <img
+                      src={imgUrl}
+                      alt={item.projectTitle}
+                      className="w-full h-full object-cover opacity-85 group-hover:scale-[1.03] transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]"
+                    />
+                    <div className="absolute bottom-4 right-4 rounded-[6px] bg-[#0b0d14] border border-white/15 px-4 py-2 flex items-baseline gap-2.5">
+                      <span className="font-headline text-[20px] font-bold text-white tabular-nums">
+                        {metricValue}
                       </span>
-                    </span>
-                  </figcaption>
-                  <div className="text-right">
-                    <div className="font-headline text-headline-md font-bold text-tertiary tabular-nums leading-none">
-                      {person.metricValue}
+                      <span className="text-[12px] text-white/75">{item.metricLabel}</span>
                     </div>
-                    <div className="text-label-sm text-on-surface-variant mt-1">{item.metricLabel}</div>
                   </div>
-                </div>
-              </figure>
-            );
-          })}
+
+                  <div className="p-6 sm:p-8">
+                    <div className="flex items-center justify-between gap-4 mb-3">
+                      <div className="flex flex-wrap gap-2">
+                        <span className="px-3 py-1 text-[12px] font-medium rounded-[6px] bg-white/10 text-white">
+                          {item.domain}
+                        </span>
+                        <span className="px-3 py-1 text-[12px] rounded-[6px] text-white/70 border border-white/15">
+                          {item.solutionTag}
+                        </span>
+                      </div>
+
+                      <span className="shrink-0 w-9 h-9 rounded-[6px] border border-white/15 flex items-center justify-center text-white/60 group-hover:border-[#0c48d8] group-hover:bg-[#0c48d8] group-hover:text-white transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]">
+                        <svg
+                          width="13"
+                          height="13"
+                          viewBox="0 0 14 14"
+                          fill="none"
+                          className="transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                          aria-hidden="true"
+                        >
+                          <path
+                            d="M1.5 12.5L12.5 1.5M12.5 1.5H3.5M12.5 1.5V10.5"
+                            stroke="currentColor"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+
+                    <h3 className="font-headline text-[20px] sm:text-[22px] font-semibold text-white leading-snug mb-2.5">
+                      {item.projectTitle}
+                    </h3>
+
+                    <p className="text-[14.5px] text-white/65 font-light leading-relaxed">
+                      {item.quote}
+                    </p>
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
         </div>
       </div>
     </section>

@@ -1,12 +1,14 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
-const locales = ["vi", "en"] as const;
+const locales = ["vi", "en", "ja"] as const;
 const defaultLocale = "vi";
 
 function getLocale(request: NextRequest): string {
   const accept = request.headers.get("accept-language")?.toLowerCase() ?? "";
-  return accept.startsWith("en") ? "en" : defaultLocale;
+  if (accept.startsWith("ja")) return "ja";
+  if (accept.startsWith("en")) return "en";
+  return defaultLocale;
 }
 
 export function proxy(request: NextRequest) {

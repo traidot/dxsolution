@@ -1,47 +1,216 @@
-import type { Dictionary } from "@/i18n/dictionaries";
+"use client";
 
-const STYLES = [
-  { icon: "bolt", accent: "bg-primary/10 text-primary" },
-  { icon: "receipt_long", accent: "bg-tertiary/10 text-tertiary" },
-  { icon: "web", accent: "bg-secondary/10 text-secondary" },
-  { icon: "search", accent: "bg-primary/10 text-primary" },
-];
+import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
+import type { Dictionary, Locale } from "@/i18n/dictionaries";
 
-export default function Products({ dict }: { dict: Dictionary }) {
+export default function Products({ dict, lang = "vi" }: { dict: Dictionary; lang?: Locale }) {
   const t = dict.products;
+  const [activeTab, setActiveTab] = useState<"software" | "ai">("software");
+  const hoverTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const handleTabHover = (tab: "software" | "ai") => {
+    if (hoverTimeoutRef.current) clearTimeout(hoverTimeoutRef.current);
+    hoverTimeoutRef.current = setTimeout(() => {
+      setActiveTab(tab);
+    }, 85);
+  };
+
+  const handleTabLeave = () => {
+    if (hoverTimeoutRef.current) {
+      clearTimeout(hoverTimeoutRef.current);
+      hoverTimeoutRef.current = null;
+    }
+  };
+
+  useEffect(() => {
+    return () => {
+      if (hoverTimeoutRef.current) clearTimeout(hoverTimeoutRef.current);
+    };
+  }, []);
+
+  const tabConfigs = [
+    {
+      key: "software" as const,
+      label:
+        lang === "vi" ? "DỊCH VỤ CỐT LÕI" : lang === "ja" ? "コアサービス" : "CORE SERVICES",
+      anchor: "#core-software",
+      items: t.items,
+    },
+    {
+      key: "ai" as const,
+      label:
+        lang === "vi"
+          ? "NĂNG LỰC CÔNG NGHỆ"
+          : lang === "ja"
+            ? "テクノロジー領域"
+            : "TECHNOLOGY CAPABILITIES",
+      anchor: "#ai-native",
+      items: t.aiItems,
+    },
+  ];
+
+  const allServicesLabel =
+    lang === "vi" ? "TẤT CẢ DỊCH VỤ" : lang === "ja" ? "サービス一覧を見る" : "ALL SERVICES";
 
   return (
-    <section
-      id="products"
-      className="scroll-section py-20 lg:py-28 bg-surface-container-low border-y border-outline-variant/30"
-    >
-      <div className="max-w-[1440px] mx-auto px-4 md:px-8">
-        <div className="text-center max-w-2xl mx-auto mb-14">
-          <p className="eyebrow mb-3">{t.eyebrow}</p>
-          <h2 className="font-headline text-headline-lg text-on-surface mb-4 text-balance">
-            {t.title}
+    <section id="products" className="py-20 lg:py-28 bg-white">
+      <div className="max-w-[1400px] mx-auto px-5 md:px-10">
+        {/* Section Header — solid corporate color, no gradient */}
+        <div className="max-w-3xl mb-14 lg:mb-20">
+          <h2 className="vnext-h2">
+            {lang === "vi" ? (
+              <>
+                Giải pháp thúc đẩy{" "}
+                <span className="font-bold text-[#0c48d8]">
+                  chuyển đổi số doanh nghiệp
+                </span>
+              </>
+            ) : lang === "ja" ? (
+              <>
+                企業の{" "}
+                <span className="font-bold text-[#0c48d8]">
+                  DXを推進するソリューション
+                </span>
+              </>
+            ) : (
+              <>
+                Solutions accelerating{" "}
+                <span className="font-bold text-[#0c48d8]">
+                  enterprise digital transformation
+                </span>
+              </>
+            )}
           </h2>
-          <p className="text-body-md text-on-surface-variant">{t.subtitle}</p>
+          <p className="mt-4 text-[16px] text-neutral-600 font-normal leading-relaxed">
+            {t.subtitle}
+          </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {t.items.map((item, index) => (
-            <div
-              key={item.name}
-              className="flex flex-col bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/40 hover:border-primary/30 transition-colors"
-            >
-              <div className={`w-11 h-11 rounded-xl flex items-center justify-center mb-5 ${STYLES[index].accent}`}>
-                <span className="material-symbols-outlined text-[26px]">{STYLES[index].icon}</span>
-              </div>
-              <h3 className="font-headline text-headline-md text-on-surface">{item.name}</h3>
-              <span
-                className={`inline-flex w-fit mt-2 px-2.5 py-0.5 rounded-full font-headline text-label-sm ${STYLES[index].accent}`}
+        {/* 2-Column Split: Left Category Switcher + Right Hairline List */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+          {/* Left Category Sidebar */}
+          <div className="lg:col-span-4 lg:sticky lg:top-28 flex flex-col gap-5">
+            {tabConfigs.map((tab) => {
+              const isSelected = activeTab === tab.key;
+              return (
+                <button
+                  key={tab.key}
+                  type="button"
+                  onClick={() => {
+                    if (hoverTimeoutRef.current) clearTimeout(hoverTimeoutRef.current);
+                    setActiveTab(tab.key);
+                  }}
+                  onMouseEnter={() => handleTabHover(tab.key)}
+                  onMouseLeave={handleTabLeave}
+                  className="group text-left py-2 cursor-pointer"
+                >
+                  <h3
+                    className={`font-headline text-[17px] sm:text-[18px] font-bold uppercase tracking-[0.04em] transition-colors duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+                      isSelected
+                        ? "text-[#0c48d8]"
+                        : "text-neutral-400 group-hover:text-neutral-700"
+                    }`}
+                  >
+                    {tab.label}
+                  </h3>
+                  <div className="mt-3 h-[2px] w-full bg-neutral-200 overflow-hidden">
+                    <div
+                      className={`h-full bg-[#0c48d8] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+                        isSelected ? "w-full" : "w-0"
+                      }`}
+                    />
+                  </div>
+                </button>
+              );
+            })}
+
+            <div className="pt-6">
+              <Link
+                href={`/${lang}/solutions`}
+                className="group inline-flex items-center gap-3 text-[13.5px] font-semibold uppercase tracking-[0.08em] text-[#1a1a1a] hover:text-[#0c48d8] transition-colors duration-300"
               >
-                {item.tag}
-              </span>
-              <p className="text-body-sm text-on-surface-variant mt-4">{item.description}</p>
+                <span className="h-[1.5px] w-10 bg-[#0c48d8] transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:w-14" />
+                <span>{allServicesLabel}</span>
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  className="transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M1.5 12.5L12.5 1.5M12.5 1.5H3.5M12.5 1.5V10.5"
+                    stroke="currentColor"
+                    strokeWidth="1.6"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </Link>
             </div>
-          ))}
+          </div>
+
+          {/* Right Editorial Hairline List — Stacked panels for smooth crossfade */}
+          <div className="lg:col-span-8 grid grid-cols-1">
+            {tabConfigs.map((tab) => {
+              const isSelected = activeTab === tab.key;
+              return (
+                <div
+                  key={tab.key}
+                  aria-hidden={!isSelected}
+                  className={`col-start-1 row-start-1 border-t border-neutral-200 divide-y divide-neutral-200 transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+                    isSelected
+                      ? "opacity-100 translate-y-0 pointer-events-auto"
+                      : "opacity-0 translate-y-2 pointer-events-none"
+                  }`}
+                >
+                  {tab.items.map((item, idx) => (
+                    <Link
+                      key={item.name}
+                      href={`/${lang}/solutions${tab.anchor}`}
+                      tabIndex={isSelected ? 0 : -1}
+                      className="group py-6 sm:py-7 flex items-center justify-between gap-6 transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:bg-neutral-50/80 px-3 sm:px-5 -mx-3 sm:-mx-5 rounded-[6px]"
+                    >
+                      <div className="flex items-start gap-5 sm:gap-7">
+                        <span className="text-[15px] font-normal text-neutral-400 group-hover:text-[#0c48d8] transition-colors duration-300 pt-0.5 tabular-nums">
+                          0{idx + 1}
+                        </span>
+                        <div>
+                          <h4 className="font-headline text-[19px] sm:text-[21px] font-semibold text-[#1a1a1a] group-hover:text-[#0c48d8] transition-colors duration-300">
+                            {item.name}
+                          </h4>
+                          <p className="mt-1.5 text-[15px] text-neutral-500 font-normal leading-relaxed max-w-2xl">
+                            {item.description}
+                          </p>
+                        </div>
+                      </div>
+
+                      <span className="shrink-0 w-9 h-9 rounded-[6px] border border-neutral-200 flex items-center justify-center text-neutral-400 group-hover:border-[#0c48d8] group-hover:bg-[#0c48d8] group-hover:text-white transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]">
+                        <svg
+                          width="13"
+                          height="13"
+                          viewBox="0 0 14 14"
+                          fill="none"
+                          className="transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                          aria-hidden="true"
+                        >
+                          <path
+                            d="M1.5 12.5L12.5 1.5M12.5 1.5H3.5M12.5 1.5V10.5"
+                            stroke="currentColor"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                      </span>
+                    </Link>
+                  ))}
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </section>

@@ -1,156 +1,492 @@
 {
   "meta": {
-    "title": "DXBiz - Digital transformation for Vietnamese businesses",
-    "description": "DXBiz consults and delivers tailored digital transformation solutions for businesses — streamline operations, boost efficiency and partner for the long term."
+    "title": "Enterprise Software Development & Digital Transformation Partner | DXBiz",
+    "description": "AI technology partner accelerating digital transformation for enterprises. Delivering custom software development, enterprise automation, and system modernization."
   },
   "nav": {
-    "products": "Platform",
-    "features": "Why DXBiz",
-    "solutions": "Solutions",
-    "contact": "Contact us",
+    "products": "Services",
+    "solutions": "Industries",
+    "features": "Working Models",
+    "cases": "Case Studies",
+    "contact": "Contact",
     "switchLanguage": "Switch language",
-    "home": "DXBiz home"
+    "home": "DXBiz home",
+    "markline": "Digital Transformation Partner"
   },
   "hero": {
-    "badge": "Your digital transformation partner",
-    "title": "Tailored digital transformation solutions for your business",
-    "subtitle": "DXBiz partners with you from consulting and design to implementation — built around your real workflows, instead of forcing your business to adapt to off-the-shelf software.",
-    "ctaPrimary": "Get a consultation",
-    "ctaSecondary": "See how it works",
-    "imgAlt": "DXBiz solution dashboard showing business operations metrics",
-    "chipSync": "Data synced · Sapo, GHN, MISA",
+    "badge": "ENTERPRISE TECHNOLOGY & DIGITAL TRANSFORMATION PARTNER",
+    "title": "Breakthrough in digital transformation",
+    "subtitle": "AI technology partner accelerating digital transformation for enterprises",
+    "ctaPrimary": "Partner with us",
+    "ctaSecondary": "Explore capabilities",
+    "imgAlt": "DXBiz enterprise software development and digital transformation solutions",
+    "chipSync": "Comprehensive system integration",
     "chipRevenueLabel": "Operational efficiency",
+    "pillars": [
+      {
+        "icon": "layers",
+        "title": "Software Development",
+        "desc": "Turn business requirements into reliable, high-performance software tailored to real operational needs."
+      },
+      {
+        "icon": "auto_awesome",
+        "title": "Enterprise Solutions & Automation",
+        "desc": "Connect systems and automate complex processes to ensure seamless and secure operations."
+      },
+      {
+        "icon": "hub",
+        "title": "System Modernization",
+        "desc": "Leverage modern platforms for speed and efficiency while preserving core operational assets."
+      },
+      {
+        "icon": "verified_user",
+        "title": "Dedicated Teams",
+        "desc": "Augment your organization with experienced engineers ready to integrate into your workflow."
+      }
+    ],
+    "console": {
+      "headerTitle": "Enterprise System Implementation Capabilities",
+      "statusBadge": "Production Ready",
+      "layerDomainTitle": "CORE SERVICES",
+      "domainModules": [
+        { "code": "ERP/OMS", "name": "Order & Warehouse Management", "metric": "99.8% accuracy" },
+        { "code": "CRM", "name": "Customer Relationship Management", "metric": "+42% retention" },
+        { "code": "BPM/RPA", "name": "Business Process Automation", "metric": "-65% manual work" },
+        { "code": "CLOUD", "name": "Infrastructure Modernization", "metric": "99.9% Uptime" }
+      ],
+      "layerAiTitle": "TECHNOLOGY CAPABILITIES",
+      "aiAgents": [
+        {
+          "name": "AI & Machine Learning",
+          "action": "Automate business processes and transform operational models",
+          "time": "Core"
+        },
+        {
+          "name": "Data & Advanced Analytics",
+          "action": "Turn enterprise data into actionable insights for rapid decision-making",
+          "time": "Core"
+        },
+        {
+          "name": "Computer Vision & OCR",
+          "action": "Digitize and extract structured data from documents and invoices",
+          "time": "Core"
+        }
+      ],
+      "ecosystemLabel": "System integration:"
+    },
     "stats": [
-      { "value": "40%", "label": "Less manual work" },
-      { "value": "2 weeks", "label": "To start rollout" },
-      { "value": "24/7", "label": "Partnership & support" }
+      { "value": "10+", "label": "Industries served" },
+      { "value": "99.8%", "label": "System reliability" },
+      { "value": "-65%", "label": "Manual workload" },
+      { "value": "24/7", "label": "Operations support" }
     ]
   },
   "products": {
-    "eyebrow": "Technology platform",
-    "title": "The building blocks behind your solution",
-    "subtitle": "Every DXBiz solution is built on proven platforms and tailored to your business — so you never start from scratch.",
+    "eyebrow": "Services & Capabilities",
+    "title": "Solutions accelerating enterprise digital transformation",
+    "subtitle": "Strong in technology, driven by innovation — DXBiz delivers end-to-end software development services for your enterprise digital transformation journey.",
+    "tabSoftware": "Core Services",
+    "tabAi": "Technology Capabilities",
     "items": [
       {
-        "name": "DXFlow",
-        "tag": "AI For Work",
-        "description": "An AI assistant that automates processes and connects with the many tools your business already uses, not just DXBiz's own products."
+        "name": "Software Development",
+        "tag": "Web App · Mobile App · Enterprise Systems",
+        "description": "Turn ideas into stable, high-performance software that solves real business challenges.",
+        "highlights": [
+          "Enterprise web and mobile application development",
+          "User-centric UI/UX design and system architecture",
+          "Comprehensive QA and software testing processes"
+        ]
       },
       {
-        "name": "OrderHub",
-        "tag": "Order management",
-        "description": "Manage orders and omnichannel sales in one place, with inventory and shipping synced in real time."
+        "name": "Enterprise Solutions & Automation",
+        "tag": "ERP · CRM · OMS · RPA",
+        "description": "Connect systems and automate complex workflows to ensure seamless and secure operations.",
+        "highlights": [
+          "Implementation and customization of ERP, CRM, OMS, and WMS",
+          "Business process automation with RPA and Low-code platforms",
+          "Two-way data integration with accounting and POS systems"
+        ]
       },
       {
-        "name": "PageHub",
-        "tag": "Sales pages",
-        "description": "Build and manage professional landing and sales pages — no technical team required."
+        "name": "Cloud & DevOps",
+        "tag": "Cloud Native · CI/CD · Security",
+        "description": "Optimize enterprise cloud platforms with agility, security, and scalability.",
+        "highlights": [
+          "Cloud architecture consulting and system migration",
+          "Automated CI/CD pipelines and DevOps infrastructure",
+          "Performance monitoring, security hardening, and cost optimization"
+        ]
       },
       {
-        "name": "SEOHub",
-        "tag": "SEO optimization",
-        "description": "Track and optimize search rankings to grow organic traffic to your business website."
+        "name": "System Modernization",
+        "tag": "Architecture Upgrade · Data Migration",
+        "description": "Harness the speed and efficiency of modern platforms while preserving proven business logic.",
+        "highlights": [
+          "Re-architect legacy software into scalable modern systems",
+          "Safe data standardization and zero-downtime migration",
+          "Open API integration across the enterprise ecosystem"
+        ]
       }
-    ]
-  },
-  "features": {
-    "eyebrow": "Why DXBiz",
-    "title": "Not off-the-shelf software — a solution for your business",
-    "subtitle": "DXBiz consults around your real problems, implements fast and stays with you for the long run — instead of leaving you to figure out software alone.",
-    "items": [
+    ],
+    "aiItems": [
       {
-        "title": "Tailored solutions",
-        "description": "We map your real workflows and design a fitting solution, rather than forcing your business into a fixed template."
+        "name": "AI & Machine Learning",
+        "tag": "Generative AI · Intelligent Automation",
+        "description": "Deploy AI/GenAI to automate business processes and transform operational models.",
+        "highlights": [
+          "Predictive machine learning models for demand and resource planning",
+          "Generative AI solutions for internal knowledge and document processing",
+          "Seamless integration of AI models into existing enterprise systems"
+        ]
       },
       {
-        "title": "Fast, low-risk rollout",
-        "description": "Go live in phases, measured and adjusted along the way — minimizing disruption for your team."
+        "name": "Conversational AI & NLP",
+        "tag": "Natural Language Processing · Chatbots",
+        "description": "Build intelligent conversational systems for customer consultation, scheduling, and knowledge retrieval.",
+        "highlights": [
+          "High-accuracy omnichannel customer support automation",
+          "Natural-language search across internal SOPs and repositories",
+          "Real-time synchronization of customer interactions with CRM"
+        ]
       },
       {
-        "title": "Long-term partnership",
-        "description": "A dedicated team supports you throughout, continuously optimizing as your business grows."
+        "name": "Computer Vision & OCR",
+        "tag": "Image Recognition · Document Digitization",
+        "description": "Apply computer vision and optical character recognition to automate inspection and data entry.",
+        "highlights": [
+          "Automated data extraction from invoices, waybills, and contracts",
+          "Automated three-way matching with purchase orders and accounting",
+          "Visual quality inspection and field image verification"
+        ]
+      },
+      {
+        "name": "Data & Advanced Analytics",
+        "tag": "Data Warehouse · Business Intelligence",
+        "description": "Turn raw data into deep operational insights for accurate and timely executive decisions.",
+        "highlights": [
+          "Centralized data warehousing across multiple business systems",
+          "Real-time executive BI dashboards and financial reporting",
+          "Trend analysis for sales, operations, and financial performance"
+        ]
       }
     ]
   },
   "solutions": {
-    "eyebrow": "Industry solutions",
-    "title": "A dedicated solution for every business model",
-    "subtitle": "Each industry has its own operational challenges — DXBiz designs solutions around your specific processes and needs.",
-    "spaBadge": "Spa & Salon chains",
-    "spaTitle": "Appointment management & automated CRM",
-    "spaDesc": "Automate booking, reminders and returning-customer care, synced across all branches.",
-    "spaImgAlt": "Spa staff using the DXBiz solution at the reception desk",
-    "items": [
+    "eyebrow": "Industries",
+    "title": "Creating value through intelligent solutions",
+    "subtitle": "With deep domain expertise across key industries, DXBiz delivers practical software solutions for complex operational challenges.",
+    "painLabel": "Business Challenge",
+    "solutionLabel": "Implemented Solution",
+    "modulesLabel": "Key Modules",
+    "aiLabel": "Applied Technology",
+    "spaBadge": "Healthcare",
+    "spaTitle": "Centralized appointment and patient record management",
+    "spaDesc": "Digitize scheduling, service records, and customer care across clinics and healthcare facilities.",
+    "spaImgAlt": "Healthcare management software platform",
+    "domains": [
       {
-        "title": "Retail & Chains",
-        "description": "Inventory management, multi-branch sync, stock forecasting and GHN/AhaMove shipping integration."
+        "id": "manufacturing",
+        "icon": "precision_manufacturing",
+        "badge": "Manufacturing",
+        "title": "Streamline operations, optimize costs, and increase output across the production line",
+        "pain": "Fragmented shop-floor data makes it difficult to track order progress, control bill of materials (BOM), and calculate accurate production costs.",
+        "solution": "Partner with manufacturers to streamline operations, optimize costs, and increase output across the entire production line through centralized MES and WMS platforms.",
+        "modules": ["Manufacturing Execution (MES)", "BOM Management", "Warehouse Management (WMS)", "Cost Accounting"],
+        "aiFeature": "Production line data analytics to forecast material requirements and reduce wastage.",
+        "metricValue": "-35%",
+        "metricLabel": "Operating cost & wastage"
       },
       {
-        "title": "Services & Agencies",
-        "description": "Centralized project management, automated reporting and efficient staff allocation."
+        "id": "retail",
+        "icon": "storefront",
+        "badge": "Retail & E-Commerce",
+        "title": "Unify omnichannel sales data, inventory, and customer experience",
+        "pain": "Selling across multiple channels (POS stores, marketplaces, websites) leads to fragmented inventory data and delayed reconciliation.",
+        "solution": "Build a centralized retail platform that synchronizes inventory and orders in real time across branches, logistics providers, and accounting.",
+        "modules": ["Order Management (OMS)", "POS & E-Commerce Sync", "Multi-Branch WMS", "CRM & Loyalty"],
+        "aiFeature": "Seasonal demand forecasting and automated inventory replenishment planning.",
+        "metricValue": "99.8%",
+        "metricLabel": "Inventory data accuracy"
+      },
+      {
+        "id": "beauty",
+        "icon": "spa",
+        "badge": "Healthcare",
+        "title": "Digitize appointment scheduling, service records, and customer care",
+        "pain": "Manual scheduling and record-keeping cause booking conflicts, fragmented service histories, and slow staff performance tracking.",
+        "solution": "Deliver a centralized scheduling and customer management system with automated appointment reminders and post-service follow-ups.",
+        "modules": ["Appointment Scheduling", "Client & Service Records", "Automated Customer Care", "Staff Performance"],
+        "aiFeature": "Automated consultation, appointment confirmation, and retention analytics.",
+        "metricValue": "+42%",
+        "metricLabel": "Customer retention rate"
+      },
+      {
+        "id": "distribution",
+        "icon": "local_shipping",
+        "badge": "Logistics & Distribution",
+        "title": "Optimize warehouse operations, delivery dispatch, and supply chain visibility",
+        "pain": "Manual wholesale order processing, credit limit checks, and batch/expiry inventory tracking consume excessive time and labor.",
+        "solution": "Deploy a B2B ordering portal, FEFO warehouse management system, and real-time delivery route dispatch platform.",
+        "modules": ["B2B Order Portal", "Warehouse Management (WMS)", "Credit Control", "Transport Management (TMS)"],
+        "aiFeature": "Automated document extraction for delivery slips and route optimization.",
+        "metricValue": "+60%",
+        "metricLabel": "Order processing speed"
+      },
+      {
+        "id": "services",
+        "icon": "business_center",
+        "badge": "Professional Services",
+        "title": "Standardize project management, resource allocation, and financial control",
+        "pain": "Scattered project documentation and task tracking make it difficult to monitor resource utilization and contract profitability.",
+        "solution": "Build a unified enterprise portal covering contract management, task workflows, expense approvals, and real-time project P&L reporting.",
+        "modules": ["Project Management", "Contract & Milestone Billing", "Resource Allocation", "Project P&L Reporting"],
+        "aiFeature": "Automated progress reporting and early risk alerts for delivery milestones.",
+        "metricValue": "+50%",
+        "metricLabel": "Project management efficiency"
+      },
+      {
+        "id": "education",
+        "icon": "school",
+        "badge": "Education",
+        "title": "Modernize admissions, academic management, and student engagement",
+        "pain": "Disconnected admissions counseling, class scheduling, attendance tracking, and tuition management slow down operations.",
+        "solution": "Implement a comprehensive education management platform connecting admissions CRM, academic scheduling, and student portals.",
+        "modules": ["Admissions CRM", "Academic Management (LMS/SIS)", "Tuition Billing", "Student & Parent Portal"],
+        "aiFeature": "Learning progress analytics and personalized course pathway recommendations.",
+        "metricValue": "+38%",
+        "metricLabel": "Admissions & operational efficiency"
+      }
+    ],
+    "items": [
+      {
+        "title": "Retail & E-Commerce",
+        "description": "Real-time omnichannel inventory and order synchronization."
+      },
+      {
+        "title": "Professional Services",
+        "description": "Centralized project management, resource planning, and financial reporting."
+      }
+    ]
+  },
+  "features": {
+    "eyebrow": "Working Models",
+    "title": "Flexible engagement models tailored to enterprise needs",
+    "subtitle": "DXBiz provides standardized software delivery processes and flexible engagement models to ensure quality, timeline predictability, and ROI.",
+    "comparison": [
+      {
+        "type": "Generic Off-the-Shelf Software",
+        "verdict": "Limited Customization",
+        "points": [
+          "Rigid workflows that cannot adapt to unique business processes",
+          "Lacks specialized features required for specific industry verticals",
+          "Limited integration capabilities with existing internal systems"
+        ],
+        "highlighted": false
+      },
+      {
+        "type": "Fragmented Ad-Hoc Development",
+        "verdict": "Schedule & Maintenance Risk",
+        "points": [
+          "Long development cycles spanning many months",
+          "High upfront costs with difficult scope control",
+          "Challenges in long-term system maintenance and scaling"
+        ],
+        "highlighted": false
+      },
+      {
+        "type": "DXBiz Enterprise Solutions",
+        "verdict": "Standardized, Flexible & Proven",
+        "points": [
+          "Combines proven industry software foundations with deep customization",
+          "Applies automation and AI to optimize long-term operating costs",
+          "Phased implementation roadmap with dedicated technical support"
+        ],
+        "highlighted": true
+      }
+    ],
+    "roadmapTitle": "4-Stage Implementation Process",
+    "items": [
+      {
+        "step": "Stage 01",
+        "title": "Discovery & Architecture Consulting",
+        "description": "Analyze business workflows, define core objectives, and design the optimal system architecture."
+      },
+      {
+        "step": "Stage 02",
+        "title": "Development & System Integration",
+        "description": "Build and customize software modules while integrating data with your existing enterprise systems."
+      },
+      {
+        "step": "Stage 03",
+        "title": "Quality Assurance & Deployment",
+        "description": "Conduct comprehensive QA testing, train staff by department, and transition smoothly into production."
+      },
+      {
+        "step": "Stage 04",
+        "title": "Operations & Continuous Scaling",
+        "description": "Ensure stable system operations, perform regular maintenance, and expand features as your business grows."
+      }
+    ],
+    "modelsTitle": "Working Models",
+    "models": [
+      {
+        "badge": "Model 01",
+        "name": "Project-Based Development",
+        "desc": "Ideal for initiatives with well-defined scope, deliverables, and timelines. DXBiz manages the full lifecycle from analysis and development to deployment.",
+        "time": "Fixed Scope & Timeline"
+      },
+      {
+        "badge": "Model 02",
+        "name": "Dedicated Team",
+        "desc": "Provide dedicated software engineers, business analysts, and project managers working long-term as an extension of your technology department.",
+        "time": "Long-Term Monthly Retainer"
+      },
+      {
+        "badge": "Model 03",
+        "name": "Solution Customization & Rollout",
+        "desc": "Leverage DXBiz's pre-engineered enterprise platforms (ERP, OMS, WMS, CRM, AI) and customize them rapidly to match your specific workflow.",
+        "time": "Go-Live in 2–4 Weeks"
       }
     ]
   },
   "partners": {
-    "label": "Integrated with Vietnam's leading business platforms"
+    "eyebrow": "System Integration",
+    "title": "Comprehensive system integration and data connectivity",
+    "label": "Secure, reliable two-way integration with leading enterprise, accounting, and commerce platforms",
+    "groups": [
+      {
+        "category": "Retail & E-Commerce",
+        "items": ["Sapo", "KiotViet", "Haravan", "Shopee", "TikTok Shop"]
+      },
+      {
+        "category": "Accounting & Finance",
+        "items": ["MISA AMIS", "Fast Accounting", "SAP", "VietQR", "VNPay"]
+      },
+      {
+        "category": "Logistics & Fulfillment",
+        "items": ["Giao Hàng Nhanh", "GHTK", "ViettelPost", "AhaMove", "J&T Express"]
+      },
+      {
+        "category": "Cloud & Communication",
+        "items": ["Zalo OA / ZNS", "AWS / Google Cloud", "Microsoft 365", "Google Workspace", "Stringee"]
+      }
+    ]
   },
   "testimonials": {
-    "eyebrow": "What customers say",
-    "title": "Trusted by businesses to run every day",
-    "subtitle": "Many businesses have streamlined operations and grown with DXBiz solutions.",
-    "ratingLabel": "Rated 5 out of 5 stars",
+    "eyebrow": "Case Studies",
+    "title": "Implementation capability recognized by clients",
+    "subtitle": "Software development and digital transformation projects delivering measurable operational value.",
+    "ratingLabel": "Featured Project",
     "items": [
       {
-        "quote": "DXBiz mapped our chain's real workflows and rolled out smoothly. Reminders and returning-customer care now run themselves, and our return rate has clearly increased.",
-        "role": "Spa chain owner",
-        "metricLabel": "Returning customers"
+        "domain": "Healthcare",
+        "solutionTag": "Web App · CRM & Scheduling",
+        "projectTitle": "Multi-branch appointment scheduling, service records, and customer care platform",
+        "quote": "Replaced fragmented spreadsheet tracking with a centralized web platform that synchronizes multi-branch bookings, automates customer reminders, and standardizes revenue reporting.",
+        "role": "Healthcare & Clinic Network",
+        "metricLabel": "Customer retention rate",
+        "secondMetricValue": "-70%",
+        "secondMetricLabel": "Reporting preparation time"
       },
       {
-        "quote": "Real-time inventory sync between Sapo and our actual warehouse ended our overselling problems. End-of-day reports run themselves — no more manual data entry.",
-        "role": "Operations director",
-        "metricLabel": "Saved per week"
+        "domain": "Retail & E-Commerce",
+        "solutionTag": "OMS & WMS · ERP Integration",
+        "projectTitle": "Centralized order management, multi-warehouse inventory, and accounting sync",
+        "quote": "Unified sales data across physical retail stores and e-commerce marketplaces, automating warehouse dispatch and synchronizing accounting entries in real time.",
+        "role": "Retail & Distribution Enterprise",
+        "metricLabel": "Inventory data accuracy",
+        "secondMetricValue": "-65%",
+        "secondMetricLabel": "Order reconciliation time"
       },
       {
-        "quote": "The DXBiz team stayed close during rollout and beyond. Our processes were digitized step by step, taking load off the team without any disruption.",
-        "role": "Founder",
-        "metricLabel": "Team productivity"
+        "domain": "Professional Services",
+        "solutionTag": "Enterprise Portal · Project Management",
+        "projectTitle": "Enterprise project operations, resource planning, and contract financial control",
+        "quote": "Engineered an internal management portal that standardizes task assignment, expense approvals, milestone billing, and real-time profit-and-loss visibility.",
+        "role": "B2B Consulting & Services Firm",
+        "metricLabel": "Project coordination efficiency",
+        "secondMetricValue": "100%",
+        "secondMetricLabel": "Timeline & cost transparency"
       }
     ]
   },
   "cta": {
-    "title": "Ready to streamline your operations?",
-    "subtitle": "Book a 1-on-1 consultation with DXBiz — we'll analyze your challenges and propose the right solution.",
-    "primary": "Book a 1-on-1 consultation",
-    "note": "Free consultation & process review · We respond within 24 business hours"
+    "eyebrow": "Contact",
+    "title": "Connect with us",
+    "subtitle": "Ready to turn ideas into practical solutions? We are ready to listen.",
+    "primary": "Submit Information",
+    "note": "Our consulting team will respond within 24 business hours.",
+    "serviceLabel": "1. Services you are interested in",
+    "services": [
+      "Software Development",
+      "Enterprise Solutions & Automation",
+      "AI & Machine Learning",
+      "Cloud & DevOps",
+      "System Modernization",
+      "Dedicated Team"
+    ],
+    "industryLabel": "2. Your industry",
+    "industries": [
+      "Manufacturing",
+      "Retail & E-Commerce",
+      "Healthcare",
+      "Logistics & Distribution",
+      "Professional Services",
+      "Education / Other"
+    ],
+    "commitments": [
+      {
+        "title": "In-Depth Domain Consulting",
+        "desc": "Work directly with solution architects experienced in your specific industry vertical."
+      },
+      {
+        "title": "Transparent Roadmap & Estimation",
+        "desc": "Receive a clear system architecture proposal, phased rollout schedule, and transparent budget."
+      },
+      {
+        "title": "Quality & Confidentiality Assurance",
+        "desc": "Strict adherence to software quality standards and full non-disclosure agreement (NDA) protection."
+      }
+    ]
   },
   "contact": {
-    "title": "Get a consultation",
-    "subtitle": "Leave your details and we'll reach out for a free consultation and process review within 24 business hours.",
+    "title": "Connect with us",
+    "subtitle": "Please leave your contact details. DXBiz's solution consulting team will reach out within 24 business hours.",
     "name": "Full name",
-    "namePlaceholder": "John Smith",
+    "namePlaceholder": "Johnathan Miller",
     "phone": "Phone number",
-    "phonePlaceholder": "+84 …",
+    "phonePlaceholder": "+84 9xx xxx xxx",
     "company": "Company name",
-    "companyPlaceholder": "Optional",
-    "message": "Your challenge",
-    "messagePlaceholder": "E.g. digitize operations, manage multiple branches…",
+    "companyPlaceholder": "Your company name",
+    "message": "Project requirements",
+    "messagePlaceholder": "Briefly describe your software development or digital transformation needs...",
     "optional": "optional",
-    "submit": "Send",
-    "submitting": "Sending…",
-    "successTitle": "Got it!",
-    "successDesc": "Thank you. We'll be in touch as soon as possible.",
+    "submit": "Submit Information",
+    "submitting": "Submitting...",
+    "successTitle": "Information Received",
+    "successDesc": "Thank you. Our consulting team will contact you shortly.",
     "close": "Close",
-    "error": "Something went wrong. Please try again."
+    "error": "Could not submit information. Please try again."
   },
   "footer": {
-    "slogan": "Digital transformation for Vietnamese businesses",
-    "tagline": "A consulting and delivery partner for business digital transformation.",
-    "serviceOf": "A service by",
+    "slogan": "AI technology partner accelerating digital transformation for enterprises",
+    "tagline": "Delivering comprehensive software development, enterprise solutions, and business automation.",
+    "serviceOf": "Developed by",
     "groups": [
-      { "title": "Platform", "links": ["DXFlow", "OrderHub", "PageHub", "SEOHub"] },
-      { "title": "Company", "links": ["About us", "Careers", "Support"] },
-      { "title": "Legal", "links": ["Privacy Policy", "Terms of Service"] }
+      {
+        "title": "Services",
+        "links": ["Software Development", "Enterprise Solutions & Automation", "Cloud & DevOps", "System Modernization"]
+      },
+      {
+        "title": "Industries",
+        "links": ["Manufacturing", "Retail & E-Commerce", "Healthcare", "Logistics & Services"]
+      },
+      {
+        "title": "Company",
+        "links": ["Working Models", "Case Studies", "Privacy Policy", "Contact"]
+      }
     ],
-    "copyright": "© 2024 DXBiz. A service by DXS Việt Nam."
+    "copyright": "© 2026 DXBiz. All rights reserved by DXS Vietnam."
   }
 }

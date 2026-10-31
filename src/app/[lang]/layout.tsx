@@ -1,17 +1,30 @@
 import type { Metadata } from "next";
-import { Geist, Inter } from "next/font/google";
+import { Be_Vietnam_Pro, Poppins, JetBrains_Mono } from "next/font/google";
 import { notFound } from "next/navigation";
 import "../globals.css";
 import { getDictionary, hasLocale, locales } from "@/i18n/dictionaries";
+import { ContactProvider } from "@/components/ContactModal";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
-const geist = Geist({
-  variable: "--font-geist",
-  subsets: ["latin"],
+const beVietnamPro = Be_Vietnam_Pro({
+  variable: "--font-be-vietnam",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
+  subsets: ["latin", "vietnamese"],
+  display: "swap",
 });
 
-const inter = Inter({
-  variable: "--font-inter",
+const poppins = Poppins({
+  variable: "--font-poppins",
+  weight: ["100", "200", "300", "400", "500", "600", "700"],
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  variable: "--font-mono",
   subsets: ["latin", "vietnamese"],
+  display: "swap",
 });
 
 export function generateStaticParams() {
@@ -41,19 +54,20 @@ export default async function RootLayout({
 }>) {
   const { lang } = await params;
   if (!hasLocale(lang)) notFound();
+  const dict = getDictionary(lang);
 
   return (
     <html
       lang={lang}
       data-scroll-behavior="smooth"
-      className={`light ${geist.variable} ${inter.variable} h-full antialiased`}
+      className={`light ${beVietnamPro.variable} ${poppins.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
-      <body className="bg-background text-on-surface selection:bg-primary/20 min-h-full flex flex-col">
-        <link
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
-          rel="stylesheet"
-        />
-        {children}
+      <body className="bg-white text-[#1a1a1a] selection:bg-[#0c48d8]/15 min-h-full flex flex-col">
+        <ContactProvider dict={dict.contact}>
+          <Header nav={dict.nav} lang={lang} />
+          <main className="flex-1">{children}</main>
+          <Footer dict={dict} lang={lang} />
+        </ContactProvider>
       </body>
     </html>
   );
