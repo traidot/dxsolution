@@ -262,13 +262,13 @@ export default function Hero({ dict, lang = "vi" }: { dict: Dictionary; lang?: L
   };
 
   const heroTitleLight =
-    lang === "vi" ? "Bước ngoặt" : lang === "ja" ? "ビジネス変革を牽引する" : "Breakthrough in";
+    lang === "vi" ? "Giải pháp" : lang === "ja" ? "企業の成長を加速する" : "Enterprise";
   const heroTitleBold =
     lang === "vi"
-      ? "chuyển đổi số"
+      ? "chuyển đổi số cho doanh nghiệp"
       : lang === "ja"
-        ? "デジタルトランスフォーメーション"
-        : "digital transformation";
+        ? "DXソリューションパートナー"
+        : "digital transformation solutions";
 
   const heroEyebrow =
     lang === "vi"
