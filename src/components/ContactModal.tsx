@@ -34,15 +34,25 @@ export function ContactProvider({
   return (
     <ContactContext.Provider value={{ open }}>
       {children}
-      {isOpen && <ContactModal dict={dict} onClose={close} />}
+      <ContactModal dict={dict} isOpen={isOpen} onClose={close} />
     </ContactContext.Provider>
   );
 }
 
-function ContactModal({ dict, onClose }: { dict: ContactDict; onClose: () => void }) {
+function ContactModal({
+  dict,
+  isOpen,
+  onClose,
+}: {
+  dict: ContactDict;
+  isOpen: boolean;
+  onClose: () => void;
+}) {
   const [status, setStatus] = useState<Status>("idle");
 
   useEffect(() => {
+    if (!isOpen) return;
+    setStatus("idle");
     const onKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
     };
@@ -52,7 +62,7 @@ function ContactModal({ dict, onClose }: { dict: ContactDict; onClose: () => voi
       document.removeEventListener("keydown", onKeyDown);
       document.body.style.overflow = "";
     };
-  }, [onClose]);
+  }, [isOpen, onClose]);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -72,26 +82,34 @@ function ContactModal({ dict, onClose }: { dict: ContactDict; onClose: () => voi
   }
 
   const inputClass =
-    "w-full h-11 rounded-[6px] border border-neutral-300 bg-white px-3.5 text-[14.5px] text-[#1a1a1a] placeholder:text-neutral-400 focus:border-[#0c48d8] focus:outline-none transition-colors";
+    "w-full h-11 rounded-[6px] border border-neutral-300 bg-white px-3.5 text-[14.5px] text-[#1a1a1a] placeholder:text-neutral-400 focus:border-[#0c48d8] focus:outline-none transition-colors duration-200";
   const labelClass = "block text-[13px] font-semibold text-neutral-800 mb-1.5";
 
   return (
     <div
-      className="fixed inset-0 z-[100] flex items-end sm:items-center justify-center p-0 sm:p-4"
+      className={`fixed inset-0 z-[100] flex items-end sm:items-center justify-center p-0 sm:p-4 transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+        isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+      }`}
       role="dialog"
-      aria-modal="true"
+      aria-modal={isOpen}
+      aria-hidden={!isOpen}
       aria-label={dict.title}
     >
       <div
-        className="absolute inset-0 bg-neutral-950/60"
+        className="absolute inset-0 bg-neutral-950/60 transition-opacity duration-300"
         onClick={onClose}
         aria-hidden="true"
       />
 
-      <div className="relative w-full sm:max-w-lg max-h-[92dvh] overflow-y-auto bg-white rounded-t-[12px] sm:rounded-[12px] border border-neutral-200 shadow-2xl p-7 sm:p-10">
+      <div
+        className={`relative w-full sm:max-w-lg max-h-[92dvh] overflow-y-auto bg-white rounded-t-[12px] sm:rounded-[12px] border border-neutral-200 shadow-2xl p-7 sm:p-10 transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+          isOpen ? "translate-y-0 scale-100" : "translate-y-3 scale-[0.98]"
+        }`}
+      >
         <button
           type="button"
           onClick={onClose}
+          tabIndex={isOpen ? 0 : -1}
           aria-label={dict.close}
           className="absolute top-5 right-5 flex h-9 w-9 items-center justify-center rounded-[6px] text-neutral-400 hover:text-neutral-900 hover:bg-neutral-100 transition-colors cursor-pointer"
         >
@@ -146,7 +164,7 @@ function ContactModal({ dict, onClose }: { dict: ContactDict; onClose: () => voi
                   name="name"
                   type="text"
                   required
-                  autoFocus
+                  tabIndex={isOpen ? 0 : -1}
                   autoComplete="name"
                   placeholder={dict.namePlaceholder}
                   className={inputClass}
@@ -162,6 +180,7 @@ function ContactModal({ dict, onClose }: { dict: ContactDict; onClose: () => voi
                   name="phone"
                   type="tel"
                   required
+                  tabIndex={isOpen ? 0 : -1}
                   autoComplete="tel"
                   placeholder={dict.phonePlaceholder}
                   className={inputClass}
@@ -177,6 +196,7 @@ function ContactModal({ dict, onClose }: { dict: ContactDict; onClose: () => voi
                   id="contact-company"
                   name="company"
                   type="text"
+                  tabIndex={isOpen ? 0 : -1}
                   autoComplete="organization"
                   placeholder={dict.companyPlaceholder}
                   className={inputClass}
@@ -192,8 +212,9 @@ function ContactModal({ dict, onClose }: { dict: ContactDict; onClose: () => voi
                   id="contact-message"
                   name="message"
                   rows={3}
+                  tabIndex={isOpen ? 0 : -1}
                   placeholder={dict.messagePlaceholder}
-                  className="w-full rounded-[6px] border border-neutral-300 bg-white p-3.5 text-[14.5px] text-[#1a1a1a] placeholder:text-neutral-400 focus:border-[#0c48d8] focus:outline-none transition-colors resize-none"
+                  className="w-full rounded-[6px] border border-neutral-300 bg-white p-3.5 text-[14.5px] text-[#1a1a1a] placeholder:text-neutral-400 focus:border-[#0c48d8] focus:outline-none transition-colors duration-200 resize-none"
                 />
               </div>
 
@@ -206,7 +227,8 @@ function ContactModal({ dict, onClose }: { dict: ContactDict; onClose: () => voi
               <button
                 type="submit"
                 disabled={status === "sending"}
-                className="mt-2 w-full h-12 rounded-[6px] bg-[#0c48d8] text-white text-[15px] font-medium hover:bg-[#0835a6] transition-colors disabled:opacity-60 cursor-pointer"
+                tabIndex={isOpen ? 0 : -1}
+                className="mt-2 w-full h-12 rounded-[6px] bg-[#0c48d8] text-white text-[15px] font-medium hover:bg-[#0835a6] transition-colors duration-300 disabled:opacity-60 cursor-pointer"
               >
                 {status === "sending" ? dict.submitting : dict.submit}
               </button>

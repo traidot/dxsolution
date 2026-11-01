@@ -283,7 +283,7 @@ export default async function SolutionsPage({
             {softwareSuites.map((item, idx) => (
               <article
                 key={item.name}
-                className="p-8 sm:p-10 rounded-[12px] border border-neutral-200 bg-white flex flex-col justify-between gap-8"
+                className="p-8 sm:p-10 rounded-[12px] border border-neutral-200 bg-white flex flex-col justify-between gap-8 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-0.5 hover:border-[#0c48d8]/40 hover:shadow-[0_16px_36px_-16px_rgba(12,72,216,0.12)]"
               >
                 <div>
                   <div className="flex items-center justify-between gap-4 mb-5">

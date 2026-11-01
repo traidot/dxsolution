@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import type { Dictionary, Locale } from "@/i18n/dictionaries";
+import Reveal from "./Reveal";
 
 export default function Products({ dict, lang = "vi" }: { dict: Dictionary; lang?: Locale }) {
   const t = dict.products;
@@ -13,7 +14,7 @@ export default function Products({ dict, lang = "vi" }: { dict: Dictionary; lang
     if (hoverTimeoutRef.current) clearTimeout(hoverTimeoutRef.current);
     hoverTimeoutRef.current = setTimeout(() => {
       setActiveTab(tab);
-    }, 85);
+    }, 110);
   };
 
   const handleTabLeave = () => {
@@ -57,7 +58,7 @@ export default function Products({ dict, lang = "vi" }: { dict: Dictionary; lang
     <section id="products" className="py-20 lg:py-28 bg-white">
       <div className="max-w-[1400px] mx-auto px-5 md:px-10">
         {/* Section Header — solid corporate color, no gradient */}
-        <div className="max-w-3xl mb-14 lg:mb-20">
+        <Reveal className="max-w-3xl mb-14 lg:mb-20">
           <h2 className="vnext-h2">
             {lang === "vi" ? (
               <>
@@ -85,10 +86,10 @@ export default function Products({ dict, lang = "vi" }: { dict: Dictionary; lang
           <p className="mt-4 text-[16px] text-neutral-600 font-normal leading-relaxed">
             {t.subtitle}
           </p>
-        </div>
+        </Reveal>
 
         {/* 2-Column Split: Left Category Switcher + Right Hairline List */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+        <Reveal delay={90} className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           {/* Left Category Sidebar */}
           <div className="lg:col-span-4 lg:sticky lg:top-28 flex flex-col gap-5">
             {tabConfigs.map((tab) => {
@@ -106,9 +107,9 @@ export default function Products({ dict, lang = "vi" }: { dict: Dictionary; lang
                   className="group text-left py-2 cursor-pointer"
                 >
                   <h3
-                    className={`font-headline text-[17px] sm:text-[18px] font-bold uppercase tracking-[0.04em] transition-colors duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+                    className={`font-headline text-[17px] sm:text-[18px] font-bold uppercase tracking-[0.04em] transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${
                       isSelected
-                        ? "text-[#0c48d8]"
+                        ? "text-[#0c48d8] translate-x-0.5"
                         : "text-neutral-400 group-hover:text-neutral-700"
                     }`}
                   >
@@ -116,7 +117,7 @@ export default function Products({ dict, lang = "vi" }: { dict: Dictionary; lang
                   </h3>
                   <div className="mt-3 h-[2px] w-full bg-neutral-200 overflow-hidden">
                     <div
-                      className={`h-full bg-[#0c48d8] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+                      className={`h-full bg-[#0c48d8] transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${
                         isSelected ? "w-full" : "w-0"
                       }`}
                     />
@@ -130,14 +131,14 @@ export default function Products({ dict, lang = "vi" }: { dict: Dictionary; lang
                 href={`/${lang}/solutions`}
                 className="group inline-flex items-center gap-3 text-[13.5px] font-semibold uppercase tracking-[0.08em] text-[#1a1a1a] hover:text-[#0c48d8] transition-colors duration-300"
               >
-                <span className="h-[1.5px] w-10 bg-[#0c48d8] transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:w-14" />
+                <span className="h-[1.5px] w-10 bg-[#0c48d8] transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:w-14" />
                 <span>{allServicesLabel}</span>
                 <svg
                   width="12"
                   height="12"
                   viewBox="0 0 14 14"
                   fill="none"
-                  className="transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                  className="transition-transform duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                   aria-hidden="true"
                 >
                   <path
@@ -160,7 +161,7 @@ export default function Products({ dict, lang = "vi" }: { dict: Dictionary; lang
                 <div
                   key={tab.key}
                   aria-hidden={!isSelected}
-                  className={`col-start-1 row-start-1 border-t border-neutral-200 divide-y divide-neutral-200 transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+                  className={`col-start-1 row-start-1 border-t border-neutral-200 divide-y divide-neutral-200 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${
                     isSelected
                       ? "opacity-100 translate-y-0 pointer-events-auto"
                       : "opacity-0 translate-y-2 pointer-events-none"
@@ -171,13 +172,13 @@ export default function Products({ dict, lang = "vi" }: { dict: Dictionary; lang
                       key={item.name}
                       href={`/${lang}/solutions${tab.anchor}`}
                       tabIndex={isSelected ? 0 : -1}
-                      className="group py-6 sm:py-7 flex items-center justify-between gap-6 transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:bg-neutral-50/80 px-3 sm:px-5 -mx-3 sm:-mx-5 rounded-[6px]"
+                      className="group py-6 sm:py-7 flex items-center justify-between gap-6 transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] hover:bg-neutral-50/80 px-3 sm:px-5 -mx-3 sm:-mx-5 rounded-[6px]"
                     >
                       <div className="flex items-start gap-5 sm:gap-7">
                         <span className="text-[15px] font-normal text-neutral-400 group-hover:text-[#0c48d8] transition-colors duration-300 pt-0.5 tabular-nums">
                           0{idx + 1}
                         </span>
-                        <div>
+                        <div className="transition-transform duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:translate-x-1">
                           <h4 className="font-headline text-[19px] sm:text-[21px] font-semibold text-[#1a1a1a] group-hover:text-[#0c48d8] transition-colors duration-300">
                             {item.name}
                           </h4>
@@ -187,13 +188,13 @@ export default function Products({ dict, lang = "vi" }: { dict: Dictionary; lang
                         </div>
                       </div>
 
-                      <span className="shrink-0 w-9 h-9 rounded-[6px] border border-neutral-200 flex items-center justify-center text-neutral-400 group-hover:border-[#0c48d8] group-hover:bg-[#0c48d8] group-hover:text-white transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]">
+                      <span className="shrink-0 w-9 h-9 rounded-[6px] border border-neutral-200 flex items-center justify-center text-neutral-400 group-hover:border-[#0c48d8] group-hover:bg-[#0c48d8] group-hover:text-white transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)]">
                         <svg
                           width="13"
                           height="13"
                           viewBox="0 0 14 14"
                           fill="none"
-                          className="transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                          className="transition-transform duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                           aria-hidden="true"
                         >
                           <path
@@ -211,7 +212,7 @@ export default function Products({ dict, lang = "vi" }: { dict: Dictionary; lang
               );
             })}
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

@@ -65,7 +65,7 @@ export default async function RootLayout({
       <body className="bg-white text-[#1a1a1a] selection:bg-[#0c48d8]/15 min-h-full flex flex-col">
         <ContactProvider dict={dict.contact}>
           <Header nav={dict.nav} lang={lang} />
-          <main className="flex-1">{children}</main>
+          <main className="flex-1 page-enter">{children}</main>
           <Footer dict={dict} lang={lang} />
         </ContactProvider>
       </body>

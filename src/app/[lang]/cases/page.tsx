@@ -71,7 +71,7 @@ export default async function CasesPage({
         id: "case-services",
         domain: "Dịch vụ Chuyên nghiệp",
         solutionTag: "Enterprise Portal · Quản trị Dự án",
-        img: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80",
+        img: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80",
         title: "Hệ thống điều hành dự án, quản lý nguồn lực và kiểm soát tài chính theo hợp đồng",
         before:
           "Thông tin dự án, tiến độ công việc và đề xuất chi phí phân tán trên nhiều công cụ giao tiếp, gây khó khăn cho ban giám đốc trong việc theo dõi nguồn lực và biên lợi nhuận.",
@@ -142,7 +142,7 @@ export default async function CasesPage({
         id: "case-services",
         domain: "Professional Services",
         solutionTag: "Enterprise Portal · Project Management",
-        img: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80",
+        img: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80",
         title: "Enterprise project operations, resource planning, and contract financial control",
         before:
           "Project documentation, task progress, and expense approvals were scattered across communication tools, limiting visibility into resource utilization and net margins.",
@@ -213,7 +213,7 @@ export default async function CasesPage({
         id: "case-services",
         domain: "プロフェッショナルサービス",
         solutionTag: "エンタープライズポータル · 案件管理",
-        img: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80",
+        img: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80",
         title: "プロジェクト運営・リソース管理・契約別収支（P&L）管理システム",
         before:
           "契約情報、タスク進捗、工数・経費申請が複数のチャットやシートに散在し、要員の稼働率や案件ごとの利益率をタイムリーに把握できなかった。",
@@ -309,11 +309,11 @@ export default async function CasesPage({
             <div className="max-w-[1400px] mx-auto px-5 md:px-10 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
               {/* Left Column: Image + Metrics */}
               <div className="lg:col-span-5 flex flex-col gap-6">
-                <div className="aspect-[16/10] bg-neutral-900 overflow-hidden rounded-[12px]">
+                <div className="aspect-[16/10] bg-neutral-900 overflow-hidden rounded-[12px] group">
                   <img
                     src={item.img}
                     alt={item.title}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.03]"
                   />
                 </div>
 

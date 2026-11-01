@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Dictionary, Locale } from "@/i18n/dictionaries";
+import Reveal from "./Reveal";
 
 export default function Features({ dict, lang = "vi" }: { dict: Dictionary; lang?: Locale }) {
   const t = dict.features;
@@ -56,7 +57,7 @@ export default function Features({ dict, lang = "vi" }: { dict: Dictionary; lang
     <section id="features" className="py-20 lg:py-28 bg-white">
       <div className="max-w-[1400px] mx-auto px-5 md:px-10">
         {/* Part 1: "Con số tự chứng minh" — solid color, no gradient */}
-        <div className="mb-20 lg:mb-28">
+        <Reveal className="mb-20 lg:mb-28">
           <h2 className="vnext-h2 mb-12 lg:mb-16">
             {lang === "vi" ? (
               <>
@@ -100,10 +101,10 @@ export default function Features({ dict, lang = "vi" }: { dict: Dictionary; lang
               ))}
             </div>
           </div>
-        </div>
+        </Reveal>
 
         {/* Part 2: Working Models */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        <Reveal delay={80} className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           <div className="lg:col-span-4">
             <h3 className="vnext-h2">
               {lang === "vi" ? (
@@ -126,11 +127,18 @@ export default function Features({ dict, lang = "vi" }: { dict: Dictionary; lang
             <div className="mt-8">
               <Link
                 href={`/${lang}/process`}
-                className="group inline-flex items-center gap-3 text-[13.5px] font-semibold uppercase tracking-[0.08em] text-[#1a1a1a] hover:text-[#0c48d8] transition-colors"
+                className="group inline-flex items-center gap-3 text-[13.5px] font-semibold uppercase tracking-[0.08em] text-[#1a1a1a] hover:text-[#0c48d8] transition-colors duration-300"
               >
-                <span className="h-[1.5px] w-10 bg-[#0c48d8] transition-all duration-200 group-hover:w-14" />
+                <span className="h-[1.5px] w-10 bg-[#0c48d8] transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:w-14" />
                 <span>{viewProcessLabel}</span>
-                <svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  className="transition-transform duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                  aria-hidden="true"
+                >
                   <path
                     d="M1.5 12.5L12.5 1.5M12.5 1.5H3.5M12.5 1.5V10.5"
                     stroke="currentColor"
@@ -147,7 +155,7 @@ export default function Features({ dict, lang = "vi" }: { dict: Dictionary; lang
             {t.items.map((item, idx) => (
               <div
                 key={item.title}
-                className={`p-7 sm:p-8 flex flex-col justify-between gap-4 ${
+                className={`p-7 sm:p-8 flex flex-col justify-between gap-4 hover:bg-neutral-50/70 transition-colors duration-300 ${
                   idx >= 2 ? "sm:border-t sm:border-neutral-200" : ""
                 }`}
               >
@@ -165,7 +173,7 @@ export default function Features({ dict, lang = "vi" }: { dict: Dictionary; lang
               </div>
             ))}
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

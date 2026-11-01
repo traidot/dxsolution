@@ -166,7 +166,7 @@ export default async function ProcessPage({
             {t.models.map((model, idx) => (
               <div
                 key={model.name}
-                className={`p-8 sm:p-10 rounded-[12px] border border-neutral-200 flex flex-col justify-between gap-10 ${
+                className={`p-8 sm:p-10 rounded-[12px] border border-neutral-200 flex flex-col justify-between gap-10 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-0.5 hover:border-[#0c48d8]/40 hover:shadow-[0_16px_36px_-16px_rgba(12,72,216,0.12)] ${
                   idx === 1 ? "bg-[#f6f7f9]" : "bg-white"
                 }`}
               >

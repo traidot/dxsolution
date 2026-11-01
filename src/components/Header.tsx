@@ -456,45 +456,56 @@ export default function Header({ nav, lang }: { nav: Dictionary["nav"]; lang: Lo
         </div>
       </div>
 
-      {/* Mobile Dropdown Navigation */}
-      {mobileMenuOpen && (
-        <div className="lg:hidden bg-white border-b border-neutral-200 px-5 py-6 flex flex-col gap-4 shadow-lg">
-          {navLinks.map((link) => {
-            const active = isActive(link.href);
-            return (
+      {/* Mobile Dropdown Navigation (Smooth CSS Grid height transition) */}
+      <div
+        className={`lg:hidden grid transition-[grid-template-rows,opacity] duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] bg-white text-[#1a1a1a] ${
+          mobileMenuOpen
+            ? "grid-rows-[1fr] opacity-100 border-b border-neutral-200 shadow-lg pointer-events-auto"
+            : "grid-rows-[0fr] opacity-0 pointer-events-none"
+        }`}
+      >
+        <div className="overflow-hidden">
+          <div className="px-5 py-6 flex flex-col gap-4">
+            {navLinks.map((link) => {
+              const active = isActive(link.href);
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  tabIndex={mobileMenuOpen ? 0 : -1}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className={`py-2.5 text-[16px] font-headline border-b border-neutral-100 flex items-center justify-between transition-colors duration-200 ${
+                    active ? "text-[#0c48d8] font-semibold" : "text-[#1a1a1a] font-medium"
+                  }`}
+                >
+                  <span>{link.label}</span>
+                </Link>
+              );
+            })}
+            <div className="pt-2 flex gap-3">
               <Link
-                key={link.href}
-                href={link.href}
+                href={`/${lang}/contact`}
+                tabIndex={mobileMenuOpen ? 0 : -1}
                 onClick={() => setMobileMenuOpen(false)}
-                className={`py-2.5 text-[16px] font-headline border-b border-neutral-100 flex items-center justify-between ${
-                  active ? "text-[#0c48d8] font-semibold" : "text-[#1a1a1a] font-medium"
-                }`}
+                className="flex-1 py-3 rounded-[6px] bg-[#0c48d8] text-white text-center text-[14.5px] font-medium"
               >
-                <span>{link.label}</span>
+                {nav.contact}
               </Link>
-            );
-          })}
-          <div className="pt-2 flex gap-3">
-            <Link
-              href={`/${lang}/contact`}
-              onClick={() => setMobileMenuOpen(false)}
-              className="flex-1 py-3 rounded-[6px] bg-[#0c48d8] text-white text-center text-[14.5px] font-medium"
-            >
-              {nav.contact}
-            </Link>
-            <button
-              type="button"
-              onClick={() => {
-                setMobileMenuOpen(false);
-                openContact();
-              }}
-              className="px-4 py-3 rounded-[6px] border border-neutral-300 text-[#1a1a1a] text-[14px] font-medium cursor-pointer"
-            >
-              {callbackLabel}
-            </button>
+              <button
+                type="button"
+                tabIndex={mobileMenuOpen ? 0 : -1}
+                onClick={() => {
+                  setMobileMenuOpen(false);
+                  openContact();
+                }}
+                className="px-4 py-3 rounded-[6px] border border-neutral-300 text-[#1a1a1a] text-[14px] font-medium cursor-pointer"
+              >
+                {callbackLabel}
+              </button>
+            </div>
           </div>
         </div>
-      )}
+      </div>
     </header>
   );
 }
