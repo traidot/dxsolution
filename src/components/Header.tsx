@@ -168,7 +168,7 @@ export default function Header({ nav, lang }: { nav: Dictionary["nav"]; lang: Lo
           aria-label={nav.home}
         >
           <Image
-            src="/dxbiz-mark.png"
+            src="/dxbiz-mark.svg"
             alt=""
             width={34}
             height={34}
