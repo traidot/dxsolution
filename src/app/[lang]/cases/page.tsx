@@ -37,7 +37,7 @@ export default async function CasesPage({
         id: "case-healthcare",
         domain: "Chăm sóc sức khỏe",
         solutionTag: "Web App · CRM & Đặt lịch",
-        img: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1200&q=80",
+        img: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=80",
         title: "Hệ thống quản lý lịch hẹn, hồ sơ dịch vụ và chăm sóc khách hàng đa chi nhánh",
         before:
           "Quy trình đặt lịch hẹn và quản lý hồ sơ khách hàng thực hiện rời rạc trên sổ sách và bảng tính, dẫn đến trùng lịch giữa các cơ sở và mất nhiều thời gian tổng hợp báo cáo.",
@@ -54,7 +54,7 @@ export default async function CasesPage({
         id: "case-retail",
         domain: "Bán lẻ & Thương mại điện tử",
         solutionTag: "OMS & WMS · Tích hợp ERP",
-        img: "https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=1200&q=80",
+        img: "https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&w=1200&q=80",
         title: "Nền tảng quản trị đơn hàng, tồn kho đa điểm và đồng bộ kế toán tự động",
         before:
           "Hoạt động bán hàng trên nhiều kênh (cửa hàng POS, sàn thương mại điện tử, website) khiến dữ liệu tồn kho không đồng nhất, phát sinh sai lệch khi đối soát vận chuyển và kế toán.",
@@ -71,7 +71,7 @@ export default async function CasesPage({
         id: "case-services",
         domain: "Dịch vụ Chuyên nghiệp",
         solutionTag: "Enterprise Portal · Quản trị Dự án",
-        img: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80",
+        img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
         title: "Hệ thống điều hành dự án, quản lý nguồn lực và kiểm soát tài chính theo hợp đồng",
         before:
           "Thông tin dự án, tiến độ công việc và đề xuất chi phí phân tán trên nhiều công cụ giao tiếp, gây khó khăn cho ban giám đốc trong việc theo dõi nguồn lực và biên lợi nhuận.",
@@ -108,7 +108,7 @@ export default async function CasesPage({
         id: "case-healthcare",
         domain: "Healthcare",
         solutionTag: "Web App · CRM & Scheduling",
-        img: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1200&q=80",
+        img: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=80",
         title: "Multi-branch appointment scheduling, service records, and customer care platform",
         before:
           "Manual booking and fragmented spreadsheet tracking caused schedule conflicts across branches, missed follow-up appointments, and slow monthly reporting.",
@@ -125,7 +125,7 @@ export default async function CasesPage({
         id: "case-retail",
         domain: "Retail & E-Commerce",
         solutionTag: "OMS & WMS · ERP Integration",
-        img: "https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=1200&q=80",
+        img: "https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&w=1200&q=80",
         title: "Centralized order management, multi-warehouse inventory, and accounting sync",
         before:
           "Selling across physical POS stores, e-commerce marketplaces, and web channels led to inventory discrepancies and manual reconciliation delays.",
@@ -142,7 +142,7 @@ export default async function CasesPage({
         id: "case-services",
         domain: "Professional Services",
         solutionTag: "Enterprise Portal · Project Management",
-        img: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80",
+        img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
         title: "Enterprise project operations, resource planning, and contract financial control",
         before:
           "Project documentation, task progress, and expense approvals were scattered across communication tools, limiting visibility into resource utilization and net margins.",
@@ -179,7 +179,7 @@ export default async function CasesPage({
         id: "case-healthcare",
         domain: "ヘルスケア",
         solutionTag: "Webアプリ · CRM・予約管理",
-        img: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1200&q=80",
+        img: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=80",
         title: "多拠点クリニック向け 予約・カルテ記録・顧客フォロー統合システム",
         before:
           "電話・紙・表計算ソフトによる個別管理のため、拠点間の予約重複やフォロー漏れが発生し、月次の売上・稼働集計に多大な時間を要していた。",
@@ -196,7 +196,7 @@ export default async function CasesPage({
         id: "case-retail",
         domain: "小売・EC",
         solutionTag: "OMS & WMS · ERP連携",
-        img: "https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=1200&q=80",
+        img: "https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&w=1200&q=80",
         title: "オムニチャネル受注管理・多拠点在庫管理・会計自動連携システム",
         before:
           "実店舗POS、複数のECモール、自社ECサイト間で在庫データが分断され、売り越しや出荷遅延、会計システムへの手入力ミスが発生していた。",
@@ -213,7 +213,7 @@ export default async function CasesPage({
         id: "case-services",
         domain: "プロフェッショナルサービス",
         solutionTag: "エンタープライズポータル · 案件管理",
-        img: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80",
+        img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
         title: "プロジェクト運営・リソース管理・契約別収支（P&L）管理システム",
         before:
           "契約情報、タスク進捗、工数・経費申請が複数のチャットやシートに散在し、要員の稼働率や案件ごとの利益率をタイムリーに把握できなかった。",

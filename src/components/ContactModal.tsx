@@ -50,11 +50,15 @@ function ContactModal({
 }) {
   const [status, setStatus] = useState<Status>("idle");
 
+  const handleClose = useCallback(() => {
+    setStatus("idle");
+    onClose();
+  }, [onClose]);
+
   useEffect(() => {
     if (!isOpen) return;
-    setStatus("idle");
     const onKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape") onClose();
+      if (e.key === "Escape") handleClose();
     };
     document.addEventListener("keydown", onKeyDown);
     document.body.style.overflow = "hidden";
@@ -62,7 +66,7 @@ function ContactModal({
       document.removeEventListener("keydown", onKeyDown);
       document.body.style.overflow = "";
     };
-  }, [isOpen, onClose]);
+  }, [isOpen, handleClose]);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -97,7 +101,7 @@ function ContactModal({
     >
       <div
         className="absolute inset-0 bg-neutral-950/60 transition-opacity duration-300"
-        onClick={onClose}
+        onClick={handleClose}
         aria-hidden="true"
       />
 
@@ -108,7 +112,7 @@ function ContactModal({
       >
         <button
           type="button"
-          onClick={onClose}
+          onClick={handleClose}
           tabIndex={isOpen ? 0 : -1}
           aria-label={dict.close}
           className="absolute top-5 right-5 flex h-9 w-9 items-center justify-center rounded-[6px] text-neutral-400 hover:text-neutral-900 hover:bg-neutral-100 transition-colors cursor-pointer"
@@ -132,7 +136,7 @@ function ContactModal({
             <p className="text-[15px] text-neutral-600 max-w-sm">{dict.successDesc}</p>
             <button
               type="button"
-              onClick={onClose}
+              onClick={handleClose}
               className="mt-2 h-11 px-8 rounded-[6px] bg-[#0b0d14] text-white text-[14px] font-medium hover:bg-[#0c48d8] transition-colors cursor-pointer"
             >
               {dict.close}

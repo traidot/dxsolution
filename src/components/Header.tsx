@@ -160,11 +160,15 @@ export default function Header({ nav, lang }: { nav: Dictionary["nav"]; lang: Lo
       <div className="flex justify-between items-center h-full px-5 md:px-10 max-w-[1400px] mx-auto">
         <Link
           href={`/${lang}`}
-          onClick={() => {
+          onClick={(e) => {
             setMobileMenuOpen(false);
             setHoveredMenu(null);
+            if (pathname === `/${lang}` || pathname === `/${lang}/` || pathname === "/") {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }
           }}
-          className="flex items-center gap-3"
+          className="flex items-center gap-3 cursor-pointer"
           aria-label={nav.home}
         >
           <Image
