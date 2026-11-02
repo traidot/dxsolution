@@ -303,7 +303,7 @@ export default function Hero({ dict, lang = "vi" }: { dict: Dictionary; lang?: L
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
           {/* Left Column: Headline, Subtitle, CTAs & Key Stats */}
           <div className="lg:col-span-6">
-            <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-[6px] bg-white/[0.07] border border-white/15 text-[12px] font-semibold tracking-[0.08em] text-white/85 mb-6">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-[6px] bg-white/[0.07] border border-white/15 text-[11px] sm:text-[12px] font-semibold tracking-[0.06em] sm:tracking-[0.08em] text-white/85 mb-5 sm:mb-6">
               <span className="h-2 w-2 rounded-[6px] bg-[#0c48d8]" />
               <span>{heroEyebrow}</span>
             </div>
@@ -363,7 +363,7 @@ export default function Hero({ dict, lang = "vi" }: { dict: Dictionary; lang?: L
             </div>
 
             {/* Executive Trust Metrics Row */}
-            <div className="mt-11 pt-7 border-t border-white/12 grid grid-cols-4 gap-4 max-w-lg">
+            <div className="mt-9 sm:mt-11 pt-6 sm:pt-7 border-t border-white/12 grid grid-cols-2 sm:grid-cols-4 gap-5 sm:gap-4 max-w-lg">
               {t.stats.map((st) => (
                 <div key={st.label}>
                   <div className="font-headline text-[22px] sm:text-[26px] font-bold text-white tabular-nums leading-none">
@@ -379,7 +379,7 @@ export default function Hero({ dict, lang = "vi" }: { dict: Dictionary; lang?: L
           <div className="lg:col-span-6">
             {/* Top Toolbar: Switch between 3 Curated People-Free Hero Image Packs + Prev/Next Slide */}
             <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
-              <div className="inline-flex items-center gap-1 p-1 rounded-[6px] bg-white/[0.06] border border-white/12">
+              <div className="inline-flex items-center gap-1 p-1 rounded-[6px] bg-white/[0.06] border border-white/12 max-w-full overflow-x-auto no-scrollbar">
                 {IMAGE_PACKS.map((pack, pIdx) => {
                   const isCurrentPack = pIdx === packIndex;
                   const packLabel =
@@ -558,8 +558,8 @@ export default function Hero({ dict, lang = "vi" }: { dict: Dictionary; lang?: L
       </div>
 
       {/* Bottom 5-Service Interactive Strip (Synced with Hero Showcase) */}
-      <div className="relative z-10 border-t border-white/12 bg-[#0b0d14]/95">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 divide-y sm:divide-y-0 sm:divide-x divide-white/10">
+      <div className="relative z-10 border-t border-white/12 bg-[#0b0d14]/95 overflow-x-auto no-scrollbar">
+        <div className="flex lg:grid lg:grid-cols-5 divide-x divide-white/10 min-w-max lg:min-w-0">
           {slides.map((item, idx) => {
             const isSelected = idx === activeIndex;
             return (
@@ -568,7 +568,7 @@ export default function Hero({ dict, lang = "vi" }: { dict: Dictionary; lang?: L
                 href={item.href}
                 onMouseEnter={() => handleTabHover(idx)}
                 onMouseLeave={handleTabLeave}
-                className={`group relative h-[64px] lg:h-[78px] px-5 flex items-center justify-center text-center text-[14.5px] lg:text-[15.5px] font-medium transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+                className={`group relative h-[54px] lg:h-[78px] px-4 lg:px-5 flex items-center justify-center text-center text-[13.5px] lg:text-[15.5px] font-medium transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] shrink-0 lg:shrink whitespace-nowrap lg:whitespace-normal ${
                   isSelected
                     ? "text-white bg-white/[0.06]"
                     : "text-white/60 hover:text-white hover:bg-white/[0.03]"

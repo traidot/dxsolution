@@ -104,6 +104,14 @@ html[lang="ja"] .vnext-hero-title-bold {
   letter-spacing: -0.015em;
 }
 
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
