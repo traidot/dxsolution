@@ -258,7 +258,7 @@ export default async function CasesPage({
       consultBtn: "Tư vấn giải pháp tương tự",
     },
     en: {
-      bannerTitle: "Case Studies",
+      bannerTitle: "Track Record",
       bannerSub: "Implementation capability recognized by clients",
       home: "Home",
       beforeLabel: "CHALLENGE",
@@ -266,7 +266,7 @@ export default async function CasesPage({
       consultBtn: "Consult a similar solution",
     },
     ja: {
-      bannerTitle: "導入事例",
+      bannerTitle: "導入実績",
       bannerSub: "お客様に評価される確かなシステム実装力",
       home: "ホーム",
       beforeLabel: "導入前の課題",

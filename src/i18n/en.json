@@ -7,7 +7,7 @@
     "products": "Services",
     "solutions": "Industries",
     "features": "Working Models",
-    "cases": "Case Studies",
+    "cases": "Track Record",
     "about": "About DXS",
     "contact": "Contact",
     "switchLanguage": "Switch language",
@@ -375,7 +375,7 @@
     ]
   },
   "testimonials": {
-    "eyebrow": "Case Studies",
+    "eyebrow": "Track Record",
     "title": "Implementation capability recognized by clients",
     "subtitle": "Software development and digital transformation projects delivering measurable operational value.",
     "ratingLabel": "Featured Project",
@@ -485,7 +485,7 @@
       },
       {
         "title": "Company",
-        "links": ["About DXS", "Working Models", "Case Studies", "Privacy Policy", "Contact"]
+        "links": ["About DXS", "Working Models", "Track Record", "Privacy Policy", "Contact"]
       }
     ],
     "copyright": "© 2026 DXS. All rights reserved by DXS Vietnam."

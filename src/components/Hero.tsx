@@ -50,8 +50,8 @@ const IMAGE_PACKS = [
   {
     id: "architecture",
     labelVi: "Kiến trúc Doanh nghiệp",
-    labelEn: "Architecture",
-    labelJa: "コーポレート",
+    labelEn: "Enterprise Architecture",
+    labelJa: "エンタープライズ基盤",
     backdrop:
       "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=2000&q=85",
     slides: [

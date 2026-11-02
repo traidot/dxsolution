@@ -7,7 +7,7 @@
     "products": "サービス",
     "solutions": "対応業界",
     "features": "開発体制・プロセス",
-    "cases": "導入事例",
+    "cases": "導入実績",
     "about": "DXSについて",
     "contact": "お問い合わせ",
     "switchLanguage": "言語切替",
@@ -375,7 +375,7 @@
     ]
   },
   "testimonials": {
-    "eyebrow": "導入事例",
+    "eyebrow": "導入実績",
     "title": "お客様に評価される確かな実装力",
     "subtitle": "多様な業界において、業務効率化と事業成長に貢献したシステム開発・DX推進プロジェクトの事例をご紹介します。",
     "ratingLabel": "導入実績",
@@ -485,7 +485,7 @@
       },
       {
         "title": "企業情報",
-        "links": ["DXSについて", "開発体制・プロセス", "導入事例", "プライバシーポリシー", "お問い合わせ"]
+        "links": ["DXSについて", "開発体制・プロセス", "導入実績", "プライバシーポリシー", "お問い合わせ"]
       }
     ],
     "copyright": "© 2026 DXS. All rights reserved by DXS Vietnam."

@@ -16,8 +16,8 @@ export default function Testimonials({ dict, lang = "vi" }: { dict: Dictionary; 
     lang === "vi"
       ? "KHÁM PHÁ CÁC DỰ ÁN"
       : lang === "ja"
-        ? "導入事例をすべて見る"
-        : "EXPLORE PROJECTS";
+        ? "導入実績をすべて見る"
+        : "VIEW PROVEN TRACK RECORD";
 
   return (
     <section

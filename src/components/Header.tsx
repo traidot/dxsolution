@@ -141,7 +141,7 @@ export default function Header({ nav, lang }: { nav: Dictionary["nav"]; lang: Lo
   const megaSolutions = megaSolutionsByLocale[lang];
   const megaIndustries = megaIndustriesByLocale[lang];
   const callbackLabel =
-    lang === "vi" ? "Yêu cầu gọi lại" : lang === "ja" ? "折り返し連絡を希望" : "Request Call";
+    lang === "vi" ? "Yêu cầu gọi lại" : lang === "ja" ? "無料相談を予約" : "Request a Call";
 
   return (
     <header
