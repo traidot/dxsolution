@@ -261,6 +261,25 @@ export default function Hero({ dict, lang = "vi" }: { dict: Dictionary; lang?: L
     }
   };
 
+  const touchStartX = useRef<number | null>(null);
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    if (touchStartX.current === null) return;
+    const diff = touchStartX.current - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 40) {
+      if (diff > 0) {
+        setActiveIndex((prev) => (prev + 1) % slides.length);
+      } else {
+        setActiveIndex((prev) => (prev - 1 + slides.length) % slides.length);
+      }
+    }
+    touchStartX.current = null;
+  };
+
   const heroTitleLight =
     lang === "vi" ? "Công nghệ đồng hành," : lang === "ja" ? "企業の成長を加速する" : "Enterprise";
   const heroTitleBold =
@@ -299,7 +318,7 @@ export default function Hero({ dict, lang = "vi" }: { dict: Dictionary; lang?: L
       </div>
 
       {/* Main 2-Column Hero Content */}
-      <div className="relative z-10 max-w-[1400px] w-full mx-auto px-5 md:px-10 my-auto py-14 lg:py-20">
+      <div className="relative z-10 max-w-[1400px] w-full mx-auto px-5 md:px-10 my-auto py-10 sm:py-14 lg:py-20">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
           {/* Left Column: Headline, Subtitle, CTAs & Key Stats */}
           <div className="lg:col-span-6">
@@ -439,7 +458,11 @@ export default function Hero({ dict, lang = "vi" }: { dict: Dictionary; lang?: L
               </div>
             </div>
 
-            <div className="rounded-[12px] overflow-hidden border border-white/15 bg-[#111522] shadow-[0_24px_60px_-15px_rgba(0,0,0,0.7)]">
+            <div
+              onTouchStart={handleTouchStart}
+              onTouchEnd={handleTouchEnd}
+              className="rounded-[12px] overflow-hidden border border-white/15 bg-[#111522] shadow-[0_24px_60px_-15px_rgba(0,0,0,0.7)]"
+            >
               {/* Top Image Stage with Stacked Crossfade */}
               <div className="relative aspect-[16/9] w-full overflow-hidden bg-[#0b0d14]">
                 {slides.map((s, idx) => {
@@ -557,9 +580,9 @@ export default function Hero({ dict, lang = "vi" }: { dict: Dictionary; lang?: L
         </div>
       </div>
 
-      {/* Bottom 5-Service Interactive Strip (Synced with Hero Showcase) */}
-      <div className="relative z-10 border-t border-white/12 bg-[#0b0d14]/95 overflow-x-auto no-scrollbar">
-        <div className="flex lg:grid lg:grid-cols-5 divide-x divide-white/10 min-w-max lg:min-w-0">
+      {/* Bottom 5-Service Interactive Strip (Desktop Only - Clean 5-column grid) */}
+      <div className="hidden lg:block relative z-10 border-t border-white/12 bg-[#0b0d14]/95">
+        <div className="grid grid-cols-5 divide-x divide-white/10">
           {slides.map((item, idx) => {
             const isSelected = idx === activeIndex;
             return (
@@ -568,7 +591,7 @@ export default function Hero({ dict, lang = "vi" }: { dict: Dictionary; lang?: L
                 href={item.href}
                 onMouseEnter={() => handleTabHover(idx)}
                 onMouseLeave={handleTabLeave}
-                className={`group relative h-[54px] lg:h-[78px] px-4 lg:px-5 flex items-center justify-center text-center text-[13.5px] lg:text-[15.5px] font-medium transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] shrink-0 lg:shrink whitespace-nowrap lg:whitespace-normal ${
+                className={`group relative h-[76px] px-5 flex items-center justify-center text-center text-[15px] font-medium transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${
                   isSelected
                     ? "text-white bg-white/[0.06]"
                     : "text-white/60 hover:text-white hover:bg-white/[0.03]"
