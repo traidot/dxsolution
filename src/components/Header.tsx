@@ -179,9 +179,12 @@ export default function Header({ nav, lang }: { nav: Dictionary["nav"]; lang: Lo
             priority
             className="h-8 w-8"
           />
-          <span className="font-headline text-[22px] font-bold tracking-tight">
-            <span className={`transition-colors duration-300 ${solidHeader ? "text-[#0c48d8]" : "text-white"}`}>DX</span>
-            <span className={`transition-colors duration-300 ${solidHeader ? "text-[#1a1a1a]" : "text-white"}`}>S</span>
+          <span
+            className={`font-headline text-[22px] font-bold tracking-tight transition-colors duration-300 ${
+              solidHeader ? "text-[#1a1a1a]" : "text-white"
+            }`}
+          >
+            DXS
           </span>
         </Link>
 
