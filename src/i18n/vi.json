@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Đối tác phát triển phần mềm & giải pháp chuyển đổi số doanh nghiệp | DXBiz",
-    "description": "Đối tác công nghệ AI tăng tốc chuyển đổi số cho doanh nghiệp. Cung cấp dịch vụ phát triển phần mềm quản trị, giải pháp doanh nghiệp & tự động hóa, và hiện đại hóa hệ thống."
+    "title": "Đối tác phát triển phần mềm & giải pháp chuyển đổi số doanh nghiệp | DXS",
+    "description": "DXS - Đối tác công nghệ AI tăng tốc chuyển đổi số cho doanh nghiệp. Cung cấp dịch vụ phát triển phần mềm quản trị, giải pháp doanh nghiệp & tự động hóa, và hiện đại hóa hệ thống."
   },
   "nav": {
     "products": "Dịch vụ",
@@ -10,7 +10,7 @@
     "cases": "Dự án thành công",
     "contact": "Liên hệ",
     "switchLanguage": "Đổi ngôn ngữ",
-    "home": "Trang chủ DXBiz",
+    "home": "Trang chủ DXS",
     "markline": "Digital Transformation Partner"
   },
   "hero": {
@@ -19,7 +19,7 @@
     "subtitle": "Đồng hành cùng tổ chức tối ưu vận hành, tự động hóa quy trình và bứt phá tăng trưởng với công nghệ AI",
     "ctaPrimary": "Hợp tác cùng chúng tôi",
     "ctaSecondary": "Khám phá năng lực",
-    "imgAlt": "Giải pháp chuyển đổi số và phát triển phần mềm doanh nghiệp DXBiz",
+    "imgAlt": "Giải pháp chuyển đổi số và phát triển phần mềm doanh nghiệp DXS",
     "chipSync": "Tích hợp hệ thống toàn diện",
     "chipRevenueLabel": "Hiệu suất vận hành",
     "pillars": [
@@ -84,7 +84,7 @@
   "products": {
     "eyebrow": "Dịch vụ & Năng lực",
     "title": "Giải pháp thúc đẩy chuyển đổi số doanh nghiệp",
-    "subtitle": "Vững vàng về công nghệ, không ngừng đổi mới — DXBiz cung cấp dịch vụ phát triển phần mềm và giải pháp quản trị toàn diện cho hành trình chuyển đổi số của doanh nghiệp.",
+    "subtitle": "Vững vàng về công nghệ, không ngừng đổi mới — DXS cung cấp dịch vụ phát triển phần mềm và giải pháp quản trị toàn diện cho hành trình chuyển đổi số của doanh nghiệp.",
     "tabSoftware": "Dịch vụ cốt lõi",
     "tabAi": "Năng lực công nghệ",
     "items": [
@@ -175,7 +175,7 @@
   "solutions": {
     "eyebrow": "Ngành nghề",
     "title": "Kiến tạo giá trị qua các giải pháp thông minh",
-    "subtitle": "Với chuyên môn sâu trong các ngành nghề trọng điểm, DXBiz mang đến những hướng tiếp cận hiệu quả cho các bài toán vận hành thực tế của khách hàng.",
+    "subtitle": "Với chuyên môn sâu trong các ngành nghề trọng điểm, DXS mang đến những hướng tiếp cận hiệu quả cho các bài toán vận hành thực tế của khách hàng.",
     "painLabel": "Bài toán thực tế",
     "solutionLabel": "Giải pháp triển khai",
     "modulesLabel": "Hạng mục trọng tâm",
@@ -272,7 +272,7 @@
   "features": {
     "eyebrow": "Mô hình làm việc",
     "title": "Mô hình hợp tác linh hoạt theo nhu cầu doanh nghiệp",
-    "subtitle": "DXBiz cung cấp các mô hình triển khai và quy trình làm việc chuẩn mực, đảm bảo chất lượng phần mềm, tiến độ bàn giao và hiệu quả đầu tư.",
+    "subtitle": "DXS cung cấp các mô hình triển khai và quy trình làm việc chuẩn mực, đảm bảo chất lượng phần mềm, tiến độ bàn giao và hiệu quả đầu tư.",
     "comparison": [
       {
         "type": "Phần mềm đóng gói đại trà",
@@ -295,7 +295,7 @@
         "highlighted": false
       },
       {
-        "type": "Giải pháp từ DXBiz",
+        "type": "Giải pháp từ DXS",
         "verdict": "Chuẩn mực, Linh hoạt & Hiệu quả",
         "points": [
           "Kết hợp nền tảng phần mềm chuẩn ngành với khả năng tùy chỉnh chuyên sâu",
@@ -333,7 +333,7 @@
       {
         "badge": "Mô hình 01",
         "name": "Phát triển theo dự án",
-        "desc": "Phù hợp với các bài toán có phạm vi, mục tiêu và lộ trình rõ ràng. DXBiz chịu trách nhiệm trọn gói từ phân tích, thiết kế, phát triển đến bàn giao nghiệm thu.",
+        "desc": "Phù hợp với các bài toán có phạm vi, mục tiêu và lộ trình rõ ràng. DXS chịu trách nhiệm trọn gói từ phân tích, thiết kế, phát triển đến bàn giao nghiệm thu.",
         "time": "Lộ trình & Ngân sách xác định"
       },
       {
@@ -345,7 +345,7 @@
       {
         "badge": "Mô hình 03",
         "name": "Triển khai & Tùy chỉnh Giải pháp",
-        "desc": "Ứng dụng các bộ giải pháp nền tảng có sẵn của DXBiz (ERP, OMS, WMS, CRM, AI) và tùy chỉnh nhanh theo quy trình đặc thù của doanh nghiệp.",
+        "desc": "Ứng dụng các bộ giải pháp nền tảng có sẵn của DXS (ERP, OMS, WMS, CRM, AI) và tùy chỉnh nhanh theo quy trình đặc thù của doanh nghiệp.",
         "time": "Đưa vào vận hành từ 2–4 tuần"
       }
     ]
@@ -416,7 +416,7 @@
     "title": "Kết nối với chúng tôi",
     "subtitle": "Biến ý tưởng thành giải pháp thực tế? Chúng tôi sẵn sàng lắng nghe bạn.",
     "primary": "Gửi thông tin",
-    "note": "Đội ngũ tư vấn của DXBiz sẽ phản hồi trong vòng 24 giờ làm việc.",
+    "note": "Đội ngũ tư vấn của DXS sẽ phản hồi trong vòng 24 giờ làm việc.",
     "serviceLabel": "1. Dịch vụ bạn đang quan tâm",
     "services": [
       "Phát triển phần mềm",
@@ -452,7 +452,7 @@
   },
   "contact": {
     "title": "Kết nối với chúng tôi",
-    "subtitle": "Vui lòng để lại thông tin liên hệ. Bộ phận tư vấn giải pháp của DXBiz sẽ liên hệ lại trong vòng 24 giờ làm việc.",
+    "subtitle": "Vui lòng để lại thông tin liên hệ. Bộ phận tư vấn giải pháp của DXS sẽ liên hệ lại trong vòng 24 giờ làm việc.",
     "name": "Họ và tên",
     "namePlaceholder": "Nguyễn Văn A",
     "phone": "Số điện thoại",
@@ -465,14 +465,14 @@
     "submit": "Gửi thông tin",
     "submitting": "Đang gửi...",
     "successTitle": "Đã tiếp nhận thông tin",
-    "successDesc": "Cảm ơn Quý khách. Đội ngũ DXBiz sẽ liên hệ lại trong thời gian sớm nhất.",
+    "successDesc": "Cảm ơn Quý khách. Đội ngũ DXS sẽ liên hệ lại trong thời gian sớm nhất.",
     "close": "Đóng",
     "error": "Chưa gửi được thông tin. Quý khách vui lòng thử lại."
   },
   "footer": {
     "slogan": "Đối tác công nghệ AI tăng tốc chuyển đổi số cho doanh nghiệp",
     "tagline": "Cung cấp dịch vụ phát triển phần mềm, giải pháp doanh nghiệp và tự động hóa toàn diện.",
-    "serviceOf": "Một đơn vị thành viên của",
+    "serviceOf": "Đơn vị chủ quản",
     "groups": [
       {
         "title": "Dịch vụ",
@@ -487,6 +487,6 @@
         "links": ["Mô hình làm việc", "Dự án thành công", "Chính sách bảo mật", "Liên hệ"]
       }
     ],
-    "copyright": "© 2026 DXBiz. Bản quyền thuộc về DXS Việt Nam."
+    "copyright": "© 2026 DXS. Bản quyền thuộc về DXS Việt Nam."
   }
 }

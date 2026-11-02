@@ -40,32 +40,32 @@ export default async function ProcessPage({
     vi: [
       {
         q: "Doanh nghiệp đang sử dụng phần mềm kế toán hoặc POS sẵn có thì có tích hợp được không?",
-        a: "Hoàn toàn được. Giải pháp của DXBiz được thiết kế theo kiến trúc mở, cho phép tích hợp dữ liệu hai chiều với các phần mềm kế toán (MISA, Fast, SAP), POS (Sapo, KiotViet), sàn thương mại điện tử và đơn vị vận chuyển mà doanh nghiệp đang vận hành.",
+        a: "Hoàn toàn được. Giải pháp của DXS được thiết kế theo kiến trúc mở, cho phép tích hợp dữ liệu hai chiều với các phần mềm kế toán (MISA, Fast, SAP), POS (Sapo, KiotViet), sàn thương mại điện tử và đơn vị vận chuyển mà doanh nghiệp đang vận hành.",
       },
       {
         q: "Thời gian triển khai một dự án phần mềm hoặc hệ thống quản trị mất bao lâu?",
-        a: "Tùy thuộc vào phạm vi và mô hình hợp tác. Với mô hình triển khai trên nền tảng giải pháp có sẵn của DXBiz, phân hệ đầu tiên có thể đi vào vận hành thực tế sau 2–4 tuần. Với các dự án phát triển phần mềm chuyên biệt quy mô lớn, lộ trình được chia thành từng giai đoạn nghiệm thu rõ ràng.",
+        a: "Tùy thuộc vào phạm vi và mô hình hợp tác. Với mô hình triển khai trên nền tảng giải pháp có sẵn của DXS, phân hệ đầu tiên có thể đi vào vận hành thực tế sau 2–4 tuần. Với các dự án phát triển phần mềm chuyên biệt quy mô lớn, lộ trình được chia thành từng giai đoạn nghiệm thu rõ ràng.",
       },
       {
-        q: "DXBiz đảm bảo chất lượng phần mềm và bảo mật dữ liệu của doanh nghiệp như thế nào?",
+        q: "DXS đảm bảo chất lượng phần mềm và bảo mật dữ liệu của doanh nghiệp như thế nào?",
         a: "Chúng tôi ký kết thỏa thuận bảo mật thông tin (NDA) ngay từ bước khảo sát. Hệ thống được thiết kế với cơ chế phân quyền theo vai trò (RBAC), lưu vết thao tác (Audit Log), mã hóa dữ liệu và tuân thủ quy trình kiểm thử chất lượng (QA) nghiêm ngặt trước khi bàn giao.",
       },
       {
         q: "Sau khi bàn giao hệ thống, chế độ bảo hành và hỗ trợ kỹ thuật ra sao?",
-        a: "Đội ngũ kỹ sư của DXBiz đồng hành xuyên suốt trong giai đoạn vận hành chính thức, hỗ trợ xử lý yêu cầu kỹ thuật nhanh chóng và cung cấp dịch vụ bảo trì, nâng cấp hệ thống dài hạn.",
+        a: "Đội ngũ kỹ sư của DXS đồng hành xuyên suốt trong giai đoạn vận hành chính thức, hỗ trợ xử lý yêu cầu kỹ thuật nhanh chóng và cung cấp dịch vụ bảo trì, nâng cấp hệ thống dài hạn.",
       },
     ],
     en: [
       {
-        q: "Can DXBiz integrate with our existing accounting or POS software?",
+        q: "Can DXS integrate with our existing accounting or POS software?",
         a: "Yes. Our systems are built on an open API architecture that supports seamless two-way synchronization with existing accounting platforms (MISA, Fast, SAP), POS systems (Sapo, KiotViet), e-commerce marketplaces, and logistics providers.",
       },
       {
         q: "What is the typical timeline for implementing a management system?",
-        a: "Timelines depend on project scope. Using DXBiz's pre-engineered industry platforms, the first operational module can go live within 2–4 weeks. Larger custom software initiatives are delivered in clear, milestone-based phases.",
+        a: "Timelines depend on project scope. Using DXS's pre-engineered industry platforms, the first operational module can go live within 2–4 weeks. Larger custom software initiatives are delivered in clear, milestone-based phases.",
       },
       {
-        q: "How does DXBiz ensure software quality and enterprise data security?",
+        q: "How does DXS ensure software quality and enterprise data security?",
         a: "We sign a strict Non-Disclosure Agreement (NDA) from day one. All systems feature role-based access control (RBAC), complete activity audit logs, encrypted storage, and rigorous QA testing prior to deployment.",
       },
       {
@@ -76,11 +76,11 @@ export default async function ProcessPage({
     ja: [
       {
         q: "現在利用中の会計ソフトやPOSシステムとの連携は可能ですか？",
-        a: "はい、可能です。DXBizのシステムはオープンAPIアーキテクチャを採用しており、既存のERP・会計システム（SAP、MISA、Fast等）、POS、ECモール、物流システムと双方向でシームレスにデータ連携できます。",
+        a: "はい、可能です。DXSのシステムはオープンAPIアーキテクチャを採用しており、既存のERP・会計システム（SAP、MISA、Fast等）、POS、ECモール、物流システムと双方向でシームレスにデータ連携できます。",
       },
       {
         q: "システム導入にかかる期間の目安はどのくらいですか？",
-        a: "プロジェクトの規模や契約モデルによって異なります。DXBizの業界別コアモジュールを活用する場合、最短2〜4週間で初期モジュールを本番稼働させることが可能です。大規模なフルスクラッチ開発の場合は、明確なマイルストーンに分けて段階的にリリースします。",
+        a: "プロジェクトの規模や契約モデルによって異なります。DXSの業界別コアモジュールを活用する場合、最短2〜4週間で初期モジュールを本番稼働させることが可能です。大規模なフルスクラッチ開発の場合は、明確なマイルストーンに分けて段階的にリリースします。",
       },
       {
         q: "品質管理および情報セキュリティ（機密保持）はどのように担保されますか？",
@@ -118,7 +118,7 @@ export default async function ProcessPage({
       bannerSub: "国際標準の品質管理と、企業ニーズに合わせた柔軟な協業モデル",
       home: "ホーム",
       deliverablesLabel: "主な成果物",
-      advantageEyebrow: "DXBizの優位性",
+      advantageEyebrow: "DXSの優位性",
       faqTitle: "よくあるご質問",
     },
   }[lang];

@@ -29,7 +29,7 @@ export async function POST(request: Request) {
   const message = typeof data.message === "string" ? data.message.trim() : "";
 
   const text =
-    `<b>[DXBiz] Yêu cầu tư vấn mới</b>\n\n` +
+    `<b>[DXS] Yêu cầu tư vấn mới</b>\n\n` +
     `<b>Họ tên:</b> ${esc(name)}\n` +
     `<b>SĐT:</b> <code>${esc(phone)}</code>\n` +
     `<b>Doanh nghiệp:</b> ${company ? esc(company) : "—"}\n` +

@@ -13,16 +13,16 @@ export default function Footer({ dict, lang }: { dict: Dictionary; lang: Locale 
       <div className="grid grid-cols-2 md:grid-cols-5 gap-10 py-16 px-5 md:px-10 max-w-[1400px] mx-auto">
         <div className="col-span-2 flex flex-col gap-4 max-w-sm">
           <Link href={`/${lang}`} className="flex items-center gap-3" aria-label={dict.nav.home}>
-            <Image src="/dxbiz-mark.svg" alt="" width={34} height={34} className="h-8 w-8" />
-            <span className="font-headline text-[21px] leading-none font-extrabold tracking-tight">
+            <Image src="/dxs-mark.svg" alt="" width={34} height={34} className="h-8 w-8" />
+            <span className="font-headline text-[22px] leading-none font-extrabold tracking-tight">
               <span className="text-[#4d8dff]">DX</span>
-              <span className="text-white">Biz</span>
+              <span className="text-white">S</span>
             </span>
           </Link>
           <p className="font-headline text-[14px] font-semibold text-white/90">{t.slogan}</p>
           <p className="text-[14px] text-white/55 leading-relaxed">{t.tagline}</p>
           <p className="text-[13.5px] text-white/55 pt-1">
-            {t.serviceOf}{" "}
+            {t.serviceOf}:{" "}
             <a
               href="https://dxsolution.vn/"
               target="_blank"

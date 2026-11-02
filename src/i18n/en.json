@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Enterprise Software Development & Digital Transformation Partner | DXBiz",
-    "description": "AI technology partner accelerating digital transformation for enterprises. Delivering custom software development, enterprise automation, and system modernization."
+    "title": "Enterprise Software Development & Digital Transformation Partner | DXS",
+    "description": "DXS - AI technology partner accelerating digital transformation for enterprises. Delivering custom software development, enterprise automation, and system modernization."
   },
   "nav": {
     "products": "Services",
@@ -10,7 +10,7 @@
     "cases": "Case Studies",
     "contact": "Contact",
     "switchLanguage": "Switch language",
-    "home": "DXBiz home",
+    "home": "DXS home",
     "markline": "Digital Transformation Partner"
   },
   "hero": {
@@ -19,7 +19,7 @@
     "subtitle": "Empowering enterprises to optimize operations, automate workflows, and accelerate growth with AI technology",
     "ctaPrimary": "Partner with us",
     "ctaSecondary": "Explore capabilities",
-    "imgAlt": "DXBiz enterprise software development and digital transformation solutions",
+    "imgAlt": "DXS enterprise software development and digital transformation solutions",
     "chipSync": "Comprehensive system integration",
     "chipRevenueLabel": "Operational efficiency",
     "pillars": [
@@ -84,7 +84,7 @@
   "products": {
     "eyebrow": "Services & Capabilities",
     "title": "Solutions accelerating enterprise digital transformation",
-    "subtitle": "Strong in technology, driven by innovation — DXBiz delivers end-to-end software development services for your enterprise digital transformation journey.",
+    "subtitle": "Strong in technology, driven by innovation — DXS delivers end-to-end software development services for your enterprise digital transformation journey.",
     "tabSoftware": "Core Services",
     "tabAi": "Technology Capabilities",
     "items": [
@@ -175,7 +175,7 @@
   "solutions": {
     "eyebrow": "Industries",
     "title": "Creating value through intelligent solutions",
-    "subtitle": "With deep domain expertise across key industries, DXBiz delivers practical software solutions for complex operational challenges.",
+    "subtitle": "With deep domain expertise across key industries, DXS delivers practical software solutions for complex operational challenges.",
     "painLabel": "Business Challenge",
     "solutionLabel": "Implemented Solution",
     "modulesLabel": "Key Modules",
@@ -272,7 +272,7 @@
   "features": {
     "eyebrow": "Working Models",
     "title": "Flexible engagement models tailored to enterprise needs",
-    "subtitle": "DXBiz provides standardized software delivery processes and flexible engagement models to ensure quality, timeline predictability, and ROI.",
+    "subtitle": "DXS provides standardized software delivery processes and flexible engagement models to ensure quality, timeline predictability, and ROI.",
     "comparison": [
       {
         "type": "Generic Off-the-Shelf Software",
@@ -295,7 +295,7 @@
         "highlighted": false
       },
       {
-        "type": "DXBiz Enterprise Solutions",
+        "type": "DXS Enterprise Solutions",
         "verdict": "Standardized, Flexible & Proven",
         "points": [
           "Combines proven industry software foundations with deep customization",
@@ -333,7 +333,7 @@
       {
         "badge": "Model 01",
         "name": "Project-Based Development",
-        "desc": "Ideal for initiatives with well-defined scope, deliverables, and timelines. DXBiz manages the full lifecycle from analysis and development to deployment.",
+        "desc": "Ideal for initiatives with well-defined scope, deliverables, and timelines. DXS manages the full lifecycle from analysis and development to deployment.",
         "time": "Fixed Scope & Timeline"
       },
       {
@@ -345,7 +345,7 @@
       {
         "badge": "Model 03",
         "name": "Solution Customization & Rollout",
-        "desc": "Leverage DXBiz's pre-engineered enterprise platforms (ERP, OMS, WMS, CRM, AI) and customize them rapidly to match your specific workflow.",
+        "desc": "Leverage DXS's pre-engineered enterprise platforms (ERP, OMS, WMS, CRM, AI) and customize them rapidly to match your specific workflow.",
         "time": "Go-Live in 2–4 Weeks"
       }
     ]
@@ -452,7 +452,7 @@
   },
   "contact": {
     "title": "Connect with us",
-    "subtitle": "Please leave your contact details. DXBiz's solution consulting team will reach out within 24 business hours.",
+    "subtitle": "Please leave your contact details. DXS's solution consulting team will reach out within 24 business hours.",
     "name": "Full name",
     "namePlaceholder": "Johnathan Miller",
     "phone": "Phone number",
@@ -472,7 +472,7 @@
   "footer": {
     "slogan": "AI technology partner accelerating digital transformation for enterprises",
     "tagline": "Delivering comprehensive software development, enterprise solutions, and business automation.",
-    "serviceOf": "Developed by",
+    "serviceOf": "Company",
     "groups": [
       {
         "title": "Services",
@@ -487,6 +487,6 @@
         "links": ["Working Models", "Case Studies", "Privacy Policy", "Contact"]
       }
     ],
-    "copyright": "© 2026 DXBiz. All rights reserved by DXS Vietnam."
+    "copyright": "© 2026 DXS. All rights reserved by DXS Vietnam."
   }
 }

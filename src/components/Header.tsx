@@ -172,16 +172,16 @@ export default function Header({ nav, lang }: { nav: Dictionary["nav"]; lang: Lo
           aria-label={nav.home}
         >
           <Image
-            src="/dxbiz-mark.svg"
+            src="/dxs-mark.svg"
             alt=""
             width={34}
             height={34}
             priority
             className="h-8 w-8"
           />
-          <span className="font-headline text-[21px] font-bold tracking-tight">
+          <span className="font-headline text-[22px] font-bold tracking-tight">
             <span className={`transition-colors duration-300 ${solidHeader ? "text-[#0c48d8]" : "text-white"}`}>DX</span>
-            <span className={`transition-colors duration-300 ${solidHeader ? "text-[#1a1a1a]" : "text-white"}`}>Biz</span>
+            <span className={`transition-colors duration-300 ${solidHeader ? "text-[#1a1a1a]" : "text-white"}`}>S</span>
           </span>
         </Link>
 
