@@ -12,8 +12,8 @@
   --color-error: #dc2626;
   --color-tertiary: #059669;
 
-  --font-headline: var(--font-be-vietnam), var(--font-poppins), "Be Vietnam Pro", "Poppins", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
-  --font-body: var(--font-be-vietnam), var(--font-poppins), "Be Vietnam Pro", "Poppins", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+  --font-headline: var(--font-be-vietnam), var(--font-noto-jp), var(--font-poppins), "Noto Sans JP", "Be Vietnam Pro", "Poppins", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+  --font-body: var(--font-be-vietnam), var(--font-noto-jp), var(--font-poppins), "Noto Sans JP", "Be Vietnam Pro", "Poppins", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
   --font-mono-code: var(--font-mono), "JetBrains Mono", monospace;
   --font-brand: var(--font-brand), "Plus Jakarta Sans", var(--font-poppins), "Poppins", sans-serif;
 }

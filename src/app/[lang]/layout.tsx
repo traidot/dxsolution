@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Be_Vietnam_Pro, Poppins, JetBrains_Mono, Plus_Jakarta_Sans } from "next/font/google";
+import { Be_Vietnam_Pro, Poppins, JetBrains_Mono, Plus_Jakarta_Sans, Noto_Sans_JP } from "next/font/google";
 import { notFound } from "next/navigation";
 import "../globals.css";
 import { getDictionary, hasLocale, locales } from "@/i18n/dictionaries";
@@ -11,6 +11,13 @@ const beVietnamPro = Be_Vietnam_Pro({
   variable: "--font-be-vietnam",
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
   subsets: ["latin", "vietnamese"],
+  display: "swap",
+});
+
+const notoSansJP = Noto_Sans_JP({
+  variable: "--font-noto-jp",
+  weight: ["300", "400", "500", "600", "700"],
+  subsets: ["latin"],
   display: "swap",
 });
 
@@ -67,7 +74,7 @@ export default async function RootLayout({
     <html
       lang={lang}
       data-scroll-behavior="smooth"
-      className={`light ${beVietnamPro.variable} ${poppins.variable} ${plusJakartaSans.variable} ${jetbrainsMono.variable} h-full antialiased`}
+      className={`light ${beVietnamPro.variable} ${notoSansJP.variable} ${poppins.variable} ${plusJakartaSans.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
       <body className="bg-white text-[#1a1a1a] selection:bg-[#0c48d8]/15 min-h-full flex flex-col">
         <ContactProvider dict={dict.contact}>
