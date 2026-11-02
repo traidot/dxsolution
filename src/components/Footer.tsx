@@ -22,7 +22,7 @@ export default function Footer({ dict, lang }: { dict: Dictionary; lang: Locale 
     <footer className="w-full bg-[#090d16] text-white border-t border-white/10">
       <div className="grid grid-cols-2 md:grid-cols-5 gap-10 py-16 px-5 md:px-10 max-w-[1400px] mx-auto">
         <div className="col-span-2 flex flex-col gap-4 max-w-sm">
-          <Link href={`/${lang}`} className="flex items-center gap-3" aria-label={dict.nav.home}>
+          <Link href={`/${lang}`} className="flex items-center gap-2" aria-label={dict.nav.home}>
             <Image src="/dxs-mark.svg" alt="" width={34} height={34} className="h-8 w-8" />
             <span className="font-brand text-[23px] leading-none font-extrabold tracking-[0.04em] uppercase text-white">
               DXS

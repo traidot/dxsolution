@@ -169,7 +169,7 @@ export default function Header({ nav, lang }: { nav: Dictionary["nav"]; lang: Lo
               window.scrollTo({ top: 0, behavior: "smooth" });
             }
           }}
-          className="flex items-center gap-3 cursor-pointer"
+          className="flex items-center gap-2 cursor-pointer"
           aria-label={nav.home}
         >
           <Image
