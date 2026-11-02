@@ -24,7 +24,7 @@ export default function Footer({ dict, lang }: { dict: Dictionary; lang: Locale 
         <div className="col-span-2 flex flex-col gap-4 max-w-sm">
           <Link href={`/${lang}`} className="flex items-center gap-3" aria-label={dict.nav.home}>
             <Image src="/dxs-mark.svg" alt="" width={34} height={34} className="h-8 w-8" />
-            <span className="font-headline text-[22px] leading-none font-extrabold tracking-tight text-white">
+            <span className="font-brand text-[23px] leading-none font-extrabold tracking-[0.04em] uppercase text-white">
               DXS
             </span>
           </Link>

@@ -181,8 +181,8 @@ export default function Header({ nav, lang }: { nav: Dictionary["nav"]; lang: Lo
             className="h-8 w-8"
           />
           <span
-            className={`font-headline text-[22px] font-bold tracking-tight transition-colors duration-300 ${
-              solidHeader ? "text-[#1a1a1a]" : "text-white"
+            className={`font-brand text-[23px] font-extrabold tracking-[0.04em] uppercase leading-none transition-colors duration-300 ${
+              solidHeader ? "text-[#111625]" : "text-white"
             }`}
           >
             DXS
