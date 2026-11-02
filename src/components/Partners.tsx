@@ -26,12 +26,12 @@ export default function Partners({ dict }: { dict: Dictionary }) {
           </div>
         </div>
 
-        <div className="lg:col-span-9 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 divide-x divide-y lg:divide-y-0 divide-neutral-200">
+        <div className="lg:col-span-9 bg-neutral-200 gap-px grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6">
           {ECOSYSTEM_ITEMS.map((item) => (
             <Link
               key={item.name}
               href={`/${lang}/solutions#ecosystem`}
-              className="group py-5 px-4 flex flex-col justify-center hover:bg-neutral-50 transition-colors"
+              className="group py-5 px-4 flex flex-col justify-center bg-white hover:bg-neutral-50 transition-colors"
             >
               <span className="font-headline text-[13.5px] font-bold tracking-[0.03em] text-neutral-800 group-hover:text-[#0c48d8] transition-colors">
                 {item.name}

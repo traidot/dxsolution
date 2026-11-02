@@ -74,10 +74,10 @@ export default function Features({ dict, lang = "vi" }: { dict: Dictionary; lang
             )}
           </h2>
 
-          <div className="border-t border-neutral-200">
-            <div className="grid grid-cols-2 lg:grid-cols-4 divide-y lg:divide-y-0 lg:divide-x divide-neutral-200 border-b border-neutral-200">
+          <div className="border-t border-b border-neutral-200 bg-neutral-200">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-px bg-neutral-200 mb-px">
               {statsTop.map((s) => (
-                <div key={s.label} className="py-8 lg:py-11 lg:px-8 first:lg:pl-0 last:lg:pr-0">
+                <div key={s.label} className="bg-white py-8 lg:py-11 px-6 lg:px-8 transition-colors duration-300 hover:bg-neutral-50/70">
                   <div className="font-headline text-[36px] sm:text-[46px] lg:text-[52px] font-bold tracking-[-0.02em] text-[#1a1a1a] leading-none tabular-nums">
                     {s.number}
                   </div>
@@ -88,9 +88,9 @@ export default function Features({ dict, lang = "vi" }: { dict: Dictionary; lang
               ))}
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-neutral-200 border-b border-neutral-200">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-neutral-200">
               {statsBottom.map((s) => (
-                <div key={s.label} className="py-8 lg:py-11 md:px-8 first:md:pl-0 last:md:pr-0">
+                <div key={s.label} className="bg-white py-8 lg:py-11 px-6 md:px-8 transition-colors duration-300 hover:bg-neutral-50/70">
                   <div className="font-headline text-[36px] sm:text-[46px] lg:text-[52px] font-bold tracking-[-0.02em] text-[#0c48d8] leading-none tabular-nums">
                     {s.number}
                   </div>
@@ -151,19 +151,17 @@ export default function Features({ dict, lang = "vi" }: { dict: Dictionary; lang
             </div>
           </div>
 
-          <div className="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 rounded-[12px] overflow-hidden border border-neutral-200 divide-y sm:divide-y-0 sm:divide-x divide-neutral-200">
-            {t.items.map((item, idx) => (
+          <div className="lg:col-span-8 rounded-[12px] overflow-hidden border border-neutral-200 bg-neutral-200 gap-px grid grid-cols-1 sm:grid-cols-2 shadow-[0_4px_24px_-8px_rgba(0,0,0,0.06)]">
+            {t.items.map((item) => (
               <div
                 key={item.title}
-                className={`p-7 sm:p-8 flex flex-col justify-between gap-4 hover:bg-neutral-50/70 transition-colors duration-300 ${
-                  idx >= 2 ? "sm:border-t sm:border-neutral-200" : ""
-                }`}
+                className="group bg-white p-7 sm:p-8 flex flex-col justify-between gap-4 hover:bg-neutral-50/90 transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)]"
               >
                 <div>
-                  <span className="text-[13px] font-medium text-[#0c48d8]">
+                  <span className="inline-block px-2.5 py-0.5 rounded-[4px] bg-[#0c48d8]/[0.08] text-[12px] font-semibold text-[#0c48d8] tracking-wide mb-3">
                     {item.step}
                   </span>
-                  <h4 className="font-headline text-[19px] font-semibold text-[#1a1a1a] mt-2 mb-2.5">
+                  <h4 className="font-headline text-[18px] sm:text-[19px] font-semibold text-[#1a1a1a] group-hover:text-[#0c48d8] transition-colors duration-300 mb-2.5">
                     {item.title}
                   </h4>
                   <p className="text-[14.5px] text-neutral-500 font-normal leading-relaxed">

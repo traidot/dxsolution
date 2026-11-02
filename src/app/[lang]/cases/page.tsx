@@ -352,7 +352,7 @@ export default async function CasesPage({
                     {item.title}
                   </h2>
 
-                  <div className="grid grid-cols-1 sm:grid-cols-2 rounded-[12px] overflow-hidden border border-neutral-200 divide-y sm:divide-y-0 sm:divide-x divide-neutral-200 mb-7">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 rounded-[12px] overflow-hidden border border-neutral-200 bg-neutral-200 gap-px mb-7">
                     <div className="p-6 bg-neutral-50">
                       <span className="block text-[11.5px] font-semibold uppercase tracking-[0.08em] text-neutral-400 mb-2">
                         {copy.beforeLabel}
