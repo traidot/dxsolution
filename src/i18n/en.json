@@ -8,6 +8,7 @@
     "solutions": "Industries",
     "features": "Working Models",
     "cases": "Case Studies",
+    "about": "About DXS",
     "contact": "Contact",
     "switchLanguage": "Switch language",
     "home": "DXS home",
@@ -484,7 +485,7 @@
       },
       {
         "title": "Company",
-        "links": ["Working Models", "Case Studies", "Privacy Policy", "Contact"]
+        "links": ["About DXS", "Working Models", "Case Studies", "Privacy Policy", "Contact"]
       }
     ],
     "copyright": "© 2026 DXS. All rights reserved by DXS Vietnam."

@@ -8,6 +8,7 @@
     "solutions": "Ngành nghề",
     "features": "Mô hình làm việc",
     "cases": "Dự án thành công",
+    "about": "Về DXS",
     "contact": "Liên hệ",
     "switchLanguage": "Đổi ngôn ngữ",
     "home": "Trang chủ DXS",
@@ -484,7 +485,7 @@
       },
       {
         "title": "Công ty",
-        "links": ["Mô hình làm việc", "Dự án thành công", "Chính sách bảo mật", "Liên hệ"]
+        "links": ["Về DXS", "Mô hình làm việc", "Dự án thành công", "Chính sách bảo mật", "Liên hệ"]
       }
     ],
     "copyright": "© 2026 DXS. Bản quyền thuộc về DXS Việt Nam."

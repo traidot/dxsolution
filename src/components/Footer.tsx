@@ -2,7 +2,17 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Dictionary, Locale } from "@/i18n/dictionaries";
 
-const GROUP_PATHS = ["solutions", "industries", "process"];
+const COMPANY_SUBPATHS = ["about", "process", "cases", "privacy", "contact"];
+
+function getLinkHref(groupIdx: number, linkIdx: number, lang: Locale): string {
+  if (groupIdx === 0) return `/${lang}/solutions`;
+  if (groupIdx === 1) return `/${lang}/industries`;
+  if (groupIdx === 2) {
+    const sub = COMPANY_SUBPATHS[linkIdx] ?? "contact";
+    return `/${lang}/${sub}`;
+  }
+  return `/${lang}`;
+}
 
 export default function Footer({ dict, lang }: { dict: Dictionary; lang: Locale }) {
   const t = dict.footer;
@@ -33,28 +43,24 @@ export default function Footer({ dict, lang }: { dict: Dictionary; lang: Locale 
           </p>
         </div>
 
-        {t.groups.map((group, idx) => {
-          const subpath = GROUP_PATHS[idx] ?? "contact";
-          const href = `/${lang}/${subpath}`;
-          return (
-            <div key={group.title}>
-              <h4 className="font-headline text-[12px] font-bold uppercase tracking-[0.14em] text-white/45 mb-5">
-                {group.title}
-              </h4>
-              <div className="flex flex-col gap-3">
-                {group.links.map((label) => (
-                  <Link
-                    key={label}
-                    href={href}
-                    className="text-[14px] text-white/70 hover:text-white transition-colors w-fit"
-                  >
-                    {label}
-                  </Link>
-                ))}
-              </div>
+        {t.groups.map((group, groupIdx) => (
+          <div key={group.title}>
+            <h4 className="font-headline text-[12px] font-bold uppercase tracking-[0.14em] text-white/45 mb-5">
+              {group.title}
+            </h4>
+            <div className="flex flex-col gap-3">
+              {group.links.map((label, linkIdx) => (
+                <Link
+                  key={label}
+                  href={getLinkHref(groupIdx, linkIdx, lang)}
+                  className="text-[14px] text-white/70 hover:text-white transition-colors w-fit"
+                >
+                  {label}
+                </Link>
+              ))}
             </div>
-          );
-        })}
+          </div>
+        ))}
       </div>
 
       <div className="border-t border-white/10">

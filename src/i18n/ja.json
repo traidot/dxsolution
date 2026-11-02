@@ -8,6 +8,7 @@
     "solutions": "対応業界",
     "features": "開発体制・プロセス",
     "cases": "導入事例",
+    "about": "DXSについて",
     "contact": "お問い合わせ",
     "switchLanguage": "言語切替",
     "home": "DXS ホーム",
@@ -484,7 +485,7 @@
       },
       {
         "title": "企業情報",
-        "links": ["開発体制・プロセス", "導入事例", "プライバシーポリシー", "お問い合わせ"]
+        "links": ["DXSについて", "開発体制・プロセス", "導入事例", "プライバシーポリシー", "お問い合わせ"]
       }
     ],
     "copyright": "© 2026 DXS. All rights reserved by DXS Vietnam."

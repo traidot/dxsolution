@@ -54,6 +54,7 @@ export default function Header({ nav, lang }: { nav: Dictionary["nav"]; lang: Lo
     { key: "industries" as const, label: nav.solutions, href: `/${lang}/industries`, hasMega: true },
     { key: "process" as const, label: nav.features, href: `/${lang}/process`, hasMega: false },
     { key: "cases" as const, label: nav.cases, href: `/${lang}/cases`, hasMega: false },
+    { key: "about" as const, label: nav.about, href: `/${lang}/about`, hasMega: false },
   ];
 
   const isActive = (href: string) => pathname === href || pathname.startsWith(`${href}/`);
