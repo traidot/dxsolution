@@ -52,7 +52,7 @@ export default function CTA({ dict }: { dict: Dictionary }) {
   }
 
   const inputClass =
-    "w-full h-11 rounded-[6px] border border-neutral-300 bg-white px-3.5 text-[14.5px] text-[#1a1a1a] placeholder:text-neutral-400 focus:border-[#0c48d8] focus:outline-none transition-colors";
+    "w-full h-11 rounded-[6px] border border-neutral-300 bg-white px-3.5 text-[14.5px] text-[#1a1a1a] placeholder:text-neutral-400 focus:border-[#0c48d8] focus:ring-2 focus:ring-[#0c48d8]/15 focus:outline-none transition-all duration-200";
 
   return (
     <section id="consultation" className="py-20 lg:py-28 bg-[#f6f7f9] border-t border-neutral-200">
@@ -268,7 +268,7 @@ export default function CTA({ dict }: { dict: Dictionary }) {
                     name="message"
                     rows={3}
                     placeholder={c.messagePlaceholder}
-                    className="w-full rounded-[6px] border border-neutral-300 bg-white p-3.5 text-[14.5px] text-[#1a1a1a] placeholder:text-neutral-400 focus:border-[#0c48d8] focus:outline-none transition-colors resize-none"
+                    className="w-full rounded-[6px] border border-neutral-300 bg-white p-3.5 text-[14.5px] text-[#1a1a1a] placeholder:text-neutral-400 focus:border-[#0c48d8] focus:ring-2 focus:ring-[#0c48d8]/15 focus:outline-none transition-all duration-200 resize-none"
                   />
                 </div>
 

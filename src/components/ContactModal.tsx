@@ -86,7 +86,7 @@ function ContactModal({
   }
 
   const inputClass =
-    "w-full h-11 rounded-[6px] border border-neutral-300 bg-white px-3.5 text-[14.5px] text-[#1a1a1a] placeholder:text-neutral-400 focus:border-[#0c48d8] focus:outline-none transition-colors duration-200";
+    "w-full h-11 rounded-[6px] border border-neutral-300 bg-white px-3.5 text-[14.5px] text-[#1a1a1a] placeholder:text-neutral-400 focus:border-[#0c48d8] focus:ring-2 focus:ring-[#0c48d8]/15 focus:outline-none transition-all duration-200";
   const labelClass = "block text-[13px] font-semibold text-neutral-800 mb-1.5";
 
   return (
@@ -218,7 +218,7 @@ function ContactModal({
                   rows={3}
                   tabIndex={isOpen ? 0 : -1}
                   placeholder={dict.messagePlaceholder}
-                  className="w-full rounded-[6px] border border-neutral-300 bg-white p-3.5 text-[14.5px] text-[#1a1a1a] placeholder:text-neutral-400 focus:border-[#0c48d8] focus:outline-none transition-colors duration-200 resize-none"
+                  className="w-full rounded-[6px] border border-neutral-300 bg-white p-3.5 text-[14.5px] text-[#1a1a1a] placeholder:text-neutral-400 focus:border-[#0c48d8] focus:ring-2 focus:ring-[#0c48d8]/15 focus:outline-none transition-all duration-200 resize-none"
                 />
               </div>
 
