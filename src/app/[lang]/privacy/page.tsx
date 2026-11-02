@@ -123,6 +123,22 @@ export default async function PrivacyPage({
       legalEmail: "legal@dxs.vn",
       legalHotline: "0969 986 980",
       legalAddress: "Tòa nhà Keangnam Landmark 72, Phạm Hùng, Q. Nam Từ Liêm, Hà Nội",
+      contactLabels: {
+        dept: "Cơ quan phụ trách",
+        email: "Email chuyên trách",
+        hotline: "Đường dây nóng",
+        address: "Địa chỉ trụ sở",
+      },
+      complianceBox: {
+        tag: "AN TOÀN & BẢO MẬT",
+        title: "Tiêu chuẩn tuân thủ cốt lõi",
+        items: [
+          "Nghị định 13/2023/NĐ-CP (Bảo vệ dữ liệu cá nhân)",
+          "Mã hóa đường truyền TLS 1.3 & Dữ liệu AES-256",
+          "Tiêu chuẩn an toàn ứng dụng OWASP Top 10",
+          "Nhật ký kiểm toán (Audit Logs) & Phân quyền RBAC",
+        ],
+      },
       ctaBadge: "Cam kết đồng hành",
       ctaHeading: "Sẵn sàng khởi động dự án phần mềm với tiêu chuẩn bảo mật tuyệt đối",
       ctaSub: "Đội ngũ chuyên gia DXS sẵn sàng tư vấn giải pháp, ký thỏa thuận bảo mật NDA và lên phương án kỹ thuật phù hợp cho tổ chức của bạn.",
@@ -210,6 +226,22 @@ export default async function PrivacyPage({
       legalEmail: "legal@dxs.vn",
       legalHotline: "0969 986 980",
       legalAddress: "Keangnam Landmark 72, Pham Hung Road, Nam Tu Liem, Hanoi, Vietnam",
+      contactLabels: {
+        dept: "Responsible Department",
+        email: "Direct Email",
+        hotline: "Hotline",
+        address: "Office Address",
+      },
+      complianceBox: {
+        tag: "SECURITY & COMPLIANCE",
+        title: "Core Compliance Standards",
+        items: [
+          "Decree 13/2023/ND-CP Personal Data Protection",
+          "TLS 1.3 Transmission & AES-256 Data Encryption",
+          "OWASP Top 10 Application Security Standards",
+          "Immutable Audit Logs & Role-Based Access (RBAC)",
+        ],
+      },
       ctaBadge: "Enterprise Commitment",
       ctaHeading: "Ready to launch your enterprise software project with guaranteed security",
       ctaSub: "Our engineering consultants are ready to sign an NDA, audit your technical architecture, and propose a dependable development roadmap.",
@@ -297,6 +329,22 @@ export default async function PrivacyPage({
       legalEmail: "legal@dxs.vn",
       legalHotline: "0969 986 980",
       legalAddress: "Keangnam Landmark 72, Pham Hung, Nam Tu Liem, Hanoi, Vietnam",
+      contactLabels: {
+        dept: "担当部署",
+        email: "専用窓口メール",
+        hotline: "ホットライン",
+        address: "所在地",
+      },
+      complianceBox: {
+        tag: "セキュリティ＆コンプライアンス",
+        title: "主要セキュリティ遵守基準",
+        items: [
+          "ベトナム個人データ保護政令（13/2023/ND-CP）準拠",
+          "TLS 1.3通信暗号化 ＆ AES-256保存データ暗号化",
+          "OWASP Top 10 セキュアコーディング規準",
+          "改ざん不能な監査ログ（Audit Logs）＆ RBAC権限管理",
+        ],
+      },
       ctaBadge: "安心の品質保証",
       ctaHeading: "堅牢なセキュリティ標準のもと、貴社のDXプロジェクトを始動",
       ctaSub: "DXSの技術コンサルタントが、NDAの締結から最適なシステムアーキテクチャ設計までワンストップでご案内いたします。",
@@ -380,28 +428,18 @@ export default async function PrivacyPage({
             {/* Compliance Badges Box */}
             <div className="bg-neutral-900 text-white rounded-xl p-6 border border-neutral-800">
               <div className="text-xs font-mono text-brand-400 uppercase tracking-widest mb-3">
-                Security & Compliance
+                {content.complianceBox.tag}
               </div>
               <h4 className="text-base font-bold text-white mb-3">
-                Tiêu chuẩn tuân thủ cốt lõi
+                {content.complianceBox.title}
               </h4>
               <ul className="space-y-2.5 text-xs text-neutral-300">
-                <li className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
-                  <span>Nghị định 13/2023/NĐ-CP (Bảo vệ dữ liệu cá nhân)</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
-                  <span>Mã hóa TLS 1.3 / AES-256 Encryption</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
-                  <span>Nguyên tắc kiểm thử an toàn OWASP Top 10</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
-                  <span>Audit Logs bất biến & Phân quyền RBAC</span>
-                </li>
+                {content.complianceBox.items.map((item, idx) => (
+                  <li key={idx} className="flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0" />
+                    <span>{item}</span>
+                  </li>
+                ))}
               </ul>
             </div>
           </aside>
@@ -451,23 +489,23 @@ export default async function PrivacyPage({
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm pt-4 border-t border-white/10">
                 <div>
-                  <div className="text-xs text-neutral-400 font-mono uppercase mb-1">Cơ quan phụ trách</div>
+                  <div className="text-xs text-neutral-400 font-mono uppercase mb-1">{content.contactLabels.dept}</div>
                   <div className="text-white font-medium">{content.legalDept}</div>
                 </div>
                 <div>
-                  <div className="text-xs text-neutral-400 font-mono uppercase mb-1">Email chuyên trách</div>
+                  <div className="text-xs text-neutral-400 font-mono uppercase mb-1">{content.contactLabels.email}</div>
                   <a href={`mailto:${content.legalEmail}`} className="text-brand-400 hover:text-brand-300 font-medium">
                     {content.legalEmail}
                   </a>
                 </div>
                 <div>
-                  <div className="text-xs text-neutral-400 font-mono uppercase mb-1">Đường dây nóng</div>
+                  <div className="text-xs text-neutral-400 font-mono uppercase mb-1">{content.contactLabels.hotline}</div>
                   <a href={`tel:${content.legalHotline.replace(/\s+/g, "")}`} className="text-white font-medium hover:text-brand-400">
                     {content.legalHotline}
                   </a>
                 </div>
                 <div>
-                  <div className="text-xs text-neutral-400 font-mono uppercase mb-1">Địa chỉ trụ sở</div>
+                  <div className="text-xs text-neutral-400 font-mono uppercase mb-1">{content.contactLabels.address}</div>
                   <div className="text-neutral-300 text-xs leading-relaxed">{content.legalAddress}</div>
                 </div>
               </div>

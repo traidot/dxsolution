@@ -59,6 +59,9 @@ export default async function AboutPage({
       missionTitle: "Sứ mệnh",
       missionDesc: "Đơn giản hóa và tự động hóa các quy trình vận hành phức tạp, giải phóng con người khỏi thao tác thủ công, đồng hành cùng doanh nghiệp bứt phá tăng trưởng bền vững.",
 
+      storyImgTag: "HẠ TẦNG & KIẾN TRÚC",
+      storyImgTitle: "Chuẩn mực hạ tầng đám mây & kỹ thuật phần mềm hiện đại",
+
       valuesEyebrow: "02 / GIÁ TRỊ CỐT LÕI",
       valuesTitle: "4 chuẩn mực dẫn lối mọi dự án tại DXS",
       values: [
@@ -89,35 +92,35 @@ export default async function AboutPage({
       pillarsSubtitle: "Hệ thống phần mềm do DXS phát triển tuân thủ nghiêm ngặt các tiêu chuẩn kiến trúc hiện đại:",
       pillars: [
         {
-          tag: "Architecture",
-          title: "Clean Architecture & Modular Monolith",
-          desc: "Phân tách rõ ràng giữa tầng nghiệp vụ và tầng dữ liệu, giúp mã nguồn luôn trong sáng, dễ bảo trì và sẵn sàng mở rộng thành microservices.",
+          tag: "Kiến trúc hệ thống",
+          title: "Kiến trúc phân tầng sạch & Khối mô-đun hóa (Clean Architecture)",
+          desc: "Phân tách rõ ràng giữa tầng nghiệp vụ và tầng dữ liệu, giúp mã nguồn luôn trong sáng, dễ bảo trì, dễ kiểm thử và sẵn sàng mở rộng linh hoạt.",
         },
         {
-          tag: "Cloud & DevOps",
-          title: "Cloud-Native & Tự động hóa CI/CD",
-          desc: "Triển khai trên nền tảng đám mây an toàn (AWS, GCP, Vercel), đường ống CI/CD tự động hóa kiểm thử và triển khai với cam kết uptime 99.8%.",
+          tag: "Hạ tầng & Đám mây",
+          title: "Nền tảng Cloud-Native & Tự động hóa CI/CD",
+          desc: "Triển khai trên nền tảng đám mây an toàn (AWS, GCP, Vercel), đường ống CI/CD tự động hóa kiểm thử và triển khai với cam kết thời gian hoạt động 99.8%.",
         },
         {
-          tag: "Data Flow",
-          title: "Tích hợp & Đồng bộ Dữ liệu Hai chiều",
-          desc: "Xử lý dữ liệu thời gian thực giữa các phân hệ ERP, CRM, OMS, WMS với cơ chế Transaction an toàn, chống thất thoát hoặc sai lệch số liệu.",
+          tag: "Dữ liệu & Tích hợp",
+          title: "Tích hợp & Đồng bộ dữ liệu hai chiều",
+          desc: "Xử lý dữ liệu thời gian thực giữa các phân hệ ERP, CRM, OMS, WMS với cơ chế giao dịch (Transaction) an toàn, đảm bảo toàn vẹn và chống thất thoát dữ liệu.",
         },
         {
-          tag: "Security",
-          title: "Bảo mật Đa lớp & Mã hóa Dữ liệu",
-          desc: "Mã hóa dữ liệu lưu trữ và truyền tải (TLS 1.3 / AES-256), ghi vết lịch sử thao tác (Audit Log) và tuân thủ Nghị định 13/2023/NĐ-CP.",
+          tag: "An toàn thông tin",
+          title: "Bảo mật đa tầng & Mã hóa dữ liệu chuyên sâu",
+          desc: "Mã hóa dữ liệu lưu trữ và truyền tải (TLS 1.3 / AES-256), ghi vết lịch sử thao tác (Audit Log) bất biến và tuân thủ nghiêm ngặt Nghị định 13/2023/NĐ-CP.",
         },
       ],
 
       profileEyebrow: "04 / THÔNG TIN PHÁP NHÂN",
       profileTitle: "Thông tin tổng quan về công ty",
       profileItems: [
-        { label: "Tên thương hiệu", value: "DXS (Digital Transformation Solutions)" },
+        { label: "Tên thương hiệu", value: "DXS (Giải pháp Chuyển đổi số Doanh nghiệp)" },
         { label: "Pháp nhân", value: "Công ty Cổ phần Giải pháp Chuyển đổi số DXS" },
         { label: "Lĩnh vực hoạt động", value: "Phát triển phần mềm theo yêu cầu, Giải pháp ERP/CRM/OMS/WMS, Tư vấn kiến trúc & Chuyển đổi số" },
-        { label: "Thị trường trọng điểm", value: "Việt Nam, Nhật Bản và các đối tác quốc tế" },
-        { label: "Cam kết kỹ thuật", value: "SLA Uptime 99.8% · Bảo mật dữ liệu NDA · Hỗ trợ vận hành 24/7" },
+        { label: "Thị trường trọng điểm", value: "Việt Nam, Nhật Bản và các đối tác doanh nghiệp quốc tế" },
+        { label: "Cam kết chất lượng", value: "Cam kết hoạt động Uptime 99.8% · Bảo mật dữ liệu NDA · Hỗ trợ kỹ thuật 24/7" },
         { label: "Kênh liên hệ chính thức", value: "contact@dxsolution.vn · Hotline: 098.884.2828" },
       ],
     },
@@ -138,6 +141,9 @@ export default async function AboutPage({
       
       missionTitle: "Mission",
       missionDesc: "To simplify and automate complex operational workflows, liberating teams from repetitive tasks and enabling enterprises to accelerate sustainable business growth.",
+
+      storyImgTag: "INFRASTRUCTURE & ARCHITECTURE",
+      storyImgTitle: "Modern cloud infrastructure & software engineering standards",
 
       valuesEyebrow: "02 / CORE VALUES",
       valuesTitle: "4 foundational principles guiding every DXS engagement",
@@ -219,6 +225,9 @@ export default async function AboutPage({
       missionTitle: "ミッション",
       missionDesc: "複雑な業務フローをシンプル化・自動化し、現場の負担を軽減することで、企業が本業の成長に専念できる環境を創出します。",
 
+      storyImgTag: "インフラ＆アーキテクチャ",
+      storyImgTitle: "最新クラウドインフラと高品質なソフトウェア設計基準",
+
       valuesEyebrow: "02 / 行動指針・コアバリュー",
       valuesTitle: "DXSの全プロジェクトを貫く4つの原則",
       values: [
@@ -249,22 +258,22 @@ export default async function AboutPage({
       pillarsSubtitle: "DXSが構築するすべてのシステムは、厳格なモダンアーキテクチャ標準に準拠しています：",
       pillars: [
         {
-          tag: "Architecture",
+          tag: "アーキテクチャ",
           title: "クリーンアーキテクチャ＆モジュラー設計",
           desc: "ビジネスロジックとデータアクセス層を分離し、保守性が高くマイクロサービス化にも適したコード品質を維持します。",
         },
         {
-          tag: "Cloud & DevOps",
+          tag: "クラウド＆DevOps",
           title: "クラウドネイティブ＆自動化CI/CD",
           desc: "AWS、GCP、Vercel等のセキュアな基盤上に構築し、CI/CDパイプラインによる自動テスト・継続的デプロイを実現します。",
         },
         {
-          tag: "Data Flow",
+          tag: "データ連携",
           title: "高整合性・双方向API連携",
           desc: "ERP、CRM、OMS、WMS間のリアルタイムデータ同期において、トランザクションの完全性と整合性を担保します。",
         },
         {
-          tag: "Security",
+          tag: "セキュリティ",
           title: "多層防御セキュリティ＆データ暗号化",
           desc: "通信・保存データの強固な暗号化（TLS 1.3 / AES-256）、監査ログの完全保持、国際的なデータ保護基準に適合します。",
         },
@@ -372,10 +381,10 @@ export default async function AboutPage({
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
                 <div className="absolute bottom-6 left-6 right-6 text-white">
                   <span className="text-[12px] uppercase tracking-wider text-[#4d8dff] font-semibold">
-                    INFRASTRUCTURE & ARCHITECTURE
+                    {copy.storyImgTag}
                   </span>
                   <div className="font-headline text-[18px] sm:text-[20px] font-bold mt-1">
-                    Chuẩn mực hạ tầng đám mây & kỹ thuật phần mềm hiện đại
+                    {copy.storyImgTitle}
                   </div>
                 </div>
               </div>
