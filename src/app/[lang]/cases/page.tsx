@@ -250,7 +250,7 @@ export default async function CasesPage({
   const fullCases = fullCasesByLocale[lang];
   const copy = {
     vi: {
-      bannerTitle: "Dự án Thành công",
+      bannerTitle: "Thành tích",
       bannerSub: "Năng lực triển khai được khách hàng công nhận",
       home: "Trang chủ",
       beforeLabel: "BÀI TOÁN TRƯỚC TRIỂN KHAI",

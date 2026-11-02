@@ -7,7 +7,7 @@
     "products": "Dịch vụ",
     "solutions": "Ngành nghề",
     "features": "Mô hình làm việc",
-    "cases": "Dự án thành công",
+    "cases": "Thành tích",
     "about": "Về DXS",
     "contact": "Liên hệ",
     "switchLanguage": "Đổi ngôn ngữ",
@@ -375,7 +375,7 @@
     ]
   },
   "testimonials": {
-    "eyebrow": "Dự án thành công",
+    "eyebrow": "Thành tích",
     "title": "Năng lực triển khai được khách hàng công nhận",
     "subtitle": "Các dự án phát triển phần mềm và chuyển đổi số mang lại giá trị vận hành thực tế cho doanh nghiệp.",
     "ratingLabel": "Dự án tiêu biểu",
@@ -485,7 +485,7 @@
       },
       {
         "title": "Công ty",
-        "links": ["Về DXS", "Mô hình làm việc", "Dự án thành công", "Chính sách bảo mật", "Liên hệ"]
+        "links": ["Về DXS", "Mô hình làm việc", "Thành tích", "Chính sách bảo mật", "Liên hệ"]
       }
     ],
     "copyright": "© 2026 DXS. Bản quyền thuộc về DXS Việt Nam."
