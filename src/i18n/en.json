@@ -1,156 +1,392 @@
 {
   "meta": {
-    "title": "DXBiz - Digital transformation for Vietnamese businesses",
-    "description": "DXBiz consults and delivers tailored digital transformation solutions for businesses — streamline operations, boost efficiency and partner for the long term."
+    "title": "DXBiz - Tailored Enterprise Operations Software | DXSolution",
+    "description": "DXBiz provides tailored enterprise operations software engineered around real workflows with AI assistance: Finance, Supply Chain, Projects, Manufacturing, and Digital Office."
   },
   "nav": {
-    "products": "Platform",
-    "features": "Why DXBiz",
-    "solutions": "Solutions",
-    "contact": "Contact us",
-    "switchLanguage": "Switch language",
-    "home": "DXBiz home"
+    "products": "Solution Modules",
+    "solutions": "Industry Blueprints",
+    "comparison": "Why DXBiz",
+    "features": "Platform Advantages",
+    "cases": "Proven Track Record",
+    "contact": "Consultation",
+    "switchLanguage": "Switch Language",
+    "home": "DXBiz Homepage"
   },
   "hero": {
-    "badge": "Your digital transformation partner",
-    "title": "Tailored digital transformation solutions for your business",
-    "subtitle": "DXBiz partners with you from consulting and design to implementation — built around your real workflows, instead of forcing your business to adapt to off-the-shelf software.",
-    "ctaPrimary": "Get a consultation",
-    "ctaSecondary": "See how it works",
-    "imgAlt": "DXBiz solution dashboard showing business operations metrics",
-    "chipSync": "Data synced · Sapo, GHN, MISA",
-    "chipRevenueLabel": "Operational efficiency",
+    "brandTag": "A solution by DXSolution · AI4W Platform",
+    "badge": "Bespoke Enterprise Operations Software Suite",
+    "title": "Bespoke Operations System for your enterprise",
+    "subtitle": "Unified data operations customized around your real workflows. Integrated AI Assistants to eliminate the friction of generic boxed SaaS.",
+    "ctaPrimary": "Request Consultation",
+    "ctaSecondary": "Explore System",
+    "chipTailored": "100% Custom Workflow",
+    "chipUnlimited": "Unlimited Users",
+    "chipAi": "Embedded AI Assistant",
     "stats": [
-      { "value": "40%", "label": "Less manual work" },
-      { "value": "2 weeks", "label": "To start rollout" },
-      { "value": "24/7", "label": "Partnership & support" }
+      { "value": "4 Pillars", "label": "Comprehensive business modules" },
+      { "value": "100%", "label": "Aligned with real workflows" },
+      { "value": "0 Hidden Fees", "label": "Unlimited user seats included" },
+      { "value": "-65%", "label": "Manual workload reduction" }
     ]
   },
   "products": {
-    "eyebrow": "Technology platform",
-    "title": "The building blocks behind your solution",
-    "subtitle": "Every DXBiz solution is built on proven platforms and tailored to your business — so you never start from scratch.",
-    "items": [
+    "eyebrow": "BUSINESS SYSTEM MODULES",
+    "title": "Comprehensive Enterprise Operations Suite",
+    "subtitle": "Flexibly assemble modules around your real business challenges. Operate smoothly with AI-driven intelligence.",
+    "groups": [
       {
-        "name": "DXFlow",
-        "tag": "AI For Work",
-        "description": "An AI assistant that automates processes and connects with the many tools your business already uses, not just DXBiz's own products."
+        "id": "finance",
+        "num": "01",
+        "icon": "account_balance_wallet",
+        "title": "Finance & Operational Cashflow",
+        "badge": "100% Cashflow Control",
+        "highlight": "Automated reconciliation and cashflow optimization",
+        "description": "Transparent fund management, budget controls, automated invoice parsing, and real-time AR/AP aging analysis.",
+        "modules": [
+          {
+            "name": "Treasury & Fund Operations",
+            "desc": "Real-time visibility over multi-bank accounts and petty cash funds."
+          },
+          {
+            "name": "AR / AP & Aging Analysis",
+            "desc": "Credit limit enforcement, payment due alerts, and automated statement generation."
+          },
+          {
+            "name": "Payment Approvals & Advances",
+            "desc": "Digital payment request workflows, multi-tier approvals, and staff advance clearance."
+          },
+          {
+            "name": "AI Invoice Parsing",
+            "desc": "Instant OCR data extraction from e-invoices with automatic matching against POs."
+          },
+          {
+            "name": "Bank Statement Reconciliation",
+            "desc": "Direct digital banking integration, automatic transaction matching, and fast closing."
+          }
+        ]
       },
       {
-        "name": "OrderHub",
-        "tag": "Order management",
-        "description": "Manage orders and omnichannel sales in one place, with inventory and shipping synced in real time."
+        "id": "commerce",
+        "num": "02",
+        "icon": "local_shipping",
+        "title": "Sales & Supply Chain",
+        "badge": "Real-time Multi-point Sync",
+        "highlight": "Seamless from procurement to delivery and aftersales",
+        "description": "Standardized procurement, multi-channel sales management, accurate multi-location inventory, and professional after-sales care.",
+        "modules": [
+          {
+            "name": "Sales & Distribution",
+            "desc": "Quotations, dynamic pricing policies, order workflows, and retail/wholesale leads."
+          },
+          {
+            "name": "Procurement & Vendors",
+            "desc": "Vendor quote comparison, purchase approval workflows, and automated 3-way matching."
+          },
+          {
+            "name": "Smart Inventory Management",
+            "desc": "Real-time stock levels, weighted average valuation, lot and serial tracking."
+          },
+          {
+            "name": "After-Sales & Warranty",
+            "desc": "Support ticket intake, warranty history, repair management, and technician dispatch."
+          },
+          {
+            "name": "Logistics & Fleet Dispatch",
+            "desc": "Delivery routing, vehicle dispatching, and fuel consumption monitoring."
+          }
+        ]
       },
       {
-        "name": "PageHub",
-        "tag": "Sales pages",
-        "description": "Build and manage professional landing and sales pages — no technical team required."
+        "id": "projects_mfg",
+        "num": "03",
+        "icon": "architecture",
+        "title": "Projects, Manufacturing & Assets",
+        "badge": "Schedule & Cost Standardization",
+        "highlight": "Specialized for construction, engineering & manufacturing",
+        "description": "End-to-end management from project budgeting and shop-floor scheduling to asset lifecycle and QA compliance.",
+        "modules": [
+          {
+            "name": "Projects & Construction",
+            "desc": "Tender package tracking, BOQ budget breakdown, site progress, and milestone billing."
+          },
+          {
+            "name": "Manufacturing Execution (MES)",
+            "desc": "Multi-level Bill of Materials (BOM), stage-based work orders, and finished-goods costing."
+          },
+          {
+            "name": "Assets & Maintenance (EAM)",
+            "desc": "Fixed asset lifecycle, handover/recovery records, and recurring preventive maintenance."
+          },
+          {
+            "name": "Quality & Safety (ISO / HSE)",
+            "desc": "Digital ISO check-sheets, Non-Conformance Reports (NCR), and corrective actions."
+          }
+        ]
       },
       {
-        "name": "SEOHub",
-        "tag": "SEO optimization",
-        "description": "Track and optimize search rankings to grow organic traffic to your business website."
+        "id": "admin_hr",
+        "num": "04",
+        "icon": "corporate_fare",
+        "title": "Digital Admin, Legal & HR",
+        "badge": "Paperless Enterprise",
+        "highlight": "Legal compliance & workforce optimization",
+        "description": "Digitizing internal approval memos, enforcing electronic contract lifecycles, and centralizing workforce management.",
+        "modules": [
+          {
+            "name": "Paperless Admin & E-Sign",
+            "desc": "Inbound/outbound dispatch registers, internal memos, and multi-tier digital signatures."
+          },
+          {
+            "name": "Contract & Legal Governance",
+            "desc": "Drafting templates, e-signatures, automated payment deadline alerts, and renewals."
+          },
+          {
+            "name": "Centralized HR Dossier",
+            "desc": "Employee profiles, labor contracts, leave tracking, and onboarding/offboarding flows."
+          },
+          {
+            "name": "Executive KPI / OKR Dashboard",
+            "desc": "Strategic goal alignment, real-time metrics, and performance analytics."
+          }
+        ]
+      }
+    ],
+    "integrationBar": {
+      "title": "Enterprise Ecosystem Integration Gateway",
+      "subtitle": "Operations data automatically synchronized with market-leading accounting, banking, and communication tools",
+      "items": [
+        { "name": "MISA Accounting", "desc": "Automatic voucher & financial journal synchronization" },
+        { "name": "E-Invoicing", "desc": "Direct generation with VNPT, Viettel, MISA, BKAV" },
+        { "name": "Banking & VietQR", "desc": "Dynamic QR codes for instant automated reconciliation" },
+        { "name": "Digital Sign & Zalo OA", "desc": "Remote signing and automated real-time dispatch alerts" }
+      ]
+    }
+  },
+  "comparison": {
+    "eyebrow": "SOFTWARE COMPARISON",
+    "title": "Why enterprises choose DXBiz tailored software over boxed SaaS?",
+    "subtitle": "Eliminate rigid out-of-the-box workflows and escalating per-user subscription fees with DXBiz tailored solutions.",
+    "columns": {
+      "feature": "Comparison Criteria",
+      "saas": "Boxed Generic SaaS Platforms",
+      "dxbiz": "DXBiz Tailored Software Suite"
+    },
+    "rows": [
+      {
+        "title": "Workflow Alignment",
+        "saas": "Rigid out-of-the-box features. Your company is forced to adapt to the software. 50% unused bloated features while custom logic cannot be modified.",
+        "dxbiz": "Engineered around your actual workflows. Assemble the exact modules you need with custom approval flows, forms, and executive dashboards."
+      },
+      {
+        "title": "Scalability & Evolution",
+        "saas": "Dependent entirely on vendor's generic product roadmap. Difficult to build custom integrations or proprietary features.",
+        "dxbiz": "Seamlessly build new modules, customize business rules, and connect new systems without disrupting current operational continuity."
+      },
+      {
+        "title": "Cost Model as Headcount Grows",
+        "saas": "Recurring subscription per user seat. Costs escalate dramatically every month as your company headcount scales up.",
+        "dxbiz": "Unlimited employee user accounts. Transparent one-time investment with zero hidden licensing traps."
+      },
+      {
+        "title": "Embedded AI Assistant",
+        "saas": "None or generic chatbots disconnected from core ledger records, purchase orders, and internal operational workflows.",
+        "dxbiz": "AI Agent natively embedded: automated e-invoice OCR parsing, smart ledger matching, and proactive overdue alerts."
+      },
+      {
+        "title": "Centralized Data & Integration",
+        "saas": "Walled-garden ecosystem, awkward data extraction, causing siloed operational software sprawl between departments.",
+        "dxbiz": "Unified operational database with two-way open API integration with MISA Accounting, E-Invoices, VietQR Banking, and Zalo OA."
       }
     ]
   },
   "features": {
-    "eyebrow": "Why DXBiz",
-    "title": "Not off-the-shelf software — a solution for your business",
-    "subtitle": "DXBiz consults around your real problems, implements fast and stays with you for the long run — instead of leaving you to figure out software alone.",
+    "eyebrow": "PLATFORM ADVANTAGES",
+    "title": "Flexible Software Architecture — Enterprise in Full Control",
+    "subtitle": "Eliminate vendor lock-in, rigid software constraints, and runaway per-user subscription costs.",
     "items": [
       {
-        "title": "Tailored solutions",
-        "description": "We map your real workflows and design a fitting solution, rather than forcing your business into a fixed template."
+        "title": "1. Engineered around real enterprise workflows",
+        "description": "Never force your team to change how they work to fit generic software. Every form, approval flow, and executive dashboard is tailored to your internal operations."
       },
       {
-        "title": "Fast, low-risk rollout",
-        "description": "Go live in phases, measured and adjusted along the way — minimizing disruption for your team."
+        "title": "2. AI Assistant embedded in daily workflows",
+        "description": "Humans and AI agents collaborate on a unified platform: automatic OCR invoice parsing, ledger anomaly audits, overdue alerts, and smart task suggestions."
       },
       {
-        "title": "Long-term partnership",
-        "description": "A dedicated team supports you throughout, continuously optimizing as your business grows."
+        "title": "3. Modular assembly tailored to your growth",
+        "description": "Deploy only the modules you need today. Seamlessly activate new capabilities as your business scales without any operational downtime."
       }
-    ]
+    ],
+    "principles": {
+      "title": "Principle: Leverage best-of-breed software, don't reinvent",
+      "desc": "DXBiz focuses on core operations while integrating smoothly with proven vertical platforms:",
+      "list": [
+        { "name": "General Ledger & Tax Filing", "note": "Sync automatically to MISA — accountants keep their familiar environment" },
+        { "name": "Time Attendance & Payroll", "note": "Direct sync from biometric fingerprint & facial recognition hardware" },
+        { "name": "Retail Point of Sale (POS)", "note": "Real-time stock synchronization with specialized POS systems" },
+        { "name": "Automated Customer Care", "note": "Direct link with AI customer service agents on AI4W platform" }
+      ]
+    }
   },
   "solutions": {
-    "eyebrow": "Industry solutions",
-    "title": "A dedicated solution for every business model",
-    "subtitle": "Each industry has its own operational challenges — DXBiz designs solutions around your specific processes and needs.",
-    "spaBadge": "Spa & Salon chains",
-    "spaTitle": "Appointment management & automated CRM",
-    "spaDesc": "Automate booking, reminders and returning-customer care, synced across all branches.",
-    "spaImgAlt": "Spa staff using the DXBiz solution at the reception desk",
+    "eyebrow": "INDUSTRY BLUEPRINTS",
+    "title": "Pre-architected for your business model",
+    "subtitle": "Standardized blueprint packages per industry vertical, dramatically shortening deployment lead times.",
     "items": [
       {
-        "title": "Retail & Chains",
-        "description": "Inventory management, multi-branch sync, stock forecasting and GHN/AhaMove shipping integration."
+        "id": "trade",
+        "title": "Trade & Distribution",
+        "icon": "storefront",
+        "tag": "Wholesale, Retail, Distribution Networks",
+        "description": "Optimize inventory turnover, manage customer credit limits and aging, monitor multi-warehouse stocks, and sync to accounting & e-invoicing.",
+        "coreModules": ["Operational Finance", "Purchasing & Vendors", "Sales & Distribution", "Multi-warehouse WMS", "MISA & VietQR Sync"],
+        "optionalModules": ["Warranty & Repair", "Fleet Logistics"],
+        "reference": "Field-tested operational solution"
       },
       {
-        "title": "Services & Agencies",
-        "description": "Centralized project management, automated reporting and efficient staff allocation."
+        "id": "construction",
+        "title": "Construction & Engineering",
+        "icon": "architecture",
+        "tag": "Contractors, Engineering Consultants, Supervisors",
+        "description": "Manage tenders, BOQ estimation, contract compliance, technical inspections, and phase-based milestone certifications.",
+        "coreModules": ["Projects & Works", "Legal & Contracts", "Digital Sign-off", "Project Cashflow"],
+        "optionalModules": ["ISO Quality & HSE Safety"],
+        "reference": "Standardized from major construction projects"
+      },
+      {
+        "id": "manufacturing",
+        "title": "Manufacturing & Fabrication",
+        "icon": "factory",
+        "tag": "Production Facilities, Custom Fabrication",
+        "description": "Multi-tier BOM management, stage-by-stage work orders, scrap tracking, and finished goods unit costing.",
+        "coreModules": ["Materials Purchasing", "Inventory WMS", "Shop Floor MES", "Asset Maintenance", "Product Costing"],
+        "optionalModules": ["ISO Quality Assurance"],
+        "reference": "Engineered around MES principles"
+      },
+      {
+        "id": "office_service",
+        "title": "Professional Services & Corporate Office",
+        "icon": "corporate_fare",
+        "tag": "Consultancies, Professional Services, Corporate HQ",
+        "description": "Digitize paperless approval workflows, inbound/outbound official documents, centralized contract lifecycle, and employee records.",
+        "coreModules": ["Paperless Admin & E-Sign", "Employee Records", "Treasury & Expenses", "Contract Governance"],
+        "optionalModules": ["Strategic KPI / OKR Dashboard"],
+        "reference": "Zero-paper digital workplace"
       }
-    ]
+    ],
+    "consultBanner": {
+      "title": "Does your business have unique custom workflows?",
+      "subtitle": "DXBiz & DXSolution consultants will conduct a hands-on audit and architect your tailored module bundle.",
+      "cta": "Audit & 1-on-1 Consultation"
+    }
   },
   "partners": {
-    "label": "Integrated with Vietnam's leading business platforms"
+    "eyebrow": "TRUSTED & INTEGRATED",
+    "title": "Enterprise Integration Ecosystem",
+    "label": "Integrated and synchronized with leading enterprise platforms"
   },
   "testimonials": {
-    "eyebrow": "What customers say",
-    "title": "Trusted by businesses to run every day",
-    "subtitle": "Many businesses have streamlined operations and grown with DXBiz solutions.",
+    "eyebrow": "PROVEN TRACK RECORD",
+    "title": "Validated and trusted by growing enterprises",
+    "subtitle": "Stable operation, unified data and transparency for each enterprise.",
     "ratingLabel": "Rated 5 out of 5 stars",
     "items": [
       {
-        "quote": "DXBiz mapped our chain's real workflows and rolled out smoothly. Reminders and returning-customer care now run themselves, and our return rate has clearly increased.",
-        "role": "Spa chain owner",
-        "metricLabel": "Returning customers"
+        "quote": "The Distribution & WMS package automated our entire multi-warehouse stock audit and AP/AR reconciliation. Month-end closing dropped from 5 days to a few hours.",
+        "role": "Chief Operating Officer · Distribution Enterprise",
+        "metricLabel": "80% reduction in reconciliation time",
+        "projectTitle": "Distribution & Multi-location WMS System"
       },
       {
-        "quote": "Real-time inventory sync between Sapo and our actual warehouse ended our overselling problems. End-of-day reports run themselves — no more manual data entry.",
-        "role": "Operations director",
-        "metricLabel": "Saved per week"
+        "quote": "Combining project cost tracking with legal contract milestones solved our payment milestone headaches. Construction cashflow is crystal clear with zero leaks.",
+        "role": "Project Director · Construction Group",
+        "metricLabel": "100% control over project cashflow",
+        "projectTitle": "Project Governance & BOQ Costing"
       },
       {
-        "quote": "The DXBiz team stayed close during rollout and beyond. Our processes were digitized step by step, taking load off the team without any disruption.",
-        "role": "Founder",
-        "metricLabel": "Team productivity"
+        "quote": "The software is custom-built around our workshop workflows, making it very natural for staff to adopt. AI invoice parsing saves our accounting team massive manual hours.",
+        "role": "CEO · Precision Manufacturing",
+        "metricLabel": "100% Aligned with Workflows",
+        "projectTitle": "Manufacturing Execution & BOM System"
       }
     ]
   },
   "cta": {
-    "title": "Ready to streamline your operations?",
-    "subtitle": "Book a 1-on-1 consultation with DXBiz — we'll analyze your challenges and propose the right solution.",
-    "primary": "Book a 1-on-1 consultation",
-    "note": "Free consultation & process review · We respond within 24 business hours"
+    "eyebrow": "CONSULTATION",
+    "title": "Ready to build your tailored enterprise operations software?",
+    "subtitle": "Book a 1-on-1 consultation with DXBiz & DXSolution experts to survey your workflows and select the ideal modules.",
+    "primary": "Submit Consultation Request",
+    "note": "Our enterprise consultants will respond within 24 business hours.",
+    "serviceLabel": "1. Modules of interest",
+    "services": [
+      "Finance & Cashflow",
+      "Sales & Supply Chain",
+      "Projects & Manufacturing",
+      "Digital Admin & HR",
+      "Custom Tailored Solution",
+      "AI Workflow Assistant"
+    ],
+    "industryLabel": "2. Industry sector",
+    "industries": [
+      "Trade & Distribution",
+      "Construction & Works",
+      "Manufacturing & Fabrication",
+      "Services & Corporate Office",
+      "Healthcare / Education / Other"
+    ],
+    "commitments": [
+      {
+        "title": "In-depth Workflow Audit",
+        "desc": "Direct engagement with solution experts who understand the practical nuances of your specific industry."
+      },
+      {
+        "title": "Tailored Scope & Transparent Budgeting",
+        "desc": "Only implement what you need with clear phased milestones and zero hidden subscription traps."
+      },
+      {
+        "title": "Long-term Partnership & Full Ownership",
+        "desc": "Ongoing technical support, clean handover, ensuring your enterprise owns and controls its operating software."
+      }
+    ]
   },
   "contact": {
-    "title": "Get a consultation",
-    "subtitle": "Leave your details and we'll reach out for a free consultation and process review within 24 business hours.",
-    "name": "Full name",
-    "namePlaceholder": "John Smith",
-    "phone": "Phone number",
-    "phonePlaceholder": "+84 …",
-    "company": "Company name",
-    "companyPlaceholder": "Optional",
-    "message": "Your challenge",
-    "messagePlaceholder": "E.g. digitize operations, manage multiple branches…",
+    "title": "Request DXBiz Consultation",
+    "subtitle": "Leave your information and our specialists will contact you within 24 business hours for a tailored assessment.",
+    "name": "Full Name",
+    "namePlaceholder": "John Doe",
+    "phone": "Phone Number",
+    "phonePlaceholder": "+84 9xx xxx xxx",
+    "company": "Company Name",
+    "companyPlaceholder": "Your company name",
+    "message": "Operational challenge or modules of interest",
+    "messagePlaceholder": "E.g. Seeking tailored Finance + Supply Chain software for distribution enterprise...",
     "optional": "optional",
-    "submit": "Send",
-    "submitting": "Sending…",
-    "successTitle": "Got it!",
-    "successDesc": "Thank you. We'll be in touch as soon as possible.",
+    "submit": "Submit Consultation Request",
+    "submitting": "Submitting…",
+    "successTitle": "Request Received!",
+    "successDesc": "Thank you. A DXBiz solution consultant will reach out to you shortly.",
     "close": "Close",
-    "error": "Something went wrong. Please try again."
+    "error": "Submission failed. Please try again."
   },
   "footer": {
-    "slogan": "Digital transformation for Vietnamese businesses",
-    "tagline": "A consulting and delivery partner for business digital transformation.",
-    "serviceOf": "A service by",
+    "slogan": "Tailored Business Operations Software Suite",
+    "tagline": "Custom-engineered for each company around real workflows. Humans and AI agents collaborate securely on unified data.",
+    "serviceOf": "A solution by",
     "groups": [
-      { "title": "Platform", "links": ["DXFlow", "OrderHub", "PageHub", "SEOHub"] },
-      { "title": "Company", "links": ["About us", "Careers", "Support"] },
-      { "title": "Legal", "links": ["Privacy Policy", "Terms of Service"] }
+      {
+        "title": "Solution Modules",
+        "links": ["Finance & Cashflow", "Sales & Supply Chain", "Projects & Manufacturing", "Admin & HR"]
+      },
+      {
+        "title": "Industry Blueprints",
+        "links": ["Trade & Distribution", "Construction & Engineering", "Manufacturing & MES", "Corporate & Services"]
+      },
+      {
+        "title": "Ecosystem & Legal",
+        "links": ["DXSolution (dxsolution.vn)", "MISA & E-Invoice Integration", "Privacy Policy", "Terms of Service"]
+      }
     ],
-    "copyright": "© 2024 DXBiz. A service by DXS Việt Nam."
+    "copyright": "© 2026 DXBiz. A service of DXSolution (dxsolution.vn)."
   }
 }

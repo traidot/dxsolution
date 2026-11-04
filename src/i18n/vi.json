@@ -1,156 +1,392 @@
 {
   "meta": {
-    "title": "DXBiz - Chuyển đổi số cho doanh nghiệp Việt",
-    "description": "DXBiz tư vấn và triển khai giải pháp chuyển đổi số may đo cho doanh nghiệp — tối ưu vận hành, tăng hiệu quả và đồng hành dài hạn."
+    "title": "DXBiz - Bộ hệ thống phần mềm vận hành doanh nghiệp thiết kế chuyên biệt | DXSolution",
+    "description": "DXBiz cung cấp giải pháp phần mềm vận hành thiết kế chuyên biệt theo quy trình thực tế với sự đồng hành của AI: Tài chính, Chuỗi cung ứng, Dự án, Sản xuất và Hành chính số."
   },
   "nav": {
-    "products": "Nền tảng",
-    "features": "Vì sao DXBiz",
-    "solutions": "Giải pháp",
-    "contact": "Liên hệ",
+    "products": "Phân hệ giải pháp",
+    "solutions": "Mẫu theo ngành",
+    "comparison": "Tại sao chọn DXBiz",
+    "features": "Hiệu quả vận hành",
+    "cases": "Đánh giá thực tế",
+    "contact": "Tư vấn triển khai",
     "switchLanguage": "Chuyển ngôn ngữ",
     "home": "DXBiz trang chủ"
   },
   "hero": {
-    "badge": "Đối tác chuyển đổi số cho doanh nghiệp",
-    "title": "Giải pháp chuyển đổi số may đo cho doanh nghiệp của bạn",
-    "subtitle": "DXBiz đồng hành từ khâu tư vấn, thiết kế đến triển khai giải pháp số — bám sát quy trình thực tế của doanh nghiệp, thay vì bắt bạn thích nghi với một phần mềm đóng hộp.",
+    "brandTag": "Một giải pháp của DXSolution · Nền tảng AI4W",
+    "badge": "Giải pháp phần mềm vận hành chuyên biệt theo nghiệp vụ",
+    "title": "Hệ thống vận hành chuyên biệt cho từng doanh nghiệp",
+    "subtitle": "Nền tảng quản trị thông suốt, tùy biến linh hoạt theo bài toán thực tế. Tích hợp Trợ lý AI đồng hành, xóa bỏ hoàn toàn rào cản phần mềm đóng hộp.",
     "ctaPrimary": "Nhận tư vấn giải pháp",
-    "ctaSecondary": "Xem cách hoạt động",
-    "imgAlt": "Bảng điều khiển giải pháp DXBiz hiển thị số liệu vận hành doanh nghiệp",
-    "chipSync": "Đồng bộ dữ liệu · Sapo, GHN, MISA",
-    "chipRevenueLabel": "Hiệu quả vận hành",
+    "ctaSecondary": "Trải nghiệm hệ thống",
+    "chipTailored": "Khớp 100% quy trình",
+    "chipUnlimited": "Không giới hạn User",
+    "chipAi": "Trợ lý AI đồng hành",
     "stats": [
-      { "value": "40%", "label": "Giảm thao tác thủ công" },
-      { "value": "2 tuần", "label": "Bắt đầu triển khai" },
-      { "value": "24/7", "label": "Đồng hành & hỗ trợ" }
+      { "value": "4 Nhóm", "label": "Phân hệ nghiệp vụ chuyên sâu" },
+      { "value": "100%", "label": "Khớp quy trình thực tế" },
+      { "value": "0 Phí ẩn", "label": "Không giới hạn người dùng" },
+      { "value": "-65%", "label": "Thời gian tác vụ thủ công" }
     ]
   },
   "products": {
-    "eyebrow": "Nền tảng công nghệ",
-    "title": "Công cụ tạo nên giải pháp cho bạn",
-    "subtitle": "Mỗi giải pháp DXBiz được xây trên các nền tảng sẵn có và tùy biến theo bài toán của doanh nghiệp — bạn không phải bắt đầu từ con số 0.",
-    "items": [
+    "eyebrow": "HỆ THỐNG PHÂN HỆ NGHIỆP VỤ",
+    "title": "Bộ giải pháp vận hành doanh nghiệp toàn diện",
+    "subtitle": "Lựa chọn và ghép nối linh hoạt các phân hệ theo bài toán của doanh nghiệp. Vận hành thông suốt với sự trợ lực của AI.",
+    "groups": [
       {
-        "name": "DXFlow",
-        "tag": "AI For Work",
-        "description": "Trợ lý AI tự động hóa quy trình và kết nối với hàng loạt phần mềm doanh nghiệp đang dùng, không chỉ riêng sản phẩm của DXBiz."
+        "id": "finance",
+        "num": "01",
+        "icon": "account_balance_wallet",
+        "title": "Tài chính & Dòng tiền vận hành",
+        "badge": "Kiểm soát 100% dòng tiền",
+        "highlight": "Tự động hóa đối soát và tối ưu dòng tiền",
+        "description": "Quản trị minh bạch thu chi, kiểm soát ngân sách, tự động hóa đọc hóa đơn và đối chiếu công nợ theo thời gian thực.",
+        "modules": [
+          {
+            "name": "Quản trị Quỹ & Thu chi",
+            "desc": "Theo dõi dòng tiền thu chi đa quỹ, tài khoản ngân hàng và tiền mặt tức thời."
+          },
+          {
+            "name": "Công nợ & Tuổi nợ",
+            "desc": "Phân loại hạn mức nợ, cảnh báo nợ đến hạn và tự động hóa biên bản đối chiếu."
+          },
+          {
+            "name": "Duyệt chi & Tạm ứng",
+            "desc": "Quy trình đề nghị thanh toán số, phê duyệt đa cấp và hoàn ứng minh bạch."
+          },
+          {
+            "name": "AI Đọc hóa đơn đầu vào",
+            "desc": "Trích xuất thông minh dữ liệu hóa đơn điện tử, tự động khớp với đơn mua hàng."
+          },
+          {
+            "name": "Đối chiếu sao kê ngân hàng",
+            "desc": "Liên thông tài khoản ngân hàng số, tự động đối soát giao dịch và chốt kỳ kế toán."
+          }
+        ]
       },
       {
-        "name": "OrderHub",
-        "tag": "Quản lý đơn hàng",
-        "description": "Quản lý đơn hàng và bán hàng đa kênh tập trung, đồng bộ tồn kho và vận chuyển theo thời gian thực."
+        "id": "commerce",
+        "num": "02",
+        "icon": "local_shipping",
+        "title": "Bán hàng & Chuỗi cung ứng",
+        "badge": "Đồng bộ đa điểm tức thời",
+        "highlight": "Liền mạch từ đặt mua đến giao hàng và hậu mãi",
+        "description": "Chuẩn hóa quy trình mua sắm, quản trị bán hàng đa kênh, kiểm soát tồn kho chính xác và dịch vụ hậu mãi chuyên nghiệp.",
+        "modules": [
+          {
+            "name": "Bán hàng & Phân phối",
+            "desc": "Báo giá, chính sách chiết khấu linh hoạt, quản lý đơn hàng và cơ hội bán lẻ/buôn."
+          },
+          {
+            "name": "Mua sắm & Nhà cung cấp",
+            "desc": "So sánh báo giá nhiều nhà cung cấp, phê duyệt đơn mua và đối chiếu 3 bên tự động."
+          },
+          {
+            "name": "Quản trị Kho thông minh",
+            "desc": "Tồn kho thực tế theo thời gian thực, tính giá vốn bình quân, quản lý theo Lô và Serial."
+          },
+          {
+            "name": "Dịch vụ sau bán & Bảo hành",
+            "desc": "Tiếp nhận yêu cầu hỗ trợ, theo dõi lịch sử bảo hành, sửa chữa và điều phối kỹ thuật."
+          },
+          {
+            "name": "Vận tải & Đội xe",
+            "desc": "Lập lịch trình giao hàng, điều phối phương tiện và kiểm soát định mức nhiên liệu."
+          }
+        ]
       },
       {
-        "name": "PageHub",
-        "tag": "Trang bán hàng",
-        "description": "Xây dựng và quản lý landing page, trang bán hàng chuyên nghiệp mà không cần đội kỹ thuật."
+        "id": "projects_mfg",
+        "num": "03",
+        "icon": "architecture",
+        "title": "Dự án, Sản xuất & Tài sản",
+        "badge": "Chuẩn hóa tiến độ & chi phí",
+        "highlight": "Chuyên sâu cho ngành công trình, cơ khí & sản xuất",
+        "description": "Quản trị xuyên suốt từ lập dự toán, điều độ công đoạn sản xuất đến giám sát thiết bị và hệ thống chất lượng.",
+        "modules": [
+          {
+            "name": "Dự án & Công trình",
+            "desc": "Quản lý gói thầu, bóc tách dự toán, tiến độ thi công và nghiệm thu thanh toán theo đợt."
+          },
+          {
+            "name": "Sản xuất & Gia công (MES)",
+            "desc": "Định mức nguyên vật liệu (BOM), lập lệnh sản xuất theo công đoạn và tính giá thành phẩm."
+          },
+          {
+            "name": "Tài sản & Thiết bị (CCDC)",
+            "desc": "Quản lý vòng đời tài sản cố định, cấp phát thu hồi và lập lịch bảo trì định kỳ."
+          },
+          {
+            "name": "Chất lượng & An toàn (ISO / HSE)",
+            "desc": "Biểu mẫu quy trình ISO, ghi nhận sự cố không phù hợp (NCR) và hành động khắc phục."
+          }
+        ]
       },
       {
-        "name": "SEOHub",
-        "tag": "Tối ưu SEO",
-        "description": "Theo dõi và tối ưu thứ hạng tìm kiếm, tăng lưu lượng truy cập tự nhiên cho website doanh nghiệp."
+        "id": "admin_hr",
+        "num": "04",
+        "icon": "corporate_fare",
+        "title": "Hành chính số, Pháp chế & Nhân sự",
+        "badge": "Văn phòng không giấy tờ",
+        "highlight": "Bảo mật pháp lý & tối ưu hóa nguồn lực",
+        "description": "Số hóa luồng tờ trình văn bản, quản trị hợp đồng điện tử chặt chẽ và chuẩn hóa công tác quản trị nguồn nhân lực.",
+        "modules": [
+          {
+            "name": "Hành chính & Trình ký số",
+            "desc": "Quản lý sổ công văn đi/đến, tạo tờ trình và phê duyệt ký duyệt văn bản trực tuyến."
+          },
+          {
+            "name": "Quản trị Hợp đồng & Pháp chế",
+            "desc": "Soạn thảo, ký kết điện tử, tự động cảnh báo hạn thanh toán và nghĩa vụ định kỳ."
+          },
+          {
+            "name": "Hồ sơ Nhân sự tập trung",
+            "desc": "Quản lý thông tin nhân viên, hợp đồng lao động, theo dõi nghỉ phép và quy trình nhân sự."
+          },
+          {
+            "name": "Điều hành & Báo cáo KPI/OKR",
+            "desc": "Thiết lập mục tiêu chỉ tiêu kinh doanh, bảng điều khiển trực quan hỗ trợ ra quyết định."
+          }
+        ]
+      }
+    ],
+    "integrationBar": {
+      "title": "Cổng kết nối liên thông hệ sinh thái doanh nghiệp",
+      "subtitle": "Dữ liệu vận hành đồng bộ tự động với các công cụ kế toán, tài chính và kênh giao tiếp hàng đầu",
+      "items": [
+        { "name": "MISA Kế toán", "desc": "Đồng bộ tự động chứng từ & sổ sách kế toán" },
+        { "name": "Hóa đơn điện tử", "desc": "VNPT, Viettel, MISA, BKAV phát hành tức thời" },
+        { "name": "Ngân hàng & VietQR", "desc": "Mã QR động đối soát tiền về tài khoản ngay" },
+        { "name": "Chữ ký số & Zalo OA", "desc": "Ký số từ xa và gửi thông báo đơn hàng tức thì" }
+      ]
+    }
+  },
+  "comparison": {
+    "eyebrow": "SO SÁNH MÔ HÌNH",
+    "title": "Tại sao doanh nghiệp chọn giải pháp thiết kế chuyên biệt DXBiz thay vì SaaS đóng hộp?",
+    "subtitle": "Xóa bỏ rủi ro quy trình bị gò bó cứng nhắc và gánh nặng chi phí user tăng dần theo quy mô nhân sự.",
+    "columns": {
+      "feature": "Tiêu chí so sánh",
+      "saas": "Phần mềm SaaS đóng hộp đại trà",
+      "dxbiz": "Giải pháp phần mềm thiết kế chuyên biệt DXBiz"
+    },
+    "rows": [
+      {
+        "title": "Độ tương thích & Tùy biến quy trình",
+        "saas": "Tính năng đóng cứng. Doanh nghiệp phải tự uốn mình theo phần mềm. 50% tính năng thừa không dùng, còn quy trình đặc thù thì không thể sửa.",
+        "dxbiz": "Phần mềm thiết kế chuyên biệt bám sát thực tế. Lắp ghép đúng phân hệ cần dùng, tùy biến biểu mẫu và luồng xét duyệt theo đúng đặc thù của doanh nghiệp."
+      },
+      {
+        "title": "Khả năng mở rộng & Tiến hóa hệ thống",
+        "saas": "Phụ thuộc vào lộ trình phát triển chung của nhà cung cấp. Khó tích hợp chức năng riêng hoặc cải tiến theo giai đoạn phát triển.",
+        "dxbiz": "Dễ dàng bổ sung tính năng mới, tạo thêm module chuyên sâu hoặc kết nối hệ thống mới mà không làm gián đoạn vận hành."
+      },
+      {
+        "title": "Chính sách chi phí & Số lượng người dùng",
+        "saas": "Thu phí định kỳ theo số User (người dùng). Công ty càng mở rộng, chi phí thuê bao phần mềm hàng tháng càng đắt đỏ.",
+        "dxbiz": "Không giới hạn số lượng tài khoản nhân viên. Dự toán đầu tư minh bạch, không phát sinh chi phí ẩn khi doanh nghiệp tăng quy mô."
+      },
+      {
+        "title": "Trợ lý AI đồng hành nghiệp vụ",
+        "saas": "Không có hoặc chỉ là chatbot chung chung, không kết nối sâu vào hóa đơn, chứng từ và luồng phê duyệt nội bộ.",
+        "dxbiz": "Trợ lý AI tích hợp sẵn: tự động OCR đọc hóa đơn đầu vào, rà soát đối chiếu số liệu và chủ động gửi cảnh báo công nợ."
+      },
+      {
+        "title": "Dữ liệu tập trung & Liên thông hệ sinh thái",
+        "saas": "Hệ thống đóng kín, xuất báo cáo khó khăn, dẫn tới tình trạng dữ liệu bị phân mảnh và cát cứ giữa các phòng ban.",
+        "dxbiz": "Dữ liệu tập trung xuyên suốt, sẵn sàng liên thông mở API 2 chiều với MISA Kế toán, Hóa đơn điện tử, VietQR và Zalo OA."
       }
     ]
   },
   "features": {
-    "eyebrow": "Vì sao chọn DXBiz",
-    "title": "Không phải phần mềm đóng hộp — là giải pháp cho doanh nghiệp bạn",
-    "subtitle": "DXBiz tư vấn theo bài toán thực tế, triển khai nhanh và đồng hành lâu dài — thay vì để bạn tự xoay xở với một phần mềm.",
+    "eyebrow": "ƯU THẾ NỀN TẢNG",
+    "title": "Kiến trúc phần mềm linh hoạt — Doanh nghiệp làm chủ hệ thống",
+    "subtitle": "Xóa bỏ rủi ro phụ thuộc quy trình đóng cứng và chi phí bản quyền tăng theo số lượng nhân viên.",
     "items": [
       {
-        "title": "Giải pháp may đo",
-        "description": "Khảo sát quy trình thực tế và thiết kế giải pháp phù hợp với doanh nghiệp, không ép bạn theo khuôn mẫu có sẵn."
+        "title": "1. Thiết kế bám sát bài toán thực tế của doanh nghiệp",
+        "description": "Không ép doanh nghiệp phải thay đổi cách làm việc để theo phần mềm. Từng biểu mẫu, luồng xét duyệt và báo cáo quản trị đều được thiết kế đúng theo thói quen và quy trình nội bộ."
       },
       {
-        "title": "Triển khai nhanh, ít rủi ro",
-        "description": "Đưa vào vận hành theo từng giai đoạn, có đo lường và điều chỉnh — giảm gián đoạn cho đội ngũ của bạn."
+        "title": "2. Trợ lý AI đồng hành vận hành thông minh",
+        "description": "Người và AI Agent cùng làm việc trên một hệ thống: AI tự động đọc hóa đơn đầu vào, rà soát dữ liệu sai lệch, cảnh báo hạn thanh toán và đề xuất nghiệp vụ chính xác."
       },
       {
-        "title": "Đồng hành & hỗ trợ dài hạn",
-        "description": "Đội ngũ chuyên trách hỗ trợ trong suốt quá trình sử dụng, cùng bạn tối ưu liên tục theo đà tăng trưởng."
+        "title": "3. Lắp ghép module linh hoạt theo từng giai đoạn",
+        "description": "Doanh nghiệp chỉ triển khai đúng các phân hệ cần dùng hôm nay, dễ dàng kích hoạt thêm tính năng mới khi quy mô phát triển mà không làm xáo trộn hệ thống hiện tại."
       }
-    ]
+    ],
+    "principles": {
+      "title": "Nguyên tắc: Tận dụng giải pháp chuyên sâu, không làm lại",
+      "desc": "DXBiz tập trung giải quyết bài toán vận hành cốt lõi, liên thông mượt mà với các nền tảng chuyên biệt:",
+      "list": [
+        { "name": "Kế toán tổng hợp & Báo cáo thuế", "note": "Kết nối tự động sang MISA — kế toán tiếp tục làm việc thuận tiện" },
+        { "name": "Chấm công & Tính lương", "note": "Tích hợp đồng bộ từ máy chấm công vân tay / khuôn mặt" },
+        { "name": "Bán lẻ tại quầy (POS)", "note": "Đồng bộ tồn kho tức thời với các phần mềm POS chuyên dụng" },
+        { "name": "Chăm sóc khách hàng tự động", "note": "Kết nối trực tiếp trợ lý AI CSKH trên hạ tầng AI4W" }
+      ]
+    }
   },
   "solutions": {
-    "eyebrow": "Giải pháp theo ngành",
-    "title": "Giải pháp riêng cho từng mô hình doanh nghiệp",
-    "subtitle": "Mỗi ngành có bài toán vận hành khác nhau — DXBiz thiết kế giải pháp bám sát đặc thù và quy trình của doanh nghiệp bạn.",
-    "spaBadge": "Chuỗi Spa & Salon",
-    "spaTitle": "Quản lý lịch hẹn & CRM tự động",
-    "spaDesc": "Tự động hóa quy trình đặt lịch, nhắc hẹn và chăm sóc khách hàng cũ, đồng bộ giữa các chi nhánh.",
-    "spaImgAlt": "Nhân viên spa sử dụng giải pháp DXBiz tại quầy lễ tân",
+    "eyebrow": "MẪU GIẢI PHÁP THEO NGÀNH",
+    "title": "Được thiết kế sẵn cho từng mô hình doanh nghiệp",
+    "subtitle": "DXBiz đóng gói sẵn các bộ giải pháp chuẩn hóa theo từng lĩnh vực, giúp doanh nghiệp rút ngắn thời gian triển khai và đưa vào vận hành ngay.",
     "items": [
       {
-        "title": "Bán lẻ & Chuỗi",
-        "description": "Quản lý kho, đồng bộ đa chi nhánh, dự báo hàng tồn và tích hợp vận chuyển GHN/AhaMove."
+        "id": "trade",
+        "title": "Thương mại & Phân phối",
+        "icon": "storefront",
+        "tag": "Bán buôn, Bán lẻ, Chuỗi phân phối",
+        "description": "Tối ưu dòng luân chuyển hàng hóa, quản lý công nợ và tuổi nợ khách hàng, kiểm soát tồn kho đa kho tức thời và tự động đẩy số liệu sang MISA & Hóa đơn điện tử.",
+        "coreModules": ["Tài chính vận hành", "Mua hàng & NCC", "Bán hàng & Phân phối", "Kho bãi đa điểm", "Liên thông MISA & VietQR"],
+        "optionalModules": ["Dịch vụ bảo hành", "Vận tải đội xe"],
+        "reference": "Giải pháp đã kiểm chứng thực tế"
       },
       {
-        "title": "Dịch vụ & Agency",
-        "description": "Quản lý dự án tập trung, tự động hóa báo cáo và phân bổ nguồn lực nhân sự hiệu quả."
+        "id": "construction",
+        "title": "Xây dựng & Tư vấn công trình",
+        "icon": "architecture",
+        "tag": "Nhà thầu, Tư vấn thiết kế, Giám sát",
+        "description": "Quản lý xuyên suốt từ gói thầu, bóc tách dự toán, thẩm tra kỹ thuật, quản lý hợp đồng đến nghiệm thu thanh toán theo từng đợt công trình.",
+        "coreModules": ["Dự án & Công trình", "Pháp chế & Hợp đồng", "Hành chính & Trình ký", "Tài chính dòng tiền dự án"],
+        "optionalModules": ["Chất lượng ISO & An toàn HSE"],
+        "reference": "Được chuẩn hóa từ các công trình lớn"
+      },
+      {
+        "id": "manufacturing",
+        "title": "Sản xuất & Gia công chế tạo",
+        "icon": "factory",
+        "tag": "Xưởng sản xuất, Nhà máy gia công",
+        "description": "Quản trị định mức nguyên vật liệu (BOM), lập lệnh sản xuất theo từng công đoạn, giám sát tỷ lệ hao hụt vật tư và tính giá thành phẩm xuất xưởng.",
+        "coreModules": ["Mua sắm vật tư", "Kho & Tồn kho", "Sản xuất (BOM & Lệnh xưởng)", "Tài sản & Bảo trì", "Tài chính giá thành"],
+        "optionalModules": ["Hệ thống chất lượng ISO"],
+        "reference": "Chuẩn hóa theo mô hình MES"
+      },
+      {
+        "id": "office_service",
+        "title": "Doanh nghiệp Dịch vụ & Văn phòng",
+        "icon": "corporate_fare",
+        "tag": "Tư vấn, Dịch vụ chuyên nghiệp, Văn phòng",
+        "description": "Số hóa toàn bộ luồng tờ trình ký duyệt không giấy tờ, quản lý sổ công văn đi/đến, quản trị vòng đời hợp đồng chặt chẽ và hồ sơ nhân sự tập trung.",
+        "coreModules": ["Hành chính & Trình ký số", "Hồ sơ Nhân sự", "Tài chính & Thu chi", "Quản lý Hợp đồng"],
+        "optionalModules": ["Báo cáo mục tiêu KPI / OKR"],
+        "reference": "Văn phòng số không giấy tờ"
       }
-    ]
+    ],
+    "consultBanner": {
+      "title": "Doanh nghiệp của bạn có quy trình đặc thù riêng?",
+      "subtitle": "Đội ngũ chuyên gia DXBiz & DXSolution sẽ cùng bạn khảo sát thực tế và thiết kế gói phân hệ chuẩn xác nhất.",
+      "cta": "Khảo sát & Nhận tư vấn 1-1"
+    }
   },
   "partners": {
-    "label": "Tích hợp cùng các nền tảng doanh nghiệp hàng đầu Việt Nam"
+    "eyebrow": "ĐƯỢC TIN CHỌN & LIÊN THÔNG",
+    "title": "Hệ sinh thái liên thông doanh nghiệp",
+    "label": "Tích hợp & liên thông cùng các nền tảng doanh nghiệp hàng đầu"
   },
   "testimonials": {
-    "eyebrow": "Khách hàng nói gì",
-    "title": "Được các doanh nghiệp tin tưởng vận hành mỗi ngày",
-    "subtitle": "Nhiều doanh nghiệp đã tối ưu vận hành và tăng trưởng cùng giải pháp DXBiz.",
+    "eyebrow": "HIỆU QUẢ THỰC TẾ",
+    "title": "Được các doanh nghiệp kiểm chứng và tin tưởng",
+    "subtitle": "Hệ thống phần mềm vận hành ổn định, dữ liệu tập trung và minh bạch cho từng doanh nghiệp.",
     "ratingLabel": "Đánh giá 5 trên 5 sao",
     "items": [
       {
-        "quote": "DXBiz khảo sát đúng quy trình của chuỗi và triển khai gọn gàng. Việc nhắc lịch, chăm sóc khách cũ giờ tự chạy, tỷ lệ khách quay lại tăng rõ rệt.",
-        "role": "Chủ chuỗi spa",
-        "metricLabel": "Khách quay lại"
+        "quote": "Gói phân hệ Thương mại giúp toàn bộ công nợ mua bán và đối soát kho của chúng tôi tự động khớp hoàn toàn. Thời gian chốt sổ cuối tháng giảm từ 5 ngày xuống còn vài giờ.",
+        "role": "Giám đốc Vận hành · Doanh nghiệp Phân phối",
+        "metricLabel": "Tiết kiệm 80% thời gian đối soát",
+        "projectTitle": "Hệ thống Phân phối & Kho đa điểm"
       },
       {
-        "quote": "Đồng bộ tồn kho giữa Sapo và kho thực tế theo thời gian thực giúp chúng tôi hết cảnh bán vượt hàng. Báo cáo cuối ngày tự chạy, không phải nhập tay nữa.",
-        "role": "Giám đốc vận hành",
-        "metricLabel": "Tiết kiệm mỗi tuần"
+        "quote": "Việc quản lý dự án công trình kết hợp pháp chế hợp đồng đã giải quyết đúng bài toán nghiệm thu thanh toán theo đợt. Dòng tiền dự án rõ ràng, không còn cảnh thất thoát.",
+        "role": "Chỉ huy trưởng Dự án · Doanh nghiệp Xây dựng",
+        "metricLabel": "Kiểm soát 100% dòng tiền công trình",
+        "projectTitle": "Quản trị Dự án & Dự toán công trình"
       },
       {
-        "quote": "Đội DXBiz đồng hành sát trong lúc triển khai và cả sau đó. Quy trình được số hóa dần, đội ngũ nhẹ đầu hẳn mà không bị gián đoạn.",
-        "role": "Nhà sáng lập",
-        "metricLabel": "Năng suất đội ngũ"
+        "quote": "Phần mềm được thiết kế chuẩn xác theo thói quen xưởng cơ khí, anh em công nhân dùng rất dễ hiểu. AI đọc hóa đơn đầu vào hoạt động rất nhạy, giải phóng lượng lớn công việc kế toán.",
+        "role": "Tổng Giám đốc · Nhà máy Cơ khí & Sản xuất",
+        "metricLabel": "Khớp 100% nghiệp vụ thực tế",
+        "projectTitle": "Hệ thống Quản lý Sản xuất & Định mức BOM"
       }
     ]
   },
   "cta": {
-    "title": "Sẵn sàng tối ưu vận hành doanh nghiệp?",
-    "subtitle": "Đặt lịch tư vấn 1-1 với DXBiz — chúng tôi phân tích bài toán của bạn và đề xuất giải pháp phù hợp.",
-    "primary": "Đặt lịch tư vấn 1-1",
-    "note": "Miễn phí tư vấn & khảo sát quy trình · Phản hồi trong 24h làm việc"
+    "eyebrow": "TƯ VẤN TRIỂN KHAI",
+    "title": "Sẵn sàng xây dựng hệ thống vận hành chuyên biệt cho doanh nghiệp bạn?",
+    "subtitle": "Đặt lịch tư vấn 1-1 cùng chuyên gia DXBiz & DXSolution để khảo sát bài toán thực tế và lựa chọn bộ phân hệ phù hợp nhất.",
+    "primary": "Gửi yêu cầu tư vấn",
+    "note": "Đội ngũ chuyên gia DXBiz sẽ liên hệ khảo sát và tư vấn trong vòng 24 giờ làm việc.",
+    "serviceLabel": "1. Nhóm phân hệ bạn quan tâm",
+    "services": [
+      "Tài chính & Dòng tiền",
+      "Bán hàng & Chuỗi cung ứng",
+      "Dự án & Sản xuất",
+      "Hành chính số & Nhân sự",
+      "Hệ thống Thiết kế riêng theo yêu cầu",
+      "Trợ lý AI đồng hành"
+    ],
+    "industryLabel": "2. Lĩnh vực hoạt động",
+    "industries": [
+      "Thương mại & Phân phối",
+      "Xây dựng & Công trình",
+      "Sản xuất & Gia công",
+      "Dịch vụ & Văn phòng",
+      "Y tế / Giáo dục / Lĩnh vực khác"
+    ],
+    "commitments": [
+      {
+        "title": "Khảo sát thực tế chuyên sâu",
+        "desc": "Làm việc trực tiếp cùng chuyên gia giải pháp để nắm bắt đúng hiện trạng và quy trình đặc thù của doanh nghiệp."
+      },
+      {
+        "title": "Thiết kế đúng bài toán & Dự toán minh bạch",
+        "desc": "Lựa chọn đúng các phân hệ cần dùng, không phát sinh chi phí ẩn, cam kết lộ trình triển khai chi tiết."
+      },
+      {
+        "title": "Đồng hành lâu dài & Toàn quyền hệ thống",
+        "desc": "Hỗ trợ kỹ thuật liên tục, bàn giao trọn vẹn và đảm bảo doanh nghiệp toàn quyền làm chủ hệ thống vận hành."
+      }
+    ]
   },
   "contact": {
-    "title": "Nhận tư vấn giải pháp",
-    "subtitle": "Để lại thông tin, chúng tôi sẽ liên hệ tư vấn và khảo sát miễn phí trong 24 giờ làm việc.",
+    "title": "Nhận tư vấn giải pháp DXBiz",
+    "subtitle": "Để lại thông tin, đội ngũ chuyên gia DXBiz sẽ liên hệ khảo sát bài toán và tư vấn mô hình phù hợp trong 24 giờ làm việc.",
     "name": "Họ và tên",
     "namePlaceholder": "Nguyễn Văn A",
     "phone": "Số điện thoại",
     "phonePlaceholder": "09xx xxx xxx",
     "company": "Tên doanh nghiệp",
-    "companyPlaceholder": "Không bắt buộc",
-    "message": "Bài toán của bạn",
-    "messagePlaceholder": "Ví dụ: cần số hóa quy trình vận hành, quản lý đa chi nhánh…",
+    "companyPlaceholder": "Tên công ty / doanh nghiệp của bạn",
+    "message": "Bài toán vận hành hoặc nhóm phân hệ bạn quan tâm",
+    "messagePlaceholder": "Ví dụ: Cần tư vấn phần mềm Tài chính + Chuỗi cung ứng cho công ty phân phối...",
     "optional": "không bắt buộc",
-    "submit": "Gửi thông tin",
+    "submit": "Gửi yêu cầu tư vấn",
     "submitting": "Đang gửi…",
-    "successTitle": "Đã nhận thông tin!",
-    "successDesc": "Cảm ơn bạn. Chúng tôi sẽ liên hệ tư vấn trong thời gian sớm nhất.",
+    "successTitle": "Đã tiếp nhận thông tin!",
+    "successDesc": "Cảm ơn bạn. Chuyên gia tư vấn của DXBiz sẽ liên hệ hỗ trợ trong thời gian sớm nhất.",
     "close": "Đóng",
     "error": "Gửi không thành công. Vui lòng thử lại."
   },
   "footer": {
-    "slogan": "Chuyển đổi số cho doanh nghiệp Việt",
-    "tagline": "Đối tác tư vấn và triển khai giải pháp chuyển đổi số cho doanh nghiệp.",
-    "serviceOf": "Một dịch vụ của",
+    "slogan": "Bộ giải pháp phần mềm vận hành doanh nghiệp thiết kế chuyên biệt",
+    "tagline": "Thiết kế riêng cho từng công ty theo đúng quy trình thực tế. Người và AI Agent cùng vận hành dữ liệu an toàn, minh bạch.",
+    "serviceOf": "Một giải pháp của",
     "groups": [
-      { "title": "Nền tảng", "links": ["DXFlow", "OrderHub", "PageHub", "SEOHub"] },
-      { "title": "Công ty", "links": ["Về chúng tôi", "Tuyển dụng", "Hỗ trợ"] },
-      { "title": "Pháp lý", "links": ["Chính sách bảo mật", "Điều khoản dịch vụ"] }
+      {
+        "title": "Phân hệ giải pháp",
+        "links": ["Tài chính & Dòng tiền", "Bán hàng & Chuỗi cung ứng", "Dự án & Sản xuất", "Hành chính & Nhân sự"]
+      },
+      {
+        "title": "Mẫu theo ngành",
+        "links": ["Thương mại & Phân phối", "Xây dựng & Tư vấn", "Sản xuất & Gia công", "Văn phòng & Dịch vụ"]
+      },
+      {
+        "title": "Hệ sinh thái & Pháp lý",
+        "links": ["DXSolution (dxsolution.vn)", "Liên thông MISA & HĐĐT", "Chính sách bảo mật", "Điều khoản dịch vụ"]
+      }
     ],
-    "copyright": "© 2024 DXBiz. Một dịch vụ của DXS Việt Nam."
+    "copyright": "© 2026 DXBiz. Một dịch vụ của DXSolution (dxsolution.vn)."
   }
 }
