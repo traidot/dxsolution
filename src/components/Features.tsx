@@ -17,6 +17,12 @@ export default function Features({ dict, lang = "vi" }: { dict: Dictionary; lang
       { number: "-65%", label: "Reduction in manual operational tasks" },
       { number: "0 Hidden Fees", label: "Unlimited employee user accounts" },
     ],
+    ja: [
+      { number: "100%", label: "現場プロセスへの完全適合" },
+      { number: "4 大領域", label: "基幹業務を網羅する専用モジュール" },
+      { number: "65%削減", label: "手作業・定型業務の工数削減" },
+      { number: "追加費用0", label: "全社員が利用可能なライセンス体系" },
+    ],
   };
 
   const statsBottomByLocale: Record<Locale, { number: string; label: string }[]> = {
@@ -30,6 +36,11 @@ export default function Features({ dict, lang = "vi" }: { dict: Dictionary; lang
       { number: "15+", label: "Two-way open API integrated platforms" },
       { number: "24/7", label: "Ongoing operational technical support" },
     ],
+    ja: [
+      { number: "2–4週間", label: "要件定義から実運用開始までのリードタイム" },
+      { number: "15+", label: "双方向オープンAPI外部連携プラットフォーム" },
+      { number: "24/7", label: "専任チームによる安心の運用・技術サポート" },
+    ],
   };
 
   const statsTop = statsTopByLocale[lang] || statsTopByLocale.vi;
@@ -41,12 +52,16 @@ export default function Features({ dict, lang = "vi" }: { dict: Dictionary; lang
         {/* Part 1: "Con số tự chứng minh" — hairline grid, solid corporate typography */}
         <Reveal className="mb-20 lg:mb-28">
           <span className="text-[12px] font-mono font-bold text-[#0c48d8] tracking-[0.14em] uppercase block mb-3">
-            {lang === "vi" ? "HIỆU QUẢ VẬN HÀNH" : "OPERATIONAL PERFORMANCE"}
+            {lang === "vi" ? "HIỆU QUẢ VẬN HÀNH" : lang === "ja" ? "運用実績とパフォーマンス" : "OPERATIONAL PERFORMANCE"}
           </span>
           <h2 className="vnext-h2 mb-12 lg:mb-16">
             {lang === "vi" ? (
               <>
                 <span className="font-bold text-[#0c48d8]">Con số</span> tự chứng minh
+              </>
+            ) : lang === "ja" ? (
+              <>
+                実績を証明する<span className="font-bold text-[#0c48d8]">指標と数値</span>
               </>
             ) : (
               <>

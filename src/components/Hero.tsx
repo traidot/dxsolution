@@ -101,6 +101,13 @@ export default function Hero({ dict, lang = "vi" }: { dict: Dictionary; lang?: L
                     cho từng doanh nghiệp
                   </span>
                 </>
+              ) : lang === "ja" ? (
+                <>
+                  <span className="block">実業務に最適化された業務基盤を、</span>
+                  <span className="text-[#0c48d8] block mt-1.5">
+                    一社一社の現場へ
+                  </span>
+                </>
               ) : (
                 <>
                   <span className="block">Bespoke Operations System</span>

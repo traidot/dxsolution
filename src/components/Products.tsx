@@ -47,6 +47,13 @@ export default function Products({ dict, lang = "vi" }: { dict: Dictionary; lang
                   vận hành doanh nghiệp toàn diện
                 </span>
               </>
+            ) : lang === "ja" ? (
+              <>
+                包括的な{" "}
+                <span className="font-bold text-[#0c48d8]">
+                  エンタープライズ業務オペレーション基盤
+                </span>
+              </>
             ) : (
               <>
                 Comprehensive{" "}

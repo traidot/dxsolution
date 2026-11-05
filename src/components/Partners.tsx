@@ -12,8 +12,8 @@ const ECOSYSTEM_ITEMS = [
 
 export default function Partners({ dict, lang = "vi" }: { dict: Dictionary; lang?: Locale }) {
   const t = dict.partners;
-  const eyebrow = t.eyebrow || (lang === "vi" ? "ĐƯỢC TIN CHỌN & LIÊN THÔNG" : "TRUSTED & INTEGRATED");
-  const title = t.title || (lang === "vi" ? "Hệ sinh thái liên thông doanh nghiệp" : "Enterprise Integration Ecosystem");
+  const eyebrow = t.eyebrow || (lang === "vi" ? "ĐƯỢC TIN CHỌN & LIÊN THÔNG" : lang === "ja" ? "信頼と実績・エコシステム" : "TRUSTED & INTEGRATED");
+  const title = t.title || (lang === "vi" ? "Hệ sinh thái liên thông doanh nghiệp" : lang === "ja" ? "エンタープライズ統合エコシステム" : "Enterprise Integration Ecosystem");
 
   return (
     <section id="partners" className="border-b border-neutral-200 bg-white">

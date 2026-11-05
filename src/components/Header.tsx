@@ -10,6 +10,7 @@ import { useContact } from "./ContactModal";
 const LOCALES: { code: Locale; label: string }[] = [
   { code: "vi", label: "VI" },
   { code: "en", label: "EN" },
+  { code: "ja", label: "JA" },
 ];
 
 export default function Header({ nav, lang }: { nav: Dictionary["nav"]; lang: Locale }) {
@@ -25,7 +26,7 @@ export default function Header({ nav, lang }: { nav: Dictionary["nav"]; lang: Lo
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const rest = pathname.replace(/^\/(vi|en)(?=\/|$)/, "");
+  const rest = pathname.replace(/^\/(vi|en|ja)(?=\/|$)/, "");
   const localeHref = (code: Locale) => `/${code}${rest || ""}`;
 
   const navLinks = [

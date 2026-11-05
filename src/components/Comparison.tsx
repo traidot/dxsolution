@@ -21,6 +21,13 @@ export default function Comparison({ dict, lang = "vi" }: { dict: Dictionary; la
                   giải pháp thiết kế chuyên biệt thay vì SaaS đóng hộp?
                 </span>
               </>
+            ) : lang === "ja" ? (
+              <>
+                なぜ先進企業は{" "}
+                <span className="font-bold text-[#0c48d8]">
+                  汎用SaaSではなくオーダーメイド基盤を選ぶのか？
+                </span>
+              </>
             ) : (
               <>
                 Why choose{" "}
@@ -108,15 +115,15 @@ export default function Comparison({ dict, lang = "vi" }: { dict: Dictionary; la
             </div>
             <div>
               <h4 className="font-headline text-[16px] font-bold text-[#1a1a1a]">
-                {lang === "vi" ? "Cần khảo sát quy trình và thiết kế phần mềm chuyên biệt cho doanh nghiệp bạn?" : "Need a custom operational workflow audit and bespoke software blueprint?"}
+                {lang === "vi" ? "Cần khảo sát quy trình và thiết kế phần mềm chuyên biệt cho doanh nghiệp bạn?" : lang === "ja" ? "貴社専用の業務システム設計・個別ヒアリングをご希望ですか？" : "Need a custom operational workflow audit and bespoke software blueprint?"}
               </h4>
               <p className="text-[14px] text-neutral-500 mt-0.5">
-                {lang === "vi" ? "Chuyên gia DXBiz sẽ trực tiếp trao đổi và đề xuất gói phân hệ chuẩn xác trong 24 giờ." : "DXBiz solution architects will audit your workflows and propose a tailored scope within 24h."}
+                {lang === "vi" ? "Chuyên gia DXBiz sẽ trực tiếp trao đổi và đề xuất gói phân hệ chuẩn xác trong 24 giờ." : lang === "ja" ? "DXBizのソリューション専門家が24時間以内に直接ヒアリングし、最適な構成をご提案します。" : "DXBiz solution architects will audit your workflows and propose a tailored scope within 24h."}
               </p>
             </div>
           </div>
           <ContactButton className="inline-flex items-center justify-center px-5 py-2.5 bg-[#0c48d8] text-white rounded-[4px] font-semibold text-[13.5px] hover:bg-[#0835a6] transition-all duration-150 shrink-0 cursor-pointer shadow-xs">
-            {lang === "vi" ? "Nhận tư vấn giải pháp chuyên biệt" : "Request Bespoke Consultation"}
+            {lang === "vi" ? "Nhận tư vấn giải pháp chuyên biệt" : lang === "ja" ? "個別相談・お見積りを申し込む" : "Request Bespoke Consultation"}
           </ContactButton>
         </Reveal>
       </div>

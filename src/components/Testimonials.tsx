@@ -31,6 +31,13 @@ export default function Testimonials({ dict, lang = "vi" }: { dict: Dictionary; 
                     được khách hàng công nhận
                   </span>
                 </>
+              ) : lang === "ja" ? (
+                <>
+                  確かな導入実績と{" "}
+                  <span className="font-bold text-white">
+                    企業現場での高い評価
+                  </span>
+                </>
               ) : (
                 <>
                   Implementation capability{" "}
@@ -48,7 +55,7 @@ export default function Testimonials({ dict, lang = "vi" }: { dict: Dictionary; 
             <div className="mt-10">
               <ContactButton className="group inline-flex items-center gap-3 text-[13.5px] font-semibold uppercase tracking-[0.08em] text-white hover:text-white/80 transition-colors duration-300 cursor-pointer">
                 <span className="h-[1.5px] w-10 bg-[#0c48d8] transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:w-14" />
-                <span>{lang === "vi" ? "NHẬN TƯ VẤN TRIỂN KHAI" : "REQUEST CONSULTATION"}</span>
+                <span>{lang === "vi" ? "NHẬN TƯ VẤN TRIỂN KHAI" : lang === "ja" ? "無料個別相談を申し込む" : "REQUEST CONSULTATION"}</span>
                 <svg
                   width="12"
                   height="12"

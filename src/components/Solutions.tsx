@@ -55,6 +55,13 @@ export default function Solutions({ dict, lang = "vi" }: { dict: Dictionary; lan
                   từng mô hình doanh nghiệp
                 </span>
               </>
+            ) : lang === "ja" ? (
+              <>
+                各業種のビジネスモデルに特化した{" "}
+                <span className="font-bold text-[#0c48d8]">
+                  事前設計モデル
+                </span>
+              </>
             ) : (
               <>
                 Pre-architected for{" "}
