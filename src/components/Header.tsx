@@ -32,7 +32,6 @@ export default function Header({ nav, lang }: { nav: Dictionary["nav"]; lang: Lo
   const navLinks = [
     { label: nav.products, href: "#systems" },
     { label: nav.solutions, href: "#solutions" },
-    { label: nav.features, href: "#features" },
     { label: nav.cases, href: "#testimonials" },
   ];
 
