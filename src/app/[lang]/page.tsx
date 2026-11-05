@@ -3,7 +3,6 @@ import { getDictionary, hasLocale } from "@/i18n/dictionaries";
 import Hero from "@/components/Hero";
 import Partners from "@/components/Partners";
 import Products from "@/components/Products";
-import Comparison from "@/components/Comparison";
 import Solutions from "@/components/Solutions";
 import Features from "@/components/Features";
 import Testimonials from "@/components/Testimonials";
@@ -23,7 +22,6 @@ export default async function Home({
       <Hero dict={dict} lang={lang} />
       <Partners dict={dict} lang={lang} />
       <Products dict={dict} lang={lang} />
-      <Comparison dict={dict} lang={lang} />
       <Solutions dict={dict} lang={lang} />
       <Features dict={dict} lang={lang} />
       <Testimonials dict={dict} lang={lang} />
