@@ -93,17 +93,17 @@ export default function Hero({ dict, lang = "vi" }: { dict: Dictionary; lang?: L
             </div>
 
             {/* Headline — Balanced 2-line layout without orphan words */}
-            <h1 className="font-headline text-[32px] sm:text-[40px] lg:text-[42px] font-bold text-[#1a1a1a] leading-[1.24] tracking-tight mb-5 max-w-xl">
+            <h1 className="font-headline text-[30px] sm:text-[36px] lg:text-[38px] xl:text-[42px] font-bold text-[#1a1a1a] leading-[1.24] tracking-tight mb-5 max-w-2xl">
               {lang === "vi" ? (
                 <>
-                  Hệ thống vận hành chuyên biệt
+                  <span className="block">Hệ thống vận hành chuyên&nbsp;biệt</span>
                   <span className="text-[#0c48d8] block mt-1.5">
                     cho từng doanh nghiệp
                   </span>
                 </>
               ) : (
                 <>
-                  Bespoke Operations System
+                  <span className="block">Bespoke Operations System</span>
                   <span className="text-[#0c48d8] block mt-1.5">
                     for your enterprise
                   </span>
